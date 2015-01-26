@@ -11,26 +11,26 @@ package crucifive;
  */
 public class Palabra {
     
-    private String Word = new String();
-    private String Pista = new String();
-    private int WordLong;
+    private String word = new String();
+    private String pista = new String();
+    private int wordLong;
     
     public Palabra()
     {
-        Word = "";
-        Pista = "";
-        WordLong = 0;
+        word = "";
+        pista = "";
+        wordLong = 0;
     }
 
     public Palabra(int WordLong, String Word, String Pista) {
-        this.WordLong = WordLong;
-        this.Pista = Pista;
-        this.Word = Word;
+        this.wordLong = WordLong;
+        this.pista = Pista;
+        this.word = Word;
     }
     
     public int GetLong()
     {
-        return WordLong;
+        return wordLong;
     }
     
     public void SetWord(String Word)

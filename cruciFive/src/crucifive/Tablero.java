@@ -14,11 +14,11 @@ import java.util.LinkedList;
 public class Tablero {
     private int x;
     private int y;
-    private float Score;
-    private float Time;
-    private LinkedList<Palabra> Palabras_x;
-    private LinkedList<Palabra> Palabras_y;
-    private Diccionario Dictionary;
+    private float score;
+    private float time;
+    private LinkedList<Palabra> palabras_x;
+    private LinkedList<Palabra> palabras_y;
+    private Diccionario dictionary;
     
     public void ShowWords(Diccionario Dictionary)
     {

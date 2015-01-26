@@ -12,11 +12,11 @@ import java.util.LinkedList;
  * @author fernando
  */
 public class Estadisticas {
-    private LinkedList<Float> ScoreList;
-    private float TiempoTotal;
-    private int Victorias;
-    private int Derrotas;
-    private float TiempoPromedio;
+    private LinkedList<Float> scoreList;
+    private float tiempoTotal;
+    private int victorias;
+    private int derrotas;
+    private float tiempoPromedio;
     
     public int CalcularPromadio()
     {

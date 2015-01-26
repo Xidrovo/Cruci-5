@@ -15,8 +15,8 @@ public class Diccionario {
     //Aquí un pequeño cambio, en el escrito habíamos puesto un "Array" de clase "Palabra"
     //Ahora hay una lista vinculada que guarda palabras.
     
-    private LinkedList<Palabra> Words;
-    private String Name;
+    private LinkedList<Palabra> words;
+    private String name;
     
     public void AddWord(String Word)
     {
