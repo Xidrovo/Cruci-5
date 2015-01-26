@@ -5,10 +5,26 @@
  */
 package crucifive;
 
+import java.util.LinkedList;
+
 /**
  *
  * @author fernando
  */
 public class Estadisticas {
-    //jaja
+    private LinkedList<Float> ScoreList;
+    private float TiempoTotal;
+    private int Victorias;
+    private int Derrotas;
+    private float TiempoPromedio;
+    
+    public int CalcularPromadio()
+    {
+        return 2;
+    }
+    
+    public void VerEstadisticas()
+    {
+        //Muestra por pantalla todas las estadísticas.
+    }
 }
