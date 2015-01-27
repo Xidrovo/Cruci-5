@@ -18,7 +18,7 @@ public class Diccionario {
     private LinkedList<Palabra> words;
     private String name;
     
-    public void AddWord(String Word)
+    public void AddWord(Palabra Word)
     {
         //This Method will add a word on the Dictionary.
     }
