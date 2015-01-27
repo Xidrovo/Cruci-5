@@ -17,13 +17,15 @@ public class IconFrame extends javax.swing.JFrame {
     /**
      * Creates new form IconFrame
      */
+    private AudioClip sonido;
     public IconFrame() {
         initComponents();
+        setLocationRelativeTo(null);
+        setTitle("Main Menu");
         try{
         setIconImage ( new ImageIcon(getClass().getResource("../Sprites/Crucify-Icono.png")).getImage());
-        AudioClip sonido;
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("../SoundTrack/AcesHigh.wav"));
-        sonido.play(); }
+        sonido.play(); }        
         catch (Exception e){
         }
 
@@ -41,11 +43,20 @@ public class IconFrame extends javax.swing.JFrame {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
+        Play = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Sprites/Crucify-Logo.png"))); // NOI18N
+
+        Play.setText("Play!");
+        Play.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        Play.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PlayActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -55,17 +66,32 @@ public class IconFrame extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 983, Short.MAX_VALUE)
                 .addContainerGap())
+            .addGroup(layout.createSequentialGroup()
+                .addGap(407, 407, 407)
+                .addComponent(Play, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(433, Short.MAX_VALUE))
+                .addGap(56, 56, 56)
+                .addComponent(Play)
+                .addContainerGap(354, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void PlayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PlayActionPerformed
+        // TODO add your handling code here:
+        Game LinkToGame = new Game();
+        LinkToGame.setVisible(true);
+        sonido.stop();
+        dispose();
+        
+    }//GEN-LAST:event_PlayActionPerformed
 
     /**
      * @param args the command line arguments
@@ -82,6 +108,7 @@ public class IconFrame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Play;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
