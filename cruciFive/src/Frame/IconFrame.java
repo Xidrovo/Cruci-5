@@ -44,13 +44,16 @@ public class IconFrame extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         Play = new javax.swing.JButton();
+        setLocationRelativeTo(null);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Sprites/Crucify-Logo.png"))); // NOI18N
 
+        Play.setBackground(new java.awt.Color(153, 153, 255));
         Play.setText("Play!");
+        Play.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         Play.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         Play.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
