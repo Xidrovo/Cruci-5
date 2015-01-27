@@ -18,8 +18,11 @@ public class IconFrame extends javax.swing.JFrame {
      */
     public IconFrame() {
         initComponents();
-        setIconImage(new ImageIcon(getClass().getResource("../Sprites/Crucify-Icono.png")).getImage());
-       }
+        try{
+        setIconImage ( new ImageIcon(getClass().getResource("../Sprites/Crucify-Icono.png")).getImage()); }
+        catch (Exception e){
+        }
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
