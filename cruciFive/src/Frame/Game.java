@@ -30,52 +30,6 @@ public class Game extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jPanel3 = new javax.swing.JPanel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
-        jTextField6 = new javax.swing.JTextField();
-        jTextField7 = new javax.swing.JTextField();
-        jTextField8 = new javax.swing.JTextField();
-        jTextField9 = new javax.swing.JTextField();
-        jTextField10 = new javax.swing.JTextField();
-        jTextField11 = new javax.swing.JTextField();
-        jTextField12 = new javax.swing.JTextField();
-        jTextField13 = new javax.swing.JTextField();
-        jTextField14 = new javax.swing.JTextField();
-        jTextField15 = new javax.swing.JTextField();
-        jTextField16 = new javax.swing.JTextField();
-        jTextField17 = new javax.swing.JTextField();
-        jTextField18 = new javax.swing.JTextField();
-        jTextField19 = new javax.swing.JTextField();
-        jTextField20 = new javax.swing.JTextField();
-        jTextField21 = new javax.swing.JTextField();
-        jTextField22 = new javax.swing.JTextField();
-        jTextField23 = new javax.swing.JTextField();
-        jTextField24 = new javax.swing.JTextField();
-        jTextField25 = new javax.swing.JTextField();
-        jTextField26 = new javax.swing.JTextField();
-        jTextField27 = new javax.swing.JTextField();
-        jTextField28 = new javax.swing.JTextField();
-        jTextField29 = new javax.swing.JTextField();
-        jTextField30 = new javax.swing.JTextField();
-        jTextField31 = new javax.swing.JTextField();
-        jTextField32 = new javax.swing.JTextField();
-        jTextField33 = new javax.swing.JTextField();
-        jTextField34 = new javax.swing.JTextField();
-        jTextField35 = new javax.swing.JTextField();
-        jTextField36 = new javax.swing.JTextField();
-        jTextField37 = new javax.swing.JTextField();
-        jTextField38 = new javax.swing.JTextField();
-        jTextField39 = new javax.swing.JTextField();
-        jTextField40 = new javax.swing.JTextField();
-        jTextField41 = new javax.swing.JTextField();
-        jTextField42 = new javax.swing.JTextField();
-        jTextField43 = new javax.swing.JTextField();
-        jTextField44 = new javax.swing.JTextField();
-        jTextField45 = new javax.swing.JTextField();
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -91,201 +45,19 @@ public class Game extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Cruci5");
 
-        jPanel3.setBackground(new java.awt.Color(211, 208, 211));
-        jPanel3.setPreferredSize(new java.awt.Dimension(500, 500));
-        jPanel3.setLayout(new java.awt.GridLayout(10, 5));
-
-        jTextField1.setPreferredSize(new java.awt.Dimension(20, 20));
-        jPanel3.add(jTextField1);
-
-        jTextField2.setPreferredSize(new java.awt.Dimension(20, 20));
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
-            }
-        });
-        jPanel3.add(jTextField2);
-
-        jTextField3.setPreferredSize(new java.awt.Dimension(20, 20));
-        jPanel3.add(jTextField3);
-
-        jTextField4.setPreferredSize(new java.awt.Dimension(20, 20));
-        jPanel3.add(jTextField4);
-
-        jTextField5.setPreferredSize(new java.awt.Dimension(20, 20));
-        jPanel3.add(jTextField5);
-
-        jTextField6.setPreferredSize(new java.awt.Dimension(20, 20));
-        jPanel3.add(jTextField6);
-
-        jTextField7.setPreferredSize(new java.awt.Dimension(20, 20));
-        jPanel3.add(jTextField7);
-
-        jTextField8.setPreferredSize(new java.awt.Dimension(20, 20));
-        jPanel3.add(jTextField8);
-
-        jTextField9.setPreferredSize(new java.awt.Dimension(20, 20));
-        jPanel3.add(jTextField9);
-
-        jTextField10.setPreferredSize(new java.awt.Dimension(20, 20));
-        jPanel3.add(jTextField10);
-
-        jTextField11.setPreferredSize(new java.awt.Dimension(20, 20));
-        jPanel3.add(jTextField11);
-
-        jTextField12.setPreferredSize(new java.awt.Dimension(20, 20));
-        jPanel3.add(jTextField12);
-
-        jTextField13.setPreferredSize(new java.awt.Dimension(20, 20));
-        jPanel3.add(jTextField13);
-
-        jTextField14.setPreferredSize(new java.awt.Dimension(20, 20));
-        jPanel3.add(jTextField14);
-
-        jTextField15.setPreferredSize(new java.awt.Dimension(20, 20));
-        jPanel3.add(jTextField15);
-
-        jTextField16.setText("jTextField1");
-        jTextField16.setPreferredSize(new java.awt.Dimension(20, 20));
-        jPanel3.add(jTextField16);
-
-        jTextField17.setText("jTextField1");
-        jTextField17.setPreferredSize(new java.awt.Dimension(20, 20));
-        jPanel3.add(jTextField17);
-
-        jTextField18.setText("jTextField1");
-        jTextField18.setPreferredSize(new java.awt.Dimension(20, 20));
-        jPanel3.add(jTextField18);
-
-        jTextField19.setPreferredSize(new java.awt.Dimension(20, 20));
-        jPanel3.add(jTextField19);
-
-        jTextField20.setPreferredSize(new java.awt.Dimension(20, 20));
-        jPanel3.add(jTextField20);
-
-        jTextField21.setText("jTextField1");
-        jTextField21.setPreferredSize(new java.awt.Dimension(20, 20));
-        jPanel3.add(jTextField21);
-
-        jTextField22.setText("jTextField1");
-        jTextField22.setPreferredSize(new java.awt.Dimension(20, 20));
-        jPanel3.add(jTextField22);
-
-        jTextField23.setText("jTextField1");
-        jTextField23.setPreferredSize(new java.awt.Dimension(20, 20));
-        jPanel3.add(jTextField23);
-
-        jTextField24.setText("jTextField1");
-        jTextField24.setPreferredSize(new java.awt.Dimension(20, 20));
-        jPanel3.add(jTextField24);
-
-        jTextField25.setText("jTextField1");
-        jTextField25.setPreferredSize(new java.awt.Dimension(20, 20));
-        jPanel3.add(jTextField25);
-
-        jTextField26.setText("jTextField1");
-        jTextField26.setPreferredSize(new java.awt.Dimension(20, 20));
-        jPanel3.add(jTextField26);
-
-        jTextField27.setText("jTextField1");
-        jTextField27.setPreferredSize(new java.awt.Dimension(20, 20));
-        jPanel3.add(jTextField27);
-
-        jTextField28.setText("jTextField1");
-        jTextField28.setPreferredSize(new java.awt.Dimension(20, 20));
-        jPanel3.add(jTextField28);
-
-        jTextField29.setText("jTextField1");
-        jTextField29.setPreferredSize(new java.awt.Dimension(20, 20));
-        jPanel3.add(jTextField29);
-
-        jTextField30.setText("jTextField1");
-        jTextField30.setPreferredSize(new java.awt.Dimension(20, 20));
-        jPanel3.add(jTextField30);
-
-        jTextField31.setText("jTextField1");
-        jTextField31.setPreferredSize(new java.awt.Dimension(20, 20));
-        jPanel3.add(jTextField31);
-
-        jTextField32.setText("jTextField1");
-        jTextField32.setPreferredSize(new java.awt.Dimension(20, 20));
-        jPanel3.add(jTextField32);
-
-        jTextField33.setText("jTextField1");
-        jTextField33.setPreferredSize(new java.awt.Dimension(20, 20));
-        jPanel3.add(jTextField33);
-
-        jTextField34.setText("jTextField1");
-        jTextField34.setPreferredSize(new java.awt.Dimension(20, 20));
-        jPanel3.add(jTextField34);
-
-        jTextField35.setText("jTextField1");
-        jTextField35.setPreferredSize(new java.awt.Dimension(20, 20));
-        jPanel3.add(jTextField35);
-
-        jTextField36.setText("jTextField1");
-        jTextField36.setPreferredSize(new java.awt.Dimension(20, 20));
-        jPanel3.add(jTextField36);
-
-        jTextField37.setText("jTextField1");
-        jTextField37.setPreferredSize(new java.awt.Dimension(20, 20));
-        jPanel3.add(jTextField37);
-
-        jTextField38.setText("jTextField1");
-        jTextField38.setPreferredSize(new java.awt.Dimension(20, 20));
-        jPanel3.add(jTextField38);
-
-        jTextField39.setText("jTextField1");
-        jTextField39.setPreferredSize(new java.awt.Dimension(20, 20));
-        jPanel3.add(jTextField39);
-
-        jTextField40.setText("jTextField1");
-        jTextField40.setPreferredSize(new java.awt.Dimension(20, 20));
-        jPanel3.add(jTextField40);
-
-        jTextField41.setText("jTextField1");
-        jTextField41.setPreferredSize(new java.awt.Dimension(20, 20));
-        jPanel3.add(jTextField41);
-
-        jTextField42.setText("jTextField1");
-        jTextField42.setPreferredSize(new java.awt.Dimension(20, 20));
-        jPanel3.add(jTextField42);
-
-        jTextField43.setText("jTextField1");
-        jTextField43.setPreferredSize(new java.awt.Dimension(20, 20));
-        jPanel3.add(jTextField43);
-
-        jTextField44.setText("jTextField1");
-        jTextField44.setPreferredSize(new java.awt.Dimension(20, 20));
-        jPanel3.add(jTextField44);
-
-        jTextField45.setText("jTextField1");
-        jTextField45.setPreferredSize(new java.awt.Dimension(20, 20));
-        jPanel3.add(jTextField45);
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(64, 64, 64)
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 700, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(239, Short.MAX_VALUE))
+            .addGap(0, 1003, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(26, 26, 26)
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 476, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(1274, Short.MAX_VALUE))
+            .addGap(0, 1776, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -324,51 +96,5 @@ public class Game extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField11;
-    private javax.swing.JTextField jTextField12;
-    private javax.swing.JTextField jTextField13;
-    private javax.swing.JTextField jTextField14;
-    private javax.swing.JTextField jTextField15;
-    private javax.swing.JTextField jTextField16;
-    private javax.swing.JTextField jTextField17;
-    private javax.swing.JTextField jTextField18;
-    private javax.swing.JTextField jTextField19;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField20;
-    private javax.swing.JTextField jTextField21;
-    private javax.swing.JTextField jTextField22;
-    private javax.swing.JTextField jTextField23;
-    private javax.swing.JTextField jTextField24;
-    private javax.swing.JTextField jTextField25;
-    private javax.swing.JTextField jTextField26;
-    private javax.swing.JTextField jTextField27;
-    private javax.swing.JTextField jTextField28;
-    private javax.swing.JTextField jTextField29;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField30;
-    private javax.swing.JTextField jTextField31;
-    private javax.swing.JTextField jTextField32;
-    private javax.swing.JTextField jTextField33;
-    private javax.swing.JTextField jTextField34;
-    private javax.swing.JTextField jTextField35;
-    private javax.swing.JTextField jTextField36;
-    private javax.swing.JTextField jTextField37;
-    private javax.swing.JTextField jTextField38;
-    private javax.swing.JTextField jTextField39;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField40;
-    private javax.swing.JTextField jTextField41;
-    private javax.swing.JTextField jTextField42;
-    private javax.swing.JTextField jTextField43;
-    private javax.swing.JTextField jTextField44;
-    private javax.swing.JTextField jTextField45;
-    private javax.swing.JTextField jTextField5;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
     // End of variables declaration//GEN-END:variables
 }

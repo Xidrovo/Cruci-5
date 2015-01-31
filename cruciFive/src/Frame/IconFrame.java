@@ -24,8 +24,9 @@ public class IconFrame extends javax.swing.JFrame {
         setTitle("Main Menu");
         try{
         setIconImage ( new ImageIcon(getClass().getResource("../Sprites/Crucify-Icono.png")).getImage());
-        sonido = java.applet.Applet.newAudioClip(getClass().getResource("../SoundTrack/AcesHigh.wav"));
-        sonido.play(); }        
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("../SoundTrack/NewAcesHigh.wav"));
+        sonido.play();
+        sonido.loop();}        
         catch (Exception e){
         }
 
