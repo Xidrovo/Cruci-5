@@ -20,6 +20,9 @@ public class Tablero {
     private LinkedList<Palabra> palabras_y;
     private Diccionario dictionary;
     
+    char tab1[][] = new char[14][14];
+    char tab2[][] = new char[14][14];
+    
     public void ShowWords(Diccionario Dictionary)
     {
         //Muestra las palabras de un diccionario indicado.
