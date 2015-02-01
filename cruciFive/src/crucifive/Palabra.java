@@ -11,9 +11,9 @@ package crucifive;
  */
 public class Palabra {
     
-    private String word = new String();
-    private String pista = new String();
-    private int wordLong;
+    protected String word = new String();
+    protected String pista = new String();
+    protected int wordLong;
     
     public Palabra()
     {
