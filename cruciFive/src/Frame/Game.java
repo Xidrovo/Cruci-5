@@ -1514,7 +1514,7 @@ public class Game extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
 
-RestrictedTextField restricted = new RestrictedTextField(new );
+RestrictedTextField restricted = new RestrictedTextField(f1c1);
 restricted.setLimit(1);
 
 }
