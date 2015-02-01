@@ -22,25 +22,15 @@ public class Palabra {
         wordLong = 0;
     }
 
-    public Palabra(int WordLong, String Word, String Pista) {
-        this.wordLong = WordLong;
+    public Palabra(String Word, String Pista) {
         this.pista = Pista;
         this.word = Word;
+        this.wordLong = Word.length();
     }
     
     public int GetLong()
     {
         return wordLong;
     }
-    
-    public void SetWord(String Word)
-    {
-        //This Method will set a word.
-    }
-     
-    public void SetPista(String Pista)
-    {
-        //this Method will set a Pista and attach it to the word.
-    }
-   
+
 }
