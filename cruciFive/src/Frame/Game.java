@@ -31,87 +31,202 @@ public class Game extends javax.swing.JFrame {
 
         jPanel2 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
-        c11 = new javax.swing.JTextField();
-        c12 = new javax.swing.JTextField();
-        c13 = new javax.swing.JTextField();
-        c14 = new javax.swing.JTextField();
-        c15 = new javax.swing.JTextField();
-        c16 = new javax.swing.JTextField();
-        c17 = new javax.swing.JTextField();
-        c18 = new javax.swing.JTextField();
-        c19 = new javax.swing.JTextField();
-        c21 = new javax.swing.JTextField();
-        c22 = new javax.swing.JTextField();
-        c23 = new javax.swing.JTextField();
-        c24 = new javax.swing.JTextField();
-        c25 = new javax.swing.JTextField();
-        c26 = new javax.swing.JTextField();
-        c27 = new javax.swing.JTextField();
-        c28 = new javax.swing.JTextField();
-        c29 = new javax.swing.JTextField();
-        c31 = new javax.swing.JTextField();
-        c32 = new javax.swing.JTextField();
-        c33 = new javax.swing.JTextField();
-        c34 = new javax.swing.JTextField();
-        c35 = new javax.swing.JTextField();
-        c36 = new javax.swing.JTextField();
-        c37 = new javax.swing.JTextField();
-        c38 = new javax.swing.JTextField();
-        c39 = new javax.swing.JTextField();
-        c41 = new javax.swing.JTextField();
-        c42 = new javax.swing.JTextField();
-        c43 = new javax.swing.JTextField();
-        c44 = new javax.swing.JTextField();
-        c45 = new javax.swing.JTextField();
-        c46 = new javax.swing.JTextField();
-        c47 = new javax.swing.JTextField();
-        c48 = new javax.swing.JTextField();
-        c49 = new javax.swing.JTextField();
-        c51 = new javax.swing.JTextField();
-        c52 = new javax.swing.JTextField();
-        c53 = new javax.swing.JTextField();
-        c54 = new javax.swing.JTextField();
-        c55 = new javax.swing.JTextField();
-        c56 = new javax.swing.JTextField();
-        c57 = new javax.swing.JTextField();
-        c58 = new javax.swing.JTextField();
-        c59 = new javax.swing.JTextField();
-        c61 = new javax.swing.JTextField();
-        c62 = new javax.swing.JTextField();
-        c63 = new javax.swing.JTextField();
-        c64 = new javax.swing.JTextField();
-        c65 = new javax.swing.JTextField();
-        c66 = new javax.swing.JTextField();
-        c67 = new javax.swing.JTextField();
-        c68 = new javax.swing.JTextField();
-        c69 = new javax.swing.JTextField();
-        c71 = new javax.swing.JTextField();
-        c72 = new javax.swing.JTextField();
-        c73 = new javax.swing.JTextField();
-        c74 = new javax.swing.JTextField();
-        c75 = new javax.swing.JTextField();
-        c76 = new javax.swing.JTextField();
-        c77 = new javax.swing.JTextField();
-        c78 = new javax.swing.JTextField();
-        c79 = new javax.swing.JTextField();
-        c81 = new javax.swing.JTextField();
-        c82 = new javax.swing.JTextField();
-        c83 = new javax.swing.JTextField();
-        c84 = new javax.swing.JTextField();
-        c85 = new javax.swing.JTextField();
-        c86 = new javax.swing.JTextField();
-        c87 = new javax.swing.JTextField();
-        c88 = new javax.swing.JTextField();
-        c89 = new javax.swing.JTextField();
-        c91 = new javax.swing.JTextField();
-        c92 = new javax.swing.JTextField();
-        c93 = new javax.swing.JTextField();
-        c94 = new javax.swing.JTextField();
-        c95 = new javax.swing.JTextField();
-        c96 = new javax.swing.JTextField();
-        c97 = new javax.swing.JTextField();
-        c98 = new javax.swing.JTextField();
-        c99 = new javax.swing.JTextField();
+        f1c1 = new javax.swing.JTextField();
+        f1c2 = new javax.swing.JTextField();
+        f1c3 = new javax.swing.JTextField();
+        f1c4 = new javax.swing.JTextField();
+        f1c5 = new javax.swing.JTextField();
+        f1c6 = new javax.swing.JTextField();
+        f1c7 = new javax.swing.JTextField();
+        f1c8 = new javax.swing.JTextField();
+        f1c9 = new javax.swing.JTextField();
+        f1c10 = new javax.swing.JTextField();
+        f1c11 = new javax.swing.JTextField();
+        f1c12 = new javax.swing.JTextField();
+        f1c13 = new javax.swing.JTextField();
+        f1c14 = new javax.swing.JTextField();
+        f2c1 = new javax.swing.JTextField();
+        f2c2 = new javax.swing.JTextField();
+        f2c3 = new javax.swing.JTextField();
+        f2c4 = new javax.swing.JTextField();
+        f2c5 = new javax.swing.JTextField();
+        f2c6 = new javax.swing.JTextField();
+        f2c7 = new javax.swing.JTextField();
+        f2c8 = new javax.swing.JTextField();
+        f2c9 = new javax.swing.JTextField();
+        f2c10 = new javax.swing.JTextField();
+        f2c11 = new javax.swing.JTextField();
+        f2c12 = new javax.swing.JTextField();
+        f2c13 = new javax.swing.JTextField();
+        f2c14 = new javax.swing.JTextField();
+        f3c1 = new javax.swing.JTextField();
+        f3c2 = new javax.swing.JTextField();
+        f3c3 = new javax.swing.JTextField();
+        f3c4 = new javax.swing.JTextField();
+        f3c5 = new javax.swing.JTextField();
+        f3c6 = new javax.swing.JTextField();
+        f3c7 = new javax.swing.JTextField();
+        f3c8 = new javax.swing.JTextField();
+        f3c9 = new javax.swing.JTextField();
+        f3c10 = new javax.swing.JTextField();
+        f3c11 = new javax.swing.JTextField();
+        f3c12 = new javax.swing.JTextField();
+        f3c13 = new javax.swing.JTextField();
+        f3c14 = new javax.swing.JTextField();
+        f4c1 = new javax.swing.JTextField();
+        f4c2 = new javax.swing.JTextField();
+        f4c3 = new javax.swing.JTextField();
+        f4c4 = new javax.swing.JTextField();
+        f4c5 = new javax.swing.JTextField();
+        f4c6 = new javax.swing.JTextField();
+        f4c7 = new javax.swing.JTextField();
+        f4c8 = new javax.swing.JTextField();
+        f4c9 = new javax.swing.JTextField();
+        f4c10 = new javax.swing.JTextField();
+        f4c11 = new javax.swing.JTextField();
+        f4c12 = new javax.swing.JTextField();
+        f4c13 = new javax.swing.JTextField();
+        f4c14 = new javax.swing.JTextField();
+        f5c1 = new javax.swing.JTextField();
+        f5c2 = new javax.swing.JTextField();
+        f5c3 = new javax.swing.JTextField();
+        f5c4 = new javax.swing.JTextField();
+        f5c5 = new javax.swing.JTextField();
+        f5c6 = new javax.swing.JTextField();
+        f5c7 = new javax.swing.JTextField();
+        f5c8 = new javax.swing.JTextField();
+        f5c9 = new javax.swing.JTextField();
+        f5c10 = new javax.swing.JTextField();
+        f5c11 = new javax.swing.JTextField();
+        f5c12 = new javax.swing.JTextField();
+        f5c13 = new javax.swing.JTextField();
+        f5c14 = new javax.swing.JTextField();
+        f6c1 = new javax.swing.JTextField();
+        f6c2 = new javax.swing.JTextField();
+        f6c3 = new javax.swing.JTextField();
+        f6c4 = new javax.swing.JTextField();
+        f6c5 = new javax.swing.JTextField();
+        f6c6 = new javax.swing.JTextField();
+        f6c7 = new javax.swing.JTextField();
+        f6c8 = new javax.swing.JTextField();
+        f6c9 = new javax.swing.JTextField();
+        f6c10 = new javax.swing.JTextField();
+        f6c11 = new javax.swing.JTextField();
+        f6c12 = new javax.swing.JTextField();
+        f6c13 = new javax.swing.JTextField();
+        f6c14 = new javax.swing.JTextField();
+        f7c1 = new javax.swing.JTextField();
+        f7c2 = new javax.swing.JTextField();
+        f7c3 = new javax.swing.JTextField();
+        f7c4 = new javax.swing.JTextField();
+        f7c5 = new javax.swing.JTextField();
+        f7c6 = new javax.swing.JTextField();
+        f7c7 = new javax.swing.JTextField();
+        f7c8 = new javax.swing.JTextField();
+        f7c9 = new javax.swing.JTextField();
+        f7c10 = new javax.swing.JTextField();
+        f7c11 = new javax.swing.JTextField();
+        f7c12 = new javax.swing.JTextField();
+        f7c13 = new javax.swing.JTextField();
+        f7c14 = new javax.swing.JTextField();
+        f8c1 = new javax.swing.JTextField();
+        f8c2 = new javax.swing.JTextField();
+        f8c3 = new javax.swing.JTextField();
+        f8c4 = new javax.swing.JTextField();
+        f8c5 = new javax.swing.JTextField();
+        f8c6 = new javax.swing.JTextField();
+        f8c7 = new javax.swing.JTextField();
+        f8c8 = new javax.swing.JTextField();
+        f8c9 = new javax.swing.JTextField();
+        f8c10 = new javax.swing.JTextField();
+        f8c11 = new javax.swing.JTextField();
+        f8c12 = new javax.swing.JTextField();
+        f8c13 = new javax.swing.JTextField();
+        f8c14 = new javax.swing.JTextField();
+        f9c1 = new javax.swing.JTextField();
+        f9c2 = new javax.swing.JTextField();
+        f9c3 = new javax.swing.JTextField();
+        f9c4 = new javax.swing.JTextField();
+        f9c5 = new javax.swing.JTextField();
+        f9c6 = new javax.swing.JTextField();
+        f9c7 = new javax.swing.JTextField();
+        f9c8 = new javax.swing.JTextField();
+        f9c9 = new javax.swing.JTextField();
+        f9c10 = new javax.swing.JTextField();
+        f9c11 = new javax.swing.JTextField();
+        f9c12 = new javax.swing.JTextField();
+        f9c13 = new javax.swing.JTextField();
+        f9c14 = new javax.swing.JTextField();
+        f10c1 = new javax.swing.JTextField();
+        f10c2 = new javax.swing.JTextField();
+        f10c3 = new javax.swing.JTextField();
+        f10c4 = new javax.swing.JTextField();
+        f10c5 = new javax.swing.JTextField();
+        f10c6 = new javax.swing.JTextField();
+        f10c7 = new javax.swing.JTextField();
+        f10c8 = new javax.swing.JTextField();
+        f10c9 = new javax.swing.JTextField();
+        f10c10 = new javax.swing.JTextField();
+        f10c11 = new javax.swing.JTextField();
+        f10c12 = new javax.swing.JTextField();
+        f10c13 = new javax.swing.JTextField();
+        f10c14 = new javax.swing.JTextField();
+        f11c1 = new javax.swing.JTextField();
+        f11c2 = new javax.swing.JTextField();
+        f11c3 = new javax.swing.JTextField();
+        f11c4 = new javax.swing.JTextField();
+        f11c5 = new javax.swing.JTextField();
+        f11c6 = new javax.swing.JTextField();
+        f11c7 = new javax.swing.JTextField();
+        f11c8 = new javax.swing.JTextField();
+        f11c9 = new javax.swing.JTextField();
+        f11c10 = new javax.swing.JTextField();
+        f11c11 = new javax.swing.JTextField();
+        f11c12 = new javax.swing.JTextField();
+        f11c13 = new javax.swing.JTextField();
+        f11c14 = new javax.swing.JTextField();
+        f12c1 = new javax.swing.JTextField();
+        f12c2 = new javax.swing.JTextField();
+        f12c3 = new javax.swing.JTextField();
+        f12c4 = new javax.swing.JTextField();
+        f12c5 = new javax.swing.JTextField();
+        f12c6 = new javax.swing.JTextField();
+        f12c7 = new javax.swing.JTextField();
+        f12c8 = new javax.swing.JTextField();
+        f12c9 = new javax.swing.JTextField();
+        f12c10 = new javax.swing.JTextField();
+        f12c11 = new javax.swing.JTextField();
+        f12c12 = new javax.swing.JTextField();
+        f12c13 = new javax.swing.JTextField();
+        f12c14 = new javax.swing.JTextField();
+        f13c1 = new javax.swing.JTextField();
+        f13c2 = new javax.swing.JTextField();
+        f13c3 = new javax.swing.JTextField();
+        f13c4 = new javax.swing.JTextField();
+        f13c5 = new javax.swing.JTextField();
+        f13c6 = new javax.swing.JTextField();
+        f13c7 = new javax.swing.JTextField();
+        f13c8 = new javax.swing.JTextField();
+        f13c9 = new javax.swing.JTextField();
+        f13c10 = new javax.swing.JTextField();
+        f13c11 = new javax.swing.JTextField();
+        f13c12 = new javax.swing.JTextField();
+        f13c13 = new javax.swing.JTextField();
+        f13c14 = new javax.swing.JTextField();
+        f14c1 = new javax.swing.JTextField();
+        f14c2 = new javax.swing.JTextField();
+        f14c3 = new javax.swing.JTextField();
+        f14c4 = new javax.swing.JTextField();
+        f14c5 = new javax.swing.JTextField();
+        f14c6 = new javax.swing.JTextField();
+        f14c7 = new javax.swing.JTextField();
+        f14c8 = new javax.swing.JTextField();
+        f14c9 = new javax.swing.JTextField();
+        f14c10 = new javax.swing.JTextField();
+        f14c11 = new javax.swing.JTextField();
+        f14c12 = new javax.swing.JTextField();
+        f14c13 = new javax.swing.JTextField();
+        f14c14 = new javax.swing.JTextField();
         jPanel4 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jList1 = new javax.swing.JList();
@@ -120,423 +235,987 @@ public class Game extends javax.swing.JFrame {
         setTitle("Cruci5");
 
         jPanel3.setMaximumSize(new java.awt.Dimension(240, 240));
-        jPanel3.setLayout(new java.awt.GridLayout(9, 9));
-
-        c11.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c11.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c11.setText("H");
-        jPanel3.add(c11);
-
-        c12.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c12.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c12.setText("H");
-        jPanel3.add(c12);
-
-        c13.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c13.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c13.setText("H");
-        jPanel3.add(c13);
-
-        c14.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c14.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c14.setText("H");
-        jPanel3.add(c14);
-
-        c15.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c15.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c15.setText("H");
-        c15.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                c15ActionPerformed(evt);
-            }
-        });
-        jPanel3.add(c15);
-
-        c16.setEditable(false);
-        c16.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c16.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c16.setText("H");
-        jPanel3.add(c16);
-
-        c17.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c17.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c17.setText("H");
-        jPanel3.add(c17);
-
-        c18.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c18.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c18.setText("H");
-        jPanel3.add(c18);
-
-        c19.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c19.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c19.setText("H");
-        jPanel3.add(c19);
-
-        c21.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c21.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c21.setText("H");
-        jPanel3.add(c21);
-
-        c22.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c22.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c22.setText("H");
-        jPanel3.add(c22);
-
-        c23.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c23.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c23.setText("H");
-        jPanel3.add(c23);
-
-        c24.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c24.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c24.setText("H");
-        jPanel3.add(c24);
-
-        c25.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c25.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c25.setText("H");
-        jPanel3.add(c25);
-
-        c26.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c26.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c26.setText("H");
-        c26.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                c26ActionPerformed(evt);
-            }
-        });
-        jPanel3.add(c26);
-
-        c27.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c27.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c27.setText("H");
-        jPanel3.add(c27);
-
-        c28.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c28.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c28.setText("H");
-        jPanel3.add(c28);
-
-        c29.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c29.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c29.setText("H");
-        jPanel3.add(c29);
-
-        c31.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c31.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c31.setText("H");
-        jPanel3.add(c31);
-
-        c32.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c32.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c32.setText("H");
-        jPanel3.add(c32);
-
-        c33.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c33.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c33.setText("H");
-        jPanel3.add(c33);
-
-        c34.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c34.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c34.setText("H");
-        jPanel3.add(c34);
-
-        c35.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c35.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c35.setText("H");
-        jPanel3.add(c35);
-
-        c36.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c36.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c36.setText("H");
-        jPanel3.add(c36);
-
-        c37.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c37.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c37.setText("H");
-        jPanel3.add(c37);
-
-        c38.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c38.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c38.setText("H");
-        jPanel3.add(c38);
-
-        c39.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c39.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c39.setText("H");
-        jPanel3.add(c39);
-
-        c41.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c41.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c41.setText("H");
-        jPanel3.add(c41);
-
-        c42.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c42.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c42.setText("H");
-        jPanel3.add(c42);
-
-        c43.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c43.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c43.setText("H");
-        jPanel3.add(c43);
-
-        c44.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c44.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c44.setText("H");
-        jPanel3.add(c44);
-
-        c45.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c45.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c45.setText("H");
-        jPanel3.add(c45);
-
-        c46.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c46.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c46.setText("H");
-        jPanel3.add(c46);
-
-        c47.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c47.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c47.setText("H");
-        jPanel3.add(c47);
-
-        c48.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c48.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c48.setText("H");
-        jPanel3.add(c48);
-
-        c49.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c49.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c49.setText("H");
-        jPanel3.add(c49);
-
-        c51.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c51.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c51.setText("H");
-        jPanel3.add(c51);
-
-        c52.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c52.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c52.setText("H");
-        jPanel3.add(c52);
-
-        c53.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c53.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c53.setText("H");
-        jPanel3.add(c53);
-
-        c54.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c54.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c54.setText("H");
-        jPanel3.add(c54);
-
-        c55.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c55.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c55.setText("H");
-        jPanel3.add(c55);
-
-        c56.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c56.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c56.setText("H");
-        jPanel3.add(c56);
-
-        c57.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c57.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c57.setText("H");
-        jPanel3.add(c57);
-
-        c58.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c58.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c58.setText("H");
-        jPanel3.add(c58);
-
-        c59.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c59.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c59.setText("H");
-        jPanel3.add(c59);
-
-        c61.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c61.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c61.setText("H");
-        jPanel3.add(c61);
-
-        c62.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c62.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c62.setText("H");
-        jPanel3.add(c62);
-
-        c63.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c63.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c63.setText("H");
-        jPanel3.add(c63);
-
-        c64.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c64.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c64.setText("H");
-        jPanel3.add(c64);
-
-        c65.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c65.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c65.setText("H");
-        jPanel3.add(c65);
-
-        c66.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c66.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c66.setText("H");
-        jPanel3.add(c66);
-
-        c67.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c67.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c67.setText("H");
-        jPanel3.add(c67);
-
-        c68.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c68.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c68.setText("H");
-        jPanel3.add(c68);
-
-        c69.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c69.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c69.setText("H");
-        jPanel3.add(c69);
-
-        c71.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c71.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c71.setText("H");
-        jPanel3.add(c71);
-
-        c72.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c72.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c72.setText("H");
-        jPanel3.add(c72);
-
-        c73.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c73.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c73.setText("H");
-        jPanel3.add(c73);
-
-        c74.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c74.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c74.setText("H");
-        jPanel3.add(c74);
-
-        c75.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c75.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c75.setText("H");
-        jPanel3.add(c75);
-
-        c76.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c76.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c76.setText("H");
-        jPanel3.add(c76);
-
-        c77.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c77.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c77.setText("H");
-        jPanel3.add(c77);
-
-        c78.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c78.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c78.setText("H");
-        jPanel3.add(c78);
-
-        c79.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c79.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c79.setText("H");
-        jPanel3.add(c79);
-
-        c81.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c81.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c81.setText("H");
-        jPanel3.add(c81);
-
-        c82.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c82.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c82.setText("H");
-        jPanel3.add(c82);
-
-        c83.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c83.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c83.setText("H");
-        jPanel3.add(c83);
-
-        c84.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c84.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c84.setText("H");
-        jPanel3.add(c84);
-
-        c85.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c85.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c85.setText("H");
-        jPanel3.add(c85);
-
-        c86.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c86.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c86.setText("H");
-        jPanel3.add(c86);
-
-        c87.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c87.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c87.setText("H");
-        jPanel3.add(c87);
-
-        c88.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c88.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c88.setText("H");
-        jPanel3.add(c88);
-
-        c89.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c89.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c89.setText("H");
-        jPanel3.add(c89);
-
-        c91.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c91.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c91.setText("H");
-        jPanel3.add(c91);
-
-        c92.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c92.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c92.setText("H");
-        jPanel3.add(c92);
-
-        c93.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c93.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c93.setText("H");
-        jPanel3.add(c93);
-
-        c94.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c94.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c94.setText("H");
-        jPanel3.add(c94);
-
-        c95.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c95.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c95.setText("H");
-        jPanel3.add(c95);
-
-        c96.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c96.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c96.setText("H");
-        jPanel3.add(c96);
-
-        c97.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c97.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c97.setText("H");
-        jPanel3.add(c97);
-
-        c98.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c98.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c98.setText("H");
-        jPanel3.add(c98);
-
-        c99.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
-        c99.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        c99.setText("H");
-        jPanel3.add(c99);
+        jPanel3.setLayout(new java.awt.GridLayout(14, 14));
+
+        f1c1.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f1c1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f1c1.setText("H");
+        jPanel3.add(f1c1);
+
+        f1c2.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f1c2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f1c2.setText("H");
+        jPanel3.add(f1c2);
+
+        f1c3.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f1c3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f1c3.setText("H");
+        jPanel3.add(f1c3);
+
+        f1c4.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f1c4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f1c4.setText("H");
+        jPanel3.add(f1c4);
+
+        f1c5.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f1c5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f1c5.setText("H");
+        jPanel3.add(f1c5);
+
+        f1c6.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f1c6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f1c6.setText("H");
+        jPanel3.add(f1c6);
+
+        f1c7.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f1c7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f1c7.setText("H");
+        jPanel3.add(f1c7);
+
+        f1c8.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f1c8.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f1c8.setText("H");
+        jPanel3.add(f1c8);
+
+        f1c9.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f1c9.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f1c9.setText("H");
+        jPanel3.add(f1c9);
+
+        f1c10.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f1c10.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f1c10.setText("H");
+        jPanel3.add(f1c10);
+
+        f1c11.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f1c11.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f1c11.setText("H");
+        jPanel3.add(f1c11);
+
+        f1c12.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f1c12.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f1c12.setText("H");
+        jPanel3.add(f1c12);
+
+        f1c13.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f1c13.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f1c13.setText("H");
+        jPanel3.add(f1c13);
+
+        f1c14.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f1c14.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f1c14.setText("H");
+        jPanel3.add(f1c14);
+
+        f2c1.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f2c1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f2c1.setText("H");
+        jPanel3.add(f2c1);
+
+        f2c2.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f2c2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f2c2.setText("H");
+        jPanel3.add(f2c2);
+
+        f2c3.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f2c3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f2c3.setText("H");
+        jPanel3.add(f2c3);
+
+        f2c4.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f2c4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f2c4.setText("H");
+        jPanel3.add(f2c4);
+
+        f2c5.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f2c5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f2c5.setText("H");
+        jPanel3.add(f2c5);
+
+        f2c6.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f2c6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f2c6.setText("H");
+        jPanel3.add(f2c6);
+
+        f2c7.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f2c7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f2c7.setText("H");
+        jPanel3.add(f2c7);
+
+        f2c8.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f2c8.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f2c8.setText("H");
+        jPanel3.add(f2c8);
+
+        f2c9.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f2c9.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f2c9.setText("H");
+        jPanel3.add(f2c9);
+
+        f2c10.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f2c10.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f2c10.setText("H");
+        jPanel3.add(f2c10);
+
+        f2c11.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f2c11.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f2c11.setText("H");
+        jPanel3.add(f2c11);
+
+        f2c12.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f2c12.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f2c12.setText("H");
+        jPanel3.add(f2c12);
+
+        f2c13.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f2c13.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f2c13.setText("H");
+        jPanel3.add(f2c13);
+
+        f2c14.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f2c14.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f2c14.setText("H");
+        jPanel3.add(f2c14);
+
+        f3c1.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f3c1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f3c1.setText("H");
+        jPanel3.add(f3c1);
+
+        f3c2.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f3c2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f3c2.setText("H");
+        jPanel3.add(f3c2);
+
+        f3c3.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f3c3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f3c3.setText("H");
+        jPanel3.add(f3c3);
+
+        f3c4.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f3c4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f3c4.setText("H");
+        jPanel3.add(f3c4);
+
+        f3c5.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f3c5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f3c5.setText("H");
+        jPanel3.add(f3c5);
+
+        f3c6.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f3c6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f3c6.setText("H");
+        jPanel3.add(f3c6);
+
+        f3c7.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f3c7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f3c7.setText("H");
+        jPanel3.add(f3c7);
+
+        f3c8.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f3c8.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f3c8.setText("H");
+        jPanel3.add(f3c8);
+
+        f3c9.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f3c9.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f3c9.setText("H");
+        jPanel3.add(f3c9);
+
+        f3c10.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f3c10.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f3c10.setText("H");
+        jPanel3.add(f3c10);
+
+        f3c11.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f3c11.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f3c11.setText("H");
+        jPanel3.add(f3c11);
+
+        f3c12.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f3c12.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f3c12.setText("H");
+        jPanel3.add(f3c12);
+
+        f3c13.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f3c13.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f3c13.setText("H");
+        jPanel3.add(f3c13);
+
+        f3c14.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f3c14.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f3c14.setText("H");
+        jPanel3.add(f3c14);
+
+        f4c1.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f4c1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f4c1.setText("H");
+        jPanel3.add(f4c1);
+
+        f4c2.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f4c2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f4c2.setText("H");
+        jPanel3.add(f4c2);
+
+        f4c3.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f4c3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f4c3.setText("H");
+        jPanel3.add(f4c3);
+
+        f4c4.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f4c4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f4c4.setText("H");
+        jPanel3.add(f4c4);
+
+        f4c5.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f4c5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f4c5.setText("H");
+        jPanel3.add(f4c5);
+
+        f4c6.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f4c6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f4c6.setText("H");
+        jPanel3.add(f4c6);
+
+        f4c7.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f4c7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f4c7.setText("H");
+        jPanel3.add(f4c7);
+
+        f4c8.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f4c8.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f4c8.setText("H");
+        jPanel3.add(f4c8);
+
+        f4c9.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f4c9.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f4c9.setText("H");
+        jPanel3.add(f4c9);
+
+        f4c10.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f4c10.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f4c10.setText("H");
+        jPanel3.add(f4c10);
+
+        f4c11.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f4c11.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f4c11.setText("H");
+        jPanel3.add(f4c11);
+
+        f4c12.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f4c12.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f4c12.setText("H");
+        jPanel3.add(f4c12);
+
+        f4c13.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f4c13.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f4c13.setText("H");
+        jPanel3.add(f4c13);
+
+        f4c14.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f4c14.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f4c14.setText("H");
+        jPanel3.add(f4c14);
+
+        f5c1.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f5c1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f5c1.setText("H");
+        jPanel3.add(f5c1);
+
+        f5c2.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f5c2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f5c2.setText("H");
+        jPanel3.add(f5c2);
+
+        f5c3.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f5c3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f5c3.setText("H");
+        jPanel3.add(f5c3);
+
+        f5c4.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f5c4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f5c4.setText("H");
+        jPanel3.add(f5c4);
+
+        f5c5.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f5c5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f5c5.setText("H");
+        jPanel3.add(f5c5);
+
+        f5c6.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f5c6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f5c6.setText("H");
+        jPanel3.add(f5c6);
+
+        f5c7.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f5c7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f5c7.setText("H");
+        jPanel3.add(f5c7);
+
+        f5c8.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f5c8.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f5c8.setText("H");
+        jPanel3.add(f5c8);
+
+        f5c9.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f5c9.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f5c9.setText("H");
+        jPanel3.add(f5c9);
+
+        f5c10.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f5c10.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f5c10.setText("H");
+        jPanel3.add(f5c10);
+
+        f5c11.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f5c11.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f5c11.setText("H");
+        jPanel3.add(f5c11);
+
+        f5c12.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f5c12.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f5c12.setText("H");
+        jPanel3.add(f5c12);
+
+        f5c13.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f5c13.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f5c13.setText("H");
+        jPanel3.add(f5c13);
+
+        f5c14.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f5c14.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f5c14.setText("H");
+        jPanel3.add(f5c14);
+
+        f6c1.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f6c1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f6c1.setText("H");
+        jPanel3.add(f6c1);
+
+        f6c2.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f6c2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f6c2.setText("H");
+        jPanel3.add(f6c2);
+
+        f6c3.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f6c3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f6c3.setText("H");
+        jPanel3.add(f6c3);
+
+        f6c4.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f6c4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f6c4.setText("H");
+        jPanel3.add(f6c4);
+
+        f6c5.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f6c5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f6c5.setText("H");
+        jPanel3.add(f6c5);
+
+        f6c6.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f6c6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f6c6.setText("H");
+        jPanel3.add(f6c6);
+
+        f6c7.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f6c7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f6c7.setText("H");
+        jPanel3.add(f6c7);
+
+        f6c8.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f6c8.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f6c8.setText("H");
+        jPanel3.add(f6c8);
+
+        f6c9.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f6c9.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f6c9.setText("H");
+        jPanel3.add(f6c9);
+
+        f6c10.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f6c10.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f6c10.setText("H");
+        jPanel3.add(f6c10);
+
+        f6c11.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f6c11.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f6c11.setText("H");
+        jPanel3.add(f6c11);
+
+        f6c12.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f6c12.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f6c12.setText("H");
+        jPanel3.add(f6c12);
+
+        f6c13.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f6c13.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f6c13.setText("H");
+        jPanel3.add(f6c13);
+
+        f6c14.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f6c14.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f6c14.setText("H");
+        jPanel3.add(f6c14);
+
+        f7c1.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f7c1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f7c1.setText("H");
+        jPanel3.add(f7c1);
+
+        f7c2.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f7c2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f7c2.setText("H");
+        jPanel3.add(f7c2);
+
+        f7c3.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f7c3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f7c3.setText("H");
+        jPanel3.add(f7c3);
+
+        f7c4.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f7c4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f7c4.setText("H");
+        jPanel3.add(f7c4);
+
+        f7c5.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f7c5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f7c5.setText("H");
+        jPanel3.add(f7c5);
+
+        f7c6.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f7c6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f7c6.setText("H");
+        jPanel3.add(f7c6);
+
+        f7c7.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f7c7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f7c7.setText("H");
+        jPanel3.add(f7c7);
+
+        f7c8.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f7c8.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f7c8.setText("H");
+        jPanel3.add(f7c8);
+
+        f7c9.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f7c9.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f7c9.setText("H");
+        jPanel3.add(f7c9);
+
+        f7c10.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f7c10.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f7c10.setText("H");
+        jPanel3.add(f7c10);
+
+        f7c11.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f7c11.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f7c11.setText("H");
+        jPanel3.add(f7c11);
+
+        f7c12.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f7c12.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f7c12.setText("H");
+        jPanel3.add(f7c12);
+
+        f7c13.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f7c13.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f7c13.setText("H");
+        jPanel3.add(f7c13);
+
+        f7c14.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f7c14.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f7c14.setText("H");
+        jPanel3.add(f7c14);
+
+        f8c1.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f8c1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f8c1.setText("H");
+        jPanel3.add(f8c1);
+
+        f8c2.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f8c2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f8c2.setText("H");
+        jPanel3.add(f8c2);
+
+        f8c3.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f8c3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f8c3.setText("H");
+        jPanel3.add(f8c3);
+
+        f8c4.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f8c4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f8c4.setText("H");
+        jPanel3.add(f8c4);
+
+        f8c5.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f8c5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f8c5.setText("H");
+        jPanel3.add(f8c5);
+
+        f8c6.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f8c6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f8c6.setText("H");
+        jPanel3.add(f8c6);
+
+        f8c7.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f8c7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f8c7.setText("H");
+        jPanel3.add(f8c7);
+
+        f8c8.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f8c8.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f8c8.setText("H");
+        jPanel3.add(f8c8);
+
+        f8c9.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f8c9.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f8c9.setText("H");
+        jPanel3.add(f8c9);
+
+        f8c10.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f8c10.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f8c10.setText("H");
+        jPanel3.add(f8c10);
+
+        f8c11.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f8c11.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f8c11.setText("H");
+        jPanel3.add(f8c11);
+
+        f8c12.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f8c12.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f8c12.setText("H");
+        jPanel3.add(f8c12);
+
+        f8c13.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f8c13.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f8c13.setText("H");
+        jPanel3.add(f8c13);
+
+        f8c14.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f8c14.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f8c14.setText("H");
+        jPanel3.add(f8c14);
+
+        f9c1.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f9c1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f9c1.setText("H");
+        jPanel3.add(f9c1);
+
+        f9c2.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f9c2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f9c2.setText("H");
+        jPanel3.add(f9c2);
+
+        f9c3.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f9c3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f9c3.setText("H");
+        jPanel3.add(f9c3);
+
+        f9c4.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f9c4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f9c4.setText("H");
+        jPanel3.add(f9c4);
+
+        f9c5.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f9c5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f9c5.setText("H");
+        jPanel3.add(f9c5);
+
+        f9c6.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f9c6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f9c6.setText("H");
+        jPanel3.add(f9c6);
+
+        f9c7.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f9c7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f9c7.setText("H");
+        jPanel3.add(f9c7);
+
+        f9c8.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f9c8.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f9c8.setText("H");
+        jPanel3.add(f9c8);
+
+        f9c9.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f9c9.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f9c9.setText("H");
+        jPanel3.add(f9c9);
+
+        f9c10.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f9c10.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f9c10.setText("H");
+        jPanel3.add(f9c10);
+
+        f9c11.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f9c11.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f9c11.setText("H");
+        jPanel3.add(f9c11);
+
+        f9c12.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f9c12.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f9c12.setText("H");
+        jPanel3.add(f9c12);
+
+        f9c13.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f9c13.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f9c13.setText("H");
+        jPanel3.add(f9c13);
+
+        f9c14.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f9c14.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f9c14.setText("H");
+        jPanel3.add(f9c14);
+
+        f10c1.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f10c1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f10c1.setText("H");
+        jPanel3.add(f10c1);
+
+        f10c2.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f10c2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f10c2.setText("H");
+        jPanel3.add(f10c2);
+
+        f10c3.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f10c3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f10c3.setText("H");
+        jPanel3.add(f10c3);
+
+        f10c4.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f10c4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f10c4.setText("H");
+        jPanel3.add(f10c4);
+
+        f10c5.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f10c5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f10c5.setText("H");
+        jPanel3.add(f10c5);
+
+        f10c6.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f10c6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f10c6.setText("H");
+        jPanel3.add(f10c6);
+
+        f10c7.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f10c7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f10c7.setText("H");
+        jPanel3.add(f10c7);
+
+        f10c8.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f10c8.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f10c8.setText("H");
+        jPanel3.add(f10c8);
+
+        f10c9.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f10c9.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f10c9.setText("H");
+        jPanel3.add(f10c9);
+
+        f10c10.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f10c10.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f10c10.setText("H");
+        jPanel3.add(f10c10);
+
+        f10c11.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f10c11.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f10c11.setText("H");
+        jPanel3.add(f10c11);
+
+        f10c12.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f10c12.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f10c12.setText("H");
+        jPanel3.add(f10c12);
+
+        f10c13.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f10c13.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f10c13.setText("H");
+        jPanel3.add(f10c13);
+
+        f10c14.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f10c14.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f10c14.setText("H");
+        jPanel3.add(f10c14);
+
+        f11c1.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f11c1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f11c1.setText("H");
+        jPanel3.add(f11c1);
+
+        f11c2.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f11c2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f11c2.setText("H");
+        jPanel3.add(f11c2);
+
+        f11c3.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f11c3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f11c3.setText("H");
+        jPanel3.add(f11c3);
+
+        f11c4.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f11c4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f11c4.setText("H");
+        jPanel3.add(f11c4);
+
+        f11c5.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f11c5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f11c5.setText("H");
+        jPanel3.add(f11c5);
+
+        f11c6.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f11c6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f11c6.setText("H");
+        jPanel3.add(f11c6);
+
+        f11c7.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f11c7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f11c7.setText("H");
+        jPanel3.add(f11c7);
+
+        f11c8.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f11c8.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f11c8.setText("H");
+        jPanel3.add(f11c8);
+
+        f11c9.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f11c9.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f11c9.setText("H");
+        jPanel3.add(f11c9);
+
+        f11c10.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f11c10.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f11c10.setText("H");
+        jPanel3.add(f11c10);
+
+        f11c11.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f11c11.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f11c11.setText("H");
+        jPanel3.add(f11c11);
+
+        f11c12.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f11c12.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f11c12.setText("H");
+        jPanel3.add(f11c12);
+
+        f11c13.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f11c13.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f11c13.setText("H");
+        jPanel3.add(f11c13);
+
+        f11c14.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f11c14.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f11c14.setText("H");
+        jPanel3.add(f11c14);
+
+        f12c1.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f12c1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f12c1.setText("H");
+        jPanel3.add(f12c1);
+
+        f12c2.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f12c2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f12c2.setText("H");
+        jPanel3.add(f12c2);
+
+        f12c3.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f12c3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f12c3.setText("H");
+        jPanel3.add(f12c3);
+
+        f12c4.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f12c4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f12c4.setText("H");
+        jPanel3.add(f12c4);
+
+        f12c5.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f12c5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f12c5.setText("H");
+        jPanel3.add(f12c5);
+
+        f12c6.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f12c6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f12c6.setText("H");
+        jPanel3.add(f12c6);
+
+        f12c7.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f12c7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f12c7.setText("H");
+        jPanel3.add(f12c7);
+
+        f12c8.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f12c8.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f12c8.setText("H");
+        jPanel3.add(f12c8);
+
+        f12c9.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f12c9.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f12c9.setText("H");
+        jPanel3.add(f12c9);
+
+        f12c10.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f12c10.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f12c10.setText("H");
+        jPanel3.add(f12c10);
+
+        f12c11.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f12c11.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f12c11.setText("H");
+        jPanel3.add(f12c11);
+
+        f12c12.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f12c12.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f12c12.setText("H");
+        jPanel3.add(f12c12);
+
+        f12c13.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f12c13.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f12c13.setText("H");
+        jPanel3.add(f12c13);
+
+        f12c14.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f12c14.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f12c14.setText("H");
+        jPanel3.add(f12c14);
+
+        f13c1.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f13c1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f13c1.setText("H");
+        jPanel3.add(f13c1);
+
+        f13c2.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f13c2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f13c2.setText("H");
+        jPanel3.add(f13c2);
+
+        f13c3.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f13c3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f13c3.setText("H");
+        jPanel3.add(f13c3);
+
+        f13c4.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f13c4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f13c4.setText("H");
+        jPanel3.add(f13c4);
+
+        f13c5.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f13c5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f13c5.setText("H");
+        jPanel3.add(f13c5);
+
+        f13c6.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f13c6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f13c6.setText("H");
+        jPanel3.add(f13c6);
+
+        f13c7.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f13c7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f13c7.setText("H");
+        jPanel3.add(f13c7);
+
+        f13c8.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f13c8.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f13c8.setText("H");
+        jPanel3.add(f13c8);
+
+        f13c9.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f13c9.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f13c9.setText("H");
+        jPanel3.add(f13c9);
+
+        f13c10.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f13c10.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f13c10.setText("H");
+        jPanel3.add(f13c10);
+
+        f13c11.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f13c11.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f13c11.setText("H");
+        jPanel3.add(f13c11);
+
+        f13c12.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f13c12.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f13c12.setText("H");
+        jPanel3.add(f13c12);
+
+        f13c13.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f13c13.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f13c13.setText("H");
+        jPanel3.add(f13c13);
+
+        f13c14.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f13c14.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f13c14.setText("H");
+        jPanel3.add(f13c14);
+
+        f14c1.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f14c1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f14c1.setText("H");
+        jPanel3.add(f14c1);
+
+        f14c2.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f14c2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f14c2.setText("H");
+        jPanel3.add(f14c2);
+
+        f14c3.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f14c3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f14c3.setText("H");
+        jPanel3.add(f14c3);
+
+        f14c4.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f14c4.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f14c4.setText("H");
+        jPanel3.add(f14c4);
+
+        f14c5.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f14c5.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f14c5.setText("H");
+        jPanel3.add(f14c5);
+
+        f14c6.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f14c6.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f14c6.setText("H");
+        jPanel3.add(f14c6);
+
+        f14c7.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f14c7.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f14c7.setText("H");
+        jPanel3.add(f14c7);
+
+        f14c8.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f14c8.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f14c8.setText("H");
+        jPanel3.add(f14c8);
+
+        f14c9.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f14c9.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f14c9.setText("H");
+        jPanel3.add(f14c9);
+
+        f14c10.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f14c10.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f14c10.setText("H");
+        jPanel3.add(f14c10);
+
+        f14c11.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f14c11.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f14c11.setText("H");
+        jPanel3.add(f14c11);
+
+        f14c12.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f14c12.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f14c12.setText("H");
+        jPanel3.add(f14c12);
+
+        f14c13.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f14c13.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f14c13.setText("H");
+        jPanel3.add(f14c13);
+
+        f14c14.setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+        f14c14.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        f14c14.setText("H");
+        jPanel3.add(f14c14);
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -563,8 +1242,8 @@ public class Game extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 237, Short.MAX_VALUE)
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 412, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 137, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(41, 41, 41))
         );
@@ -575,42 +1254,24 @@ public class Game extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 279, Short.MAX_VALUE)
+                        .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addContainerGap(108, Short.MAX_VALUE))
+                .addContainerGap(21, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 796, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addContainerGap()
-                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addContainerGap()))
+            .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 442, Short.MAX_VALUE)
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addContainerGap()
-                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addContainerGap()))
+            .addComponent(jPanel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void c15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c15ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_c15ActionPerformed
-
-    private void c26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c26ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_c26ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -648,87 +1309,202 @@ public class Game extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField c11;
-    private javax.swing.JTextField c12;
-    private javax.swing.JTextField c13;
-    private javax.swing.JTextField c14;
-    private javax.swing.JTextField c15;
-    private javax.swing.JTextField c16;
-    private javax.swing.JTextField c17;
-    private javax.swing.JTextField c18;
-    private javax.swing.JTextField c19;
-    private javax.swing.JTextField c21;
-    private javax.swing.JTextField c22;
-    private javax.swing.JTextField c23;
-    private javax.swing.JTextField c24;
-    private javax.swing.JTextField c25;
-    private javax.swing.JTextField c26;
-    private javax.swing.JTextField c27;
-    private javax.swing.JTextField c28;
-    private javax.swing.JTextField c29;
-    private javax.swing.JTextField c31;
-    private javax.swing.JTextField c32;
-    private javax.swing.JTextField c33;
-    private javax.swing.JTextField c34;
-    private javax.swing.JTextField c35;
-    private javax.swing.JTextField c36;
-    private javax.swing.JTextField c37;
-    private javax.swing.JTextField c38;
-    private javax.swing.JTextField c39;
-    private javax.swing.JTextField c41;
-    private javax.swing.JTextField c42;
-    private javax.swing.JTextField c43;
-    private javax.swing.JTextField c44;
-    private javax.swing.JTextField c45;
-    private javax.swing.JTextField c46;
-    private javax.swing.JTextField c47;
-    private javax.swing.JTextField c48;
-    private javax.swing.JTextField c49;
-    private javax.swing.JTextField c51;
-    private javax.swing.JTextField c52;
-    private javax.swing.JTextField c53;
-    private javax.swing.JTextField c54;
-    private javax.swing.JTextField c55;
-    private javax.swing.JTextField c56;
-    private javax.swing.JTextField c57;
-    private javax.swing.JTextField c58;
-    private javax.swing.JTextField c59;
-    private javax.swing.JTextField c61;
-    private javax.swing.JTextField c62;
-    private javax.swing.JTextField c63;
-    private javax.swing.JTextField c64;
-    private javax.swing.JTextField c65;
-    private javax.swing.JTextField c66;
-    private javax.swing.JTextField c67;
-    private javax.swing.JTextField c68;
-    private javax.swing.JTextField c69;
-    private javax.swing.JTextField c71;
-    private javax.swing.JTextField c72;
-    private javax.swing.JTextField c73;
-    private javax.swing.JTextField c74;
-    private javax.swing.JTextField c75;
-    private javax.swing.JTextField c76;
-    private javax.swing.JTextField c77;
-    private javax.swing.JTextField c78;
-    private javax.swing.JTextField c79;
-    private javax.swing.JTextField c81;
-    private javax.swing.JTextField c82;
-    private javax.swing.JTextField c83;
-    private javax.swing.JTextField c84;
-    private javax.swing.JTextField c85;
-    private javax.swing.JTextField c86;
-    private javax.swing.JTextField c87;
-    private javax.swing.JTextField c88;
-    private javax.swing.JTextField c89;
-    private javax.swing.JTextField c91;
-    private javax.swing.JTextField c92;
-    private javax.swing.JTextField c93;
-    private javax.swing.JTextField c94;
-    private javax.swing.JTextField c95;
-    private javax.swing.JTextField c96;
-    private javax.swing.JTextField c97;
-    private javax.swing.JTextField c98;
-    private javax.swing.JTextField c99;
+    private javax.swing.JTextField f10c1;
+    private javax.swing.JTextField f10c10;
+    private javax.swing.JTextField f10c11;
+    private javax.swing.JTextField f10c12;
+    private javax.swing.JTextField f10c13;
+    private javax.swing.JTextField f10c14;
+    private javax.swing.JTextField f10c2;
+    private javax.swing.JTextField f10c3;
+    private javax.swing.JTextField f10c4;
+    private javax.swing.JTextField f10c5;
+    private javax.swing.JTextField f10c6;
+    private javax.swing.JTextField f10c7;
+    private javax.swing.JTextField f10c8;
+    private javax.swing.JTextField f10c9;
+    private javax.swing.JTextField f11c1;
+    private javax.swing.JTextField f11c10;
+    private javax.swing.JTextField f11c11;
+    private javax.swing.JTextField f11c12;
+    private javax.swing.JTextField f11c13;
+    private javax.swing.JTextField f11c14;
+    private javax.swing.JTextField f11c2;
+    private javax.swing.JTextField f11c3;
+    private javax.swing.JTextField f11c4;
+    private javax.swing.JTextField f11c5;
+    private javax.swing.JTextField f11c6;
+    private javax.swing.JTextField f11c7;
+    private javax.swing.JTextField f11c8;
+    private javax.swing.JTextField f11c9;
+    private javax.swing.JTextField f12c1;
+    private javax.swing.JTextField f12c10;
+    private javax.swing.JTextField f12c11;
+    private javax.swing.JTextField f12c12;
+    private javax.swing.JTextField f12c13;
+    private javax.swing.JTextField f12c14;
+    private javax.swing.JTextField f12c2;
+    private javax.swing.JTextField f12c3;
+    private javax.swing.JTextField f12c4;
+    private javax.swing.JTextField f12c5;
+    private javax.swing.JTextField f12c6;
+    private javax.swing.JTextField f12c7;
+    private javax.swing.JTextField f12c8;
+    private javax.swing.JTextField f12c9;
+    private javax.swing.JTextField f13c1;
+    private javax.swing.JTextField f13c10;
+    private javax.swing.JTextField f13c11;
+    private javax.swing.JTextField f13c12;
+    private javax.swing.JTextField f13c13;
+    private javax.swing.JTextField f13c14;
+    private javax.swing.JTextField f13c2;
+    private javax.swing.JTextField f13c3;
+    private javax.swing.JTextField f13c4;
+    private javax.swing.JTextField f13c5;
+    private javax.swing.JTextField f13c6;
+    private javax.swing.JTextField f13c7;
+    private javax.swing.JTextField f13c8;
+    private javax.swing.JTextField f13c9;
+    private javax.swing.JTextField f14c1;
+    private javax.swing.JTextField f14c10;
+    private javax.swing.JTextField f14c11;
+    private javax.swing.JTextField f14c12;
+    private javax.swing.JTextField f14c13;
+    private javax.swing.JTextField f14c14;
+    private javax.swing.JTextField f14c2;
+    private javax.swing.JTextField f14c3;
+    private javax.swing.JTextField f14c4;
+    private javax.swing.JTextField f14c5;
+    private javax.swing.JTextField f14c6;
+    private javax.swing.JTextField f14c7;
+    private javax.swing.JTextField f14c8;
+    private javax.swing.JTextField f14c9;
+    private javax.swing.JTextField f1c1;
+    private javax.swing.JTextField f1c10;
+    private javax.swing.JTextField f1c11;
+    private javax.swing.JTextField f1c12;
+    private javax.swing.JTextField f1c13;
+    private javax.swing.JTextField f1c14;
+    private javax.swing.JTextField f1c2;
+    private javax.swing.JTextField f1c3;
+    private javax.swing.JTextField f1c4;
+    private javax.swing.JTextField f1c5;
+    private javax.swing.JTextField f1c6;
+    private javax.swing.JTextField f1c7;
+    private javax.swing.JTextField f1c8;
+    private javax.swing.JTextField f1c9;
+    private javax.swing.JTextField f2c1;
+    private javax.swing.JTextField f2c10;
+    private javax.swing.JTextField f2c11;
+    private javax.swing.JTextField f2c12;
+    private javax.swing.JTextField f2c13;
+    private javax.swing.JTextField f2c14;
+    private javax.swing.JTextField f2c2;
+    private javax.swing.JTextField f2c3;
+    private javax.swing.JTextField f2c4;
+    private javax.swing.JTextField f2c5;
+    private javax.swing.JTextField f2c6;
+    private javax.swing.JTextField f2c7;
+    private javax.swing.JTextField f2c8;
+    private javax.swing.JTextField f2c9;
+    private javax.swing.JTextField f3c1;
+    private javax.swing.JTextField f3c10;
+    private javax.swing.JTextField f3c11;
+    private javax.swing.JTextField f3c12;
+    private javax.swing.JTextField f3c13;
+    private javax.swing.JTextField f3c14;
+    private javax.swing.JTextField f3c2;
+    private javax.swing.JTextField f3c3;
+    private javax.swing.JTextField f3c4;
+    private javax.swing.JTextField f3c5;
+    private javax.swing.JTextField f3c6;
+    private javax.swing.JTextField f3c7;
+    private javax.swing.JTextField f3c8;
+    private javax.swing.JTextField f3c9;
+    private javax.swing.JTextField f4c1;
+    private javax.swing.JTextField f4c10;
+    private javax.swing.JTextField f4c11;
+    private javax.swing.JTextField f4c12;
+    private javax.swing.JTextField f4c13;
+    private javax.swing.JTextField f4c14;
+    private javax.swing.JTextField f4c2;
+    private javax.swing.JTextField f4c3;
+    private javax.swing.JTextField f4c4;
+    private javax.swing.JTextField f4c5;
+    private javax.swing.JTextField f4c6;
+    private javax.swing.JTextField f4c7;
+    private javax.swing.JTextField f4c8;
+    private javax.swing.JTextField f4c9;
+    private javax.swing.JTextField f5c1;
+    private javax.swing.JTextField f5c10;
+    private javax.swing.JTextField f5c11;
+    private javax.swing.JTextField f5c12;
+    private javax.swing.JTextField f5c13;
+    private javax.swing.JTextField f5c14;
+    private javax.swing.JTextField f5c2;
+    private javax.swing.JTextField f5c3;
+    private javax.swing.JTextField f5c4;
+    private javax.swing.JTextField f5c5;
+    private javax.swing.JTextField f5c6;
+    private javax.swing.JTextField f5c7;
+    private javax.swing.JTextField f5c8;
+    private javax.swing.JTextField f5c9;
+    private javax.swing.JTextField f6c1;
+    private javax.swing.JTextField f6c10;
+    private javax.swing.JTextField f6c11;
+    private javax.swing.JTextField f6c12;
+    private javax.swing.JTextField f6c13;
+    private javax.swing.JTextField f6c14;
+    private javax.swing.JTextField f6c2;
+    private javax.swing.JTextField f6c3;
+    private javax.swing.JTextField f6c4;
+    private javax.swing.JTextField f6c5;
+    private javax.swing.JTextField f6c6;
+    private javax.swing.JTextField f6c7;
+    private javax.swing.JTextField f6c8;
+    private javax.swing.JTextField f6c9;
+    private javax.swing.JTextField f7c1;
+    private javax.swing.JTextField f7c10;
+    private javax.swing.JTextField f7c11;
+    private javax.swing.JTextField f7c12;
+    private javax.swing.JTextField f7c13;
+    private javax.swing.JTextField f7c14;
+    private javax.swing.JTextField f7c2;
+    private javax.swing.JTextField f7c3;
+    private javax.swing.JTextField f7c4;
+    private javax.swing.JTextField f7c5;
+    private javax.swing.JTextField f7c6;
+    private javax.swing.JTextField f7c7;
+    private javax.swing.JTextField f7c8;
+    private javax.swing.JTextField f7c9;
+    private javax.swing.JTextField f8c1;
+    private javax.swing.JTextField f8c10;
+    private javax.swing.JTextField f8c11;
+    private javax.swing.JTextField f8c12;
+    private javax.swing.JTextField f8c13;
+    private javax.swing.JTextField f8c14;
+    private javax.swing.JTextField f8c2;
+    private javax.swing.JTextField f8c3;
+    private javax.swing.JTextField f8c4;
+    private javax.swing.JTextField f8c5;
+    private javax.swing.JTextField f8c6;
+    private javax.swing.JTextField f8c7;
+    private javax.swing.JTextField f8c8;
+    private javax.swing.JTextField f8c9;
+    private javax.swing.JTextField f9c1;
+    private javax.swing.JTextField f9c10;
+    private javax.swing.JTextField f9c11;
+    private javax.swing.JTextField f9c12;
+    private javax.swing.JTextField f9c13;
+    private javax.swing.JTextField f9c14;
+    private javax.swing.JTextField f9c2;
+    private javax.swing.JTextField f9c3;
+    private javax.swing.JTextField f9c4;
+    private javax.swing.JTextField f9c5;
+    private javax.swing.JTextField f9c6;
+    private javax.swing.JTextField f9c7;
+    private javax.swing.JTextField f9c8;
+    private javax.swing.JTextField f9c9;
     private javax.swing.JList jList1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
