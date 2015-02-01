@@ -11,12 +11,12 @@ package crucifive;
  */
 public class PalabraT extends Palabra{
     
-    private boolean orientacion;
+    private boolean orientacion;      //  true para horizontal, false vertical
     private int posicioni[] = new int[2];    //aqui ira la posicion en el tablero de la palabra
     private int posicionf[] = new int[2];
 
     public PalabraT() {
-        orientacion = false;
+        orientacion = true;
     }
 
     public PalabraT(String Word, String Pista, boolean orientacion) {
