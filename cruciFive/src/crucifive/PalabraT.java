@@ -15,8 +15,10 @@ public class PalabraT extends Palabra{
     private int posicioni[] = new int[2];    //aqui ira la posicion en el tablero de la palabra
     private int posicionf[] = new int[2];
 
-    public PalabraT() {
-        orientacion = true;
+    
+    
+    public PalabraT(boolean orientacion) {
+        this.orientacion = orientacion;
     }
 
     public PalabraT(String Word, String Pista, boolean orientacion) {
