@@ -5,6 +5,8 @@
  */
 package Frame;
 
+import Atxy2k.CustomTextField.RestrictedTextField;
+
 /**
  *
  * @author fernando
@@ -1511,4 +1513,8 @@ public class Game extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
+
+RestrictedTextField restricted = new RestrictedTextField(new );
+restricted.setLimit(1);
+
 }
