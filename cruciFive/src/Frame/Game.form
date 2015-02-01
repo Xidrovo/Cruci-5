@@ -86,6 +86,12 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="f1c1ActionPerformed"/>
+              </Events>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_AddingCodePre" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f1c1);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f1c2">
               <Properties>
@@ -95,6 +101,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f1c2);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f1c3">
               <Properties>
@@ -104,6 +113,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f1c3);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f1c4">
               <Properties>
@@ -113,6 +125,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f1c4);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f1c5">
               <Properties>
@@ -122,6 +137,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f1c5);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f1c6">
               <Properties>
@@ -131,6 +149,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f1c6);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f1c7">
               <Properties>
@@ -140,6 +161,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f1c7);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f1c8">
               <Properties>
@@ -149,6 +173,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f1c8);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f1c9">
               <Properties>
@@ -158,6 +185,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f1c9);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f1c10">
               <Properties>
@@ -167,6 +197,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f1c10);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f1c11">
               <Properties>
@@ -176,6 +209,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f1c11);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f1c12">
               <Properties>
@@ -185,6 +221,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f1c12);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f1c13">
               <Properties>
@@ -194,6 +233,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f1c13);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f1c14">
               <Properties>
@@ -203,6 +245,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f1c14);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f2c1">
               <Properties>
@@ -212,6 +257,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f2c1);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f2c2">
               <Properties>
@@ -221,6 +269,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f2c2);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f2c3">
               <Properties>
@@ -230,6 +281,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f2c3);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f2c4">
               <Properties>
@@ -239,6 +293,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f2c4);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f2c5">
               <Properties>
@@ -248,6 +305,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f2c5);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f2c6">
               <Properties>
@@ -257,6 +317,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f2c6);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f2c7">
               <Properties>
@@ -266,6 +329,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f2c7);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f2c8">
               <Properties>
@@ -275,6 +341,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f2c8);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f2c9">
               <Properties>
@@ -284,6 +353,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f2c9);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f2c10">
               <Properties>
@@ -293,6 +365,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f2c10);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f2c11">
               <Properties>
@@ -302,6 +377,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f2c11);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f2c12">
               <Properties>
@@ -311,6 +389,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f2c12);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f2c13">
               <Properties>
@@ -320,6 +401,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f2c13);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f2c14">
               <Properties>
@@ -329,6 +413,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f2c14);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f3c1">
               <Properties>
@@ -338,6 +425,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f3c1);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f3c2">
               <Properties>
@@ -347,6 +437,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f3c2);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f3c3">
               <Properties>
@@ -356,6 +449,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f3c3);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f3c4">
               <Properties>
@@ -365,6 +461,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f3c4);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f3c5">
               <Properties>
@@ -374,6 +473,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f3c5);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f3c6">
               <Properties>
@@ -383,6 +485,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f3c6);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f3c7">
               <Properties>
@@ -392,6 +497,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f3c7);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f3c8">
               <Properties>
@@ -401,6 +509,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f3c8);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f3c9">
               <Properties>
@@ -410,6 +521,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f3c9);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f3c10">
               <Properties>
@@ -419,6 +533,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f3c10);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f3c11">
               <Properties>
@@ -428,6 +545,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f3c11);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f3c12">
               <Properties>
@@ -437,6 +557,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f3c12);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f3c13">
               <Properties>
@@ -446,6 +569,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f3c13);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f3c14">
               <Properties>
@@ -455,6 +581,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f3c14);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f4c1">
               <Properties>
@@ -464,6 +593,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f4c1);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f4c2">
               <Properties>
@@ -473,6 +605,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f4c2);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f4c3">
               <Properties>
@@ -482,6 +617,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f4c3);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f4c4">
               <Properties>
@@ -491,6 +629,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f4c4);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f4c5">
               <Properties>
@@ -500,6 +641,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f4c5);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f4c6">
               <Properties>
@@ -509,6 +653,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f4c6);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f4c7">
               <Properties>
@@ -518,6 +665,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f4c7);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f4c8">
               <Properties>
@@ -527,6 +677,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f4c8);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f4c9">
               <Properties>
@@ -536,6 +689,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f4c9);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f4c10">
               <Properties>
@@ -545,6 +701,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f4c10);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f4c11">
               <Properties>
@@ -554,6 +713,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f4c11);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f4c12">
               <Properties>
@@ -563,6 +725,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f4c12);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f4c13">
               <Properties>
@@ -572,6 +737,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f4c13);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f4c14">
               <Properties>
@@ -581,6 +749,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f4c14);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f5c1">
               <Properties>
@@ -590,6 +761,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f5c1);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f5c2">
               <Properties>
@@ -599,6 +773,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f5c2);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f5c3">
               <Properties>
@@ -608,6 +785,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f5c3);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f5c4">
               <Properties>
@@ -617,6 +797,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f5c4);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f5c5">
               <Properties>
@@ -626,6 +809,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f5c5);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f5c6">
               <Properties>
@@ -635,6 +821,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f5c6);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f5c7">
               <Properties>
@@ -644,6 +833,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f5c7);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f5c8">
               <Properties>
@@ -653,6 +845,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f5c8);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f5c9">
               <Properties>
@@ -662,6 +857,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f5c9);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f5c10">
               <Properties>
@@ -671,6 +869,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f5c10);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f5c11">
               <Properties>
@@ -680,6 +881,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f5c11);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f5c12">
               <Properties>
@@ -689,6 +893,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f5c12);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f5c13">
               <Properties>
@@ -698,6 +905,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f5c13);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f5c14">
               <Properties>
@@ -707,6 +917,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f5c14);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f6c1">
               <Properties>
@@ -716,6 +929,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f6c1);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f6c2">
               <Properties>
@@ -725,6 +941,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f6c2);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f6c3">
               <Properties>
@@ -734,6 +953,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f6c3);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f6c4">
               <Properties>
@@ -743,6 +965,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f6c4);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f6c5">
               <Properties>
@@ -752,6 +977,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f6c5);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f6c6">
               <Properties>
@@ -761,6 +989,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f6c6);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f6c7">
               <Properties>
@@ -770,6 +1001,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f6c7);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f6c8">
               <Properties>
@@ -779,6 +1013,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f6c8);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f6c9">
               <Properties>
@@ -788,6 +1025,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f6c9);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f6c10">
               <Properties>
@@ -797,6 +1037,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f6c10);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f6c11">
               <Properties>
@@ -806,6 +1049,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f6c11);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f6c12">
               <Properties>
@@ -815,6 +1061,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f6c12);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f6c13">
               <Properties>
@@ -824,6 +1073,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f6c13);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f6c14">
               <Properties>
@@ -833,6 +1085,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f6c14);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f7c1">
               <Properties>
@@ -842,6 +1097,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f7c1);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f7c2">
               <Properties>
@@ -851,6 +1109,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f7c2);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f7c3">
               <Properties>
@@ -860,6 +1121,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f7c3);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f7c4">
               <Properties>
@@ -869,6 +1133,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f7c4);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f7c5">
               <Properties>
@@ -878,6 +1145,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f7c5);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f7c6">
               <Properties>
@@ -887,6 +1157,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f7c6);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f7c7">
               <Properties>
@@ -896,6 +1169,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f7c7);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f7c8">
               <Properties>
@@ -905,6 +1181,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f7c8);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f7c9">
               <Properties>
@@ -914,6 +1193,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f7c9);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f7c10">
               <Properties>
@@ -923,6 +1205,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f7c10);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f7c11">
               <Properties>
@@ -932,6 +1217,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f7c11);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f7c12">
               <Properties>
@@ -941,6 +1229,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f7c12);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f7c13">
               <Properties>
@@ -950,6 +1241,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f7c13);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f7c14">
               <Properties>
@@ -959,6 +1253,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f7c14);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f8c1">
               <Properties>
@@ -968,6 +1265,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f8c1);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f8c2">
               <Properties>
@@ -977,6 +1277,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f8c2);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f8c3">
               <Properties>
@@ -986,6 +1289,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f8c3);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f8c4">
               <Properties>
@@ -995,6 +1301,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f8c4);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f8c5">
               <Properties>
@@ -1004,6 +1313,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f8c5);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f8c6">
               <Properties>
@@ -1013,6 +1325,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f8c6);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f8c7">
               <Properties>
@@ -1022,6 +1337,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f8c7);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f8c8">
               <Properties>
@@ -1031,6 +1349,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f8c8);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f8c9">
               <Properties>
@@ -1040,6 +1361,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f8c9);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f8c10">
               <Properties>
@@ -1049,6 +1373,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f8c10);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f8c11">
               <Properties>
@@ -1058,6 +1385,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f8c10);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f8c12">
               <Properties>
@@ -1067,6 +1397,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f8c12);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f8c13">
               <Properties>
@@ -1076,6 +1409,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f8c13);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f8c14">
               <Properties>
@@ -1085,6 +1421,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f8c14);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f9c1">
               <Properties>
@@ -1094,6 +1433,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f9c1);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f9c2">
               <Properties>
@@ -1103,6 +1445,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f9c2);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f9c3">
               <Properties>
@@ -1112,6 +1457,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f9c3);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f9c4">
               <Properties>
@@ -1121,6 +1469,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f9c4);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f9c5">
               <Properties>
@@ -1130,6 +1481,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f9c5);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f9c6">
               <Properties>
@@ -1139,6 +1493,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f9c6);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f9c7">
               <Properties>
@@ -1148,6 +1505,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f9c7);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f9c8">
               <Properties>
@@ -1157,6 +1517,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f9c8);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f9c9">
               <Properties>
@@ -1166,6 +1529,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f9c9);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f9c10">
               <Properties>
@@ -1175,6 +1541,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f9c10);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f9c11">
               <Properties>
@@ -1184,6 +1553,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f9c11);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f9c12">
               <Properties>
@@ -1193,6 +1565,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f9c12);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f9c13">
               <Properties>
@@ -1202,6 +1577,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f9c13);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f9c14">
               <Properties>
@@ -1211,6 +1589,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f9c14);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f10c1">
               <Properties>
@@ -1220,6 +1601,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f10c1);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f10c2">
               <Properties>
@@ -1229,6 +1613,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f10c2);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f10c3">
               <Properties>
@@ -1238,6 +1625,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f10c3);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f10c4">
               <Properties>
@@ -1247,6 +1637,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f10c4);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f10c5">
               <Properties>
@@ -1256,6 +1649,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f10c5);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f10c6">
               <Properties>
@@ -1265,6 +1661,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f10c6);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f10c7">
               <Properties>
@@ -1274,6 +1673,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f10c7);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f10c8">
               <Properties>
@@ -1283,6 +1685,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f10c8);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f10c9">
               <Properties>
@@ -1292,6 +1697,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f10c9);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f10c10">
               <Properties>
@@ -1301,6 +1709,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f10c10);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f10c11">
               <Properties>
@@ -1310,6 +1721,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f10c11);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f10c12">
               <Properties>
@@ -1319,6 +1733,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f10c12);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f10c13">
               <Properties>
@@ -1328,6 +1745,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f10c13);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f10c14">
               <Properties>
@@ -1337,6 +1757,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f10c14);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f11c1">
               <Properties>
@@ -1346,6 +1769,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f11c1);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f11c2">
               <Properties>
@@ -1355,6 +1781,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f11c2);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f11c3">
               <Properties>
@@ -1364,6 +1793,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f11c3);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f11c4">
               <Properties>
@@ -1373,6 +1805,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f11c4);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f11c5">
               <Properties>
@@ -1382,6 +1817,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f11c5);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f11c6">
               <Properties>
@@ -1391,6 +1829,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f11c6);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f11c7">
               <Properties>
@@ -1400,6 +1841,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f11c7);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f11c8">
               <Properties>
@@ -1409,6 +1853,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f11c8);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f11c9">
               <Properties>
@@ -1418,6 +1865,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f11c9);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f11c10">
               <Properties>
@@ -1427,6 +1877,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f11c10);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f11c11">
               <Properties>
@@ -1436,6 +1889,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f11c11);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f11c12">
               <Properties>
@@ -1445,6 +1901,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f11c12);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f11c13">
               <Properties>
@@ -1454,6 +1913,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f11c13);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f11c14">
               <Properties>
@@ -1463,6 +1925,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f11c14);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f12c1">
               <Properties>
@@ -1472,6 +1937,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f12c1);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f12c2">
               <Properties>
@@ -1481,6 +1949,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f12c2);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f12c3">
               <Properties>
@@ -1490,6 +1961,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f12c3);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f12c4">
               <Properties>
@@ -1499,6 +1973,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f12c4);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f12c5">
               <Properties>
@@ -1508,6 +1985,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f12c5);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f12c6">
               <Properties>
@@ -1517,6 +1997,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f12c6);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f12c7">
               <Properties>
@@ -1526,6 +2009,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f12c7);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f12c8">
               <Properties>
@@ -1535,6 +2021,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f12c8);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f12c9">
               <Properties>
@@ -1544,6 +2033,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f12c9);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f12c10">
               <Properties>
@@ -1553,6 +2045,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f12c10);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f12c11">
               <Properties>
@@ -1562,6 +2057,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f12c11);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f12c12">
               <Properties>
@@ -1571,6 +2069,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f12c12);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f12c13">
               <Properties>
@@ -1580,6 +2081,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f12c13);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f12c14">
               <Properties>
@@ -1589,6 +2093,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f12c14);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f13c1">
               <Properties>
@@ -1598,6 +2105,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f13c1);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f13c2">
               <Properties>
@@ -1607,6 +2117,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f13c2);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f13c3">
               <Properties>
@@ -1616,6 +2129,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f13c3);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f13c4">
               <Properties>
@@ -1625,6 +2141,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f13c4);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f13c5">
               <Properties>
@@ -1634,6 +2153,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f13c5);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f13c6">
               <Properties>
@@ -1643,6 +2165,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f13c6);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f13c7">
               <Properties>
@@ -1652,6 +2177,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f13c7);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f13c8">
               <Properties>
@@ -1661,6 +2189,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f13c8);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f13c9">
               <Properties>
@@ -1670,6 +2201,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f13c9);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f13c10">
               <Properties>
@@ -1679,6 +2213,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f13c10);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f13c11">
               <Properties>
@@ -1688,6 +2225,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f13c11);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f13c12">
               <Properties>
@@ -1697,6 +2237,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f13c12);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f13c13">
               <Properties>
@@ -1706,6 +2249,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f13c13);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f13c14">
               <Properties>
@@ -1715,6 +2261,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f13c14);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f14c1">
               <Properties>
@@ -1724,6 +2273,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f14c1);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f14c2">
               <Properties>
@@ -1733,6 +2285,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f14c2);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f14c3">
               <Properties>
@@ -1742,6 +2297,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f14c3);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f14c4">
               <Properties>
@@ -1751,6 +2309,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f14c4);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f14c5">
               <Properties>
@@ -1760,6 +2321,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f14c5);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f14c6">
               <Properties>
@@ -1769,6 +2333,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f14c6);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f14c7">
               <Properties>
@@ -1778,6 +2345,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f14c7);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f14c8">
               <Properties>
@@ -1787,6 +2357,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f14c8);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f14c9">
               <Properties>
@@ -1796,6 +2369,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f14c9);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f14c10">
               <Properties>
@@ -1805,6 +2381,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f14c10);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f14c11">
               <Properties>
@@ -1814,6 +2393,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f14c11);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f14c12">
               <Properties>
@@ -1823,6 +2405,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f14c12);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f14c13">
               <Properties>
@@ -1832,6 +2417,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f14c13);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
             <Component class="javax.swing.JTextField" name="f14c14">
               <Properties>
@@ -1841,6 +2429,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <AuxValues>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="RestrictedTextField r1 = new RestrictedTextField(f14c14);&#xa;r1.setLimit(1);"/>
+              </AuxValues>
             </Component>
           </SubComponents>
         </Container>
