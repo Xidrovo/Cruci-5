@@ -16,6 +16,7 @@ public class NewGame extends javax.swing.JFrame {
      */
     public NewGame() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**
@@ -34,6 +35,7 @@ public class NewGame extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Diction");
 
         jButton1.setText("Diccionario 1");
 

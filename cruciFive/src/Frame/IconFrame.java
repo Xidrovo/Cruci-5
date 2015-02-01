@@ -169,6 +169,10 @@ public class IconFrame extends javax.swing.JFrame {
 
     private void newGameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newGameActionPerformed
         // TODO add your handling code here:
+        NewGame LinkToGame = new NewGame();
+        LinkToGame.setVisible(true);
+        sonido.stop();
+        dispose();
     }//GEN-LAST:event_newGameActionPerformed
 
     private void OptionsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OptionsActionPerformed

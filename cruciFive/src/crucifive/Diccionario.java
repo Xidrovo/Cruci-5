@@ -36,6 +36,7 @@ public class Diccionario {
     public String GetWord()
     {
         //This Method will return a word of the Dictionary's words.
+        //Esto es una prueba 
         return "Hello Word";
     }
 }
