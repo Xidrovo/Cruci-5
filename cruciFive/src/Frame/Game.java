@@ -27,7 +27,7 @@ public class Game extends javax.swing.JFrame {
         JTextField m[][] = new JTextField[14][14];
         m[0][0]=f1c1;
         m[0][1]=f1c2;
-        m[0][1]=f1c2;
+        m[0][2]=f1c2;
     }
 
     /**
