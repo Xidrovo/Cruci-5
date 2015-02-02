@@ -11,7 +11,7 @@ import java.util.LinkedList;
  *
  * @author fernando
  */
-public class Tablero {
+public class Tablero{
     private int x;
     private int y;
     private float score;
@@ -22,6 +22,7 @@ public class Tablero {
     
     char tab1[][] = new char[14][14];
     char tab2[][] = new char[14][14];
+    
     
     public void ShowWords(Diccionario Dictionary)
     {

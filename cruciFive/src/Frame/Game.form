@@ -86,6 +86,9 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="H"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="f1c1ActionPerformed"/>
+              </Events>
             </Component>
             <Component class="javax.swing.JTextField" name="f1c2">
               <Properties>
