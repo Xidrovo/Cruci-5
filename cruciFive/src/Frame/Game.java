@@ -1674,6 +1674,7 @@ public class Game extends javax.swing.JFrame {
 
     private void f1c1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_f1c1ActionPerformed
         // TODO add your handling code here:
+        f1c2.grabFocus();
     }//GEN-LAST:event_f1c1ActionPerformed
 
     /**
