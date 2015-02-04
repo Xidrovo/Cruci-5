@@ -314,15 +314,32 @@ public class NewGame extends javax.swing.JFrame {
         // TODO add your handling code here:
         try
         {
-            int Horizontal = Integer.parseInt(HorizontalText.getText());
-            int Vertical = Integer.parseInt(VerticalText.getText());
+            CanDoIt();
         }
             catch (java.lang.NumberFormatException e)
                     {
                     int x = JOptionPane.showConfirmDialog(this, "MASSIVE ERROR!!", "OH MY GOSH!", JOptionPane.OK_CANCEL_OPTION);
                     }
+            catch(OverNumberException OnE)
+            {
+                    int x = JOptionPane.showConfirmDialog(this, "Unsupported number!", "OH MY GOSH!", JOptionPane.OK_CANCEL_OPTION);
+            }
+            catch(UnderNumberException UnE)
+            {
+                    int x = JOptionPane.showConfirmDialog(this, "Unsopported number!", "OH MY GOSH!", JOptionPane.OK_CANCEL_OPTION);
+            }
     }//GEN-LAST:event_CreateMouseClicked
 
+    public void CanDoIt() throws java.lang.NumberFormatException, OverNumberException, UnderNumberException
+    {
+            int Horizontal = Integer.parseInt(HorizontalText.getText());
+            int Vertical = Integer.parseInt(VerticalText.getText());
+            
+            if (Horizontal >14 || Vertical > 14 || Vertical < 1)
+                throw new OverNumberException("Numero mayor a 14");
+            if (Horizontal < 1 || Vertical < 1)
+                throw new UnderNumberException("Numero menor a 1");
+    }
     /**
      * @param args the command line arguments
      */
@@ -388,4 +405,18 @@ public class NewGame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables
+
+    private static class OverNumberException extends Exception {
+
+        public OverNumberException(String Mensaje) {
+            super(Mensaje);
+        }
+    }
+
+    private static class UnderNumberException extends Exception {
+
+        public UnderNumberException(String Mensaje) {
+            super(Mensaje);
+        }
+    }
 }
