@@ -28,71 +28,203 @@ public class NewGame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
+        DiccionaryGroup = new javax.swing.ButtonGroup();
+        CrucigramClass = new javax.swing.ButtonGroup();
+        Everything = new javax.swing.JPanel();
+        MiddleLeft = new javax.swing.JPanel();
+        UpperTittle = new javax.swing.JPanel();
+        Tittle = new javax.swing.JTextField();
+        DiccionariosLay = new javax.swing.JPanel();
+        Diccionario1 = new javax.swing.JRadioButton();
+        Diccionario2 = new javax.swing.JRadioButton();
+        Diccionario3 = new javax.swing.JRadioButton();
+        Diccionario4 = new javax.swing.JRadioButton();
+        MiddleRight = new javax.swing.JPanel();
+        ClassSection = new javax.swing.JPanel();
+        CruciClass = new javax.swing.JPanel();
+        jCheckBox1 = new javax.swing.JCheckBox();
+        jCheckBox2 = new javax.swing.JCheckBox();
+        CruciImage = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTextArea2 = new javax.swing.JTextArea();
+        jPanel1 = new javax.swing.JPanel();
+        Horizontal = new java.awt.Label();
+        HorizontalText = new java.awt.TextField();
+        Vertical = new java.awt.Label();
+        VerticalText = new java.awt.TextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Diction");
+        setPreferredSize(new java.awt.Dimension(1141, 662));
 
-        jButton1.setText("Diccionario 1");
+        Everything.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton2.setText("Diccionario 2");
+        Tittle.setBackground(new java.awt.Color(238, 238, 238));
+        Tittle.setFont(new java.awt.Font("Earth", 0, 36)); // NOI18N
+        Tittle.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        Tittle.setText("New Game Set Up");
+        Tittle.setEnabled(false);
+        Tittle.setRequestFocusEnabled(false);
 
-        jButton3.setText("Diccionario 3");
+        javax.swing.GroupLayout UpperTittleLayout = new javax.swing.GroupLayout(UpperTittle);
+        UpperTittle.setLayout(UpperTittleLayout);
+        UpperTittleLayout.setHorizontalGroup(
+            UpperTittleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(UpperTittleLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(Tittle, javax.swing.GroupLayout.DEFAULT_SIZE, 547, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        UpperTittleLayout.setVerticalGroup(
+            UpperTittleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(UpperTittleLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(Tittle, javax.swing.GroupLayout.DEFAULT_SIZE, 155, Short.MAX_VALUE))
+        );
 
-        jButton4.setText("Diccionario 4");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
-            }
-        });
+        DiccionariosLay.setLayout(new java.awt.GridLayout(4, 3, 0, 20));
 
-        jLabel1.setFont(new java.awt.Font("Lucida Grande", 0, 24)); // NOI18N
-        jLabel1.setText("Escoja un Tema");
+        DiccionaryGroup.add(Diccionario1);
+        Diccionario1.setText("Diccionario 1");
+        Diccionario1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        DiccionariosLay.add(Diccionario1);
+
+        DiccionaryGroup.add(Diccionario2);
+        Diccionario2.setText("Diccionario 2");
+        Diccionario2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        DiccionariosLay.add(Diccionario2);
+
+        DiccionaryGroup.add(Diccionario3);
+        Diccionario3.setText("Diccionario 3");
+        Diccionario3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        DiccionariosLay.add(Diccionario3);
+
+        DiccionaryGroup.add(Diccionario4);
+        Diccionario4.setText("Diccionario 4");
+        Diccionario4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        DiccionariosLay.add(Diccionario4);
+
+        javax.swing.GroupLayout MiddleLeftLayout = new javax.swing.GroupLayout(MiddleLeft);
+        MiddleLeft.setLayout(MiddleLeftLayout);
+        MiddleLeftLayout.setHorizontalGroup(
+            MiddleLeftLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(UpperTittle, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(MiddleLeftLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(DiccionariosLay, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 571, Short.MAX_VALUE))
+        );
+        MiddleLeftLayout.setVerticalGroup(
+            MiddleLeftLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(MiddleLeftLayout.createSequentialGroup()
+                .addComponent(UpperTittle, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(797, Short.MAX_VALUE))
+            .addGroup(MiddleLeftLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(MiddleLeftLayout.createSequentialGroup()
+                    .addGap(167, 167, 167)
+                    .addComponent(DiccionariosLay, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(521, Short.MAX_VALUE)))
+        );
+
+        Everything.add(MiddleLeft, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 0, -1, -1));
+
+        CruciClass.setLayout(new java.awt.GridLayout(2, 1, 0, 50));
+
+        CrucigramClass.add(jCheckBox1);
+        jCheckBox1.setText("Normal");
+        jCheckBox1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        CruciClass.add(jCheckBox1);
+
+        CrucigramClass.add(jCheckBox2);
+        jCheckBox2.setText("Cascada");
+        jCheckBox2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        CruciClass.add(jCheckBox2);
+
+        CruciImage.setLayout(new java.awt.GridLayout(2, 1, 0, 50));
+
+        jTextArea1.setColumns(20);
+        jTextArea1.setRows(5);
+        jTextArea1.setText("Insert Normal Crucigram Icon Here\n");
+        jScrollPane1.setViewportView(jTextArea1);
+
+        CruciImage.add(jScrollPane1);
+
+        jTextArea2.setColumns(20);
+        jTextArea2.setRows(5);
+        jTextArea2.setText("Insert Cascada Crucigram Icon Here\n");
+        jScrollPane2.setViewportView(jTextArea2);
+
+        CruciImage.add(jScrollPane2);
+
+        javax.swing.GroupLayout ClassSectionLayout = new javax.swing.GroupLayout(ClassSection);
+        ClassSection.setLayout(ClassSectionLayout);
+        ClassSectionLayout.setHorizontalGroup(
+            ClassSectionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ClassSectionLayout.createSequentialGroup()
+                .addComponent(CruciClass, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(CruciImage, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        ClassSectionLayout.setVerticalGroup(
+            ClassSectionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(ClassSectionLayout.createSequentialGroup()
+                .addGroup(ClassSectionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(CruciClass, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(CruciImage, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(0, 4, Short.MAX_VALUE))
+        );
+
+        jPanel1.setLayout(new java.awt.GridLayout(2, 2, 50, 100));
+
+        Horizontal.setAlignment(java.awt.Label.CENTER);
+        Horizontal.setName("Horizontal"); // NOI18N
+        Horizontal.setText("Horizontal Words");
+        jPanel1.add(Horizontal);
+
+        HorizontalText.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        jPanel1.add(HorizontalText);
+
+        Vertical.setAlignment(java.awt.Label.CENTER);
+        Vertical.setName("Vertical"); // NOI18N
+        Vertical.setText("Vertical Words");
+        jPanel1.add(Vertical);
+        jPanel1.add(VerticalText);
+
+        javax.swing.GroupLayout MiddleRightLayout = new javax.swing.GroupLayout(MiddleRight);
+        MiddleRight.setLayout(MiddleRightLayout);
+        MiddleRightLayout.setHorizontalGroup(
+            MiddleRightLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(ClassSection, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MiddleRightLayout.createSequentialGroup()
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        MiddleRightLayout.setVerticalGroup(
+            MiddleRightLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(MiddleRightLayout.createSequentialGroup()
+                .addComponent(ClassSection, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(44, 44, 44)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+
+        Everything.add(MiddleRight, new org.netbeans.lib.awtextra.AbsoluteConstraints(589, 0, -1, 701));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(92, 92, 92)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(40, 40, 40)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 228, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(40, Short.MAX_VALUE))
+                .addComponent(Everything, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(23, 23, 23)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(jButton1)
-                .addGap(18, 18, 18)
-                .addComponent(jButton2)
-                .addGap(18, 18, 18)
-                .addComponent(jButton3)
-                .addGap(18, 18, 18)
-                .addComponent(jButton4)
-                .addContainerGap(40, Short.MAX_VALUE))
+            .addComponent(Everything, javax.swing.GroupLayout.DEFAULT_SIZE, 701, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -130,10 +262,31 @@ public class NewGame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JLabel jLabel1;
+    private javax.swing.JPanel ClassSection;
+    private javax.swing.JPanel CruciClass;
+    private javax.swing.JPanel CruciImage;
+    private javax.swing.ButtonGroup CrucigramClass;
+    private javax.swing.JRadioButton Diccionario1;
+    private javax.swing.JRadioButton Diccionario2;
+    private javax.swing.JRadioButton Diccionario3;
+    private javax.swing.JRadioButton Diccionario4;
+    private javax.swing.JPanel DiccionariosLay;
+    private javax.swing.ButtonGroup DiccionaryGroup;
+    private javax.swing.JPanel Everything;
+    private java.awt.Label Horizontal;
+    private java.awt.TextField HorizontalText;
+    private javax.swing.JPanel MiddleLeft;
+    private javax.swing.JPanel MiddleRight;
+    private javax.swing.JTextField Tittle;
+    private javax.swing.JPanel UpperTittle;
+    private java.awt.Label Vertical;
+    private java.awt.TextField VerticalText;
+    private javax.swing.JCheckBox jCheckBox1;
+    private javax.swing.JCheckBox jCheckBox2;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextArea jTextArea2;
     // End of variables declaration//GEN-END:variables
 }
