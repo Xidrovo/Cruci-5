@@ -5,6 +5,8 @@
  */
 package Frame;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author JorLuis
@@ -89,23 +91,28 @@ public class NewGame extends javax.swing.JFrame {
         DiccionariosLay.setLayout(new java.awt.GridLayout(4, 3, 0, 20));
 
         DiccionaryGroup.add(CGeneral);
-        CGeneral.setText("Cultura General");
+        CGeneral.setText("General Culture");
         CGeneral.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         DiccionariosLay.add(CGeneral);
 
         DiccionaryGroup.add(Adjetivos);
-        Adjetivos.setText("Adjetivos");
+        Adjetivos.setText("Adjetives");
         Adjetivos.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         DiccionariosLay.add(Adjetivos);
 
         DiccionaryGroup.add(Biologia);
-        Biologia.setText("Biologia");
+        Biologia.setText("Biology");
         Biologia.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         DiccionariosLay.add(Biologia);
 
         DiccionaryGroup.add(Programacion);
-        Programacion.setText("Programacion");
+        Programacion.setText("Programation");
         Programacion.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Programacion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ProgramacionActionPerformed(evt);
+            }
+        });
         DiccionariosLay.add(Programacion);
 
         java.awt.FlowLayout flowLayout1 = new java.awt.FlowLayout();
@@ -115,6 +122,11 @@ public class NewGame extends javax.swing.JFrame {
         Create.setFont(new java.awt.Font("Earth", 1, 18)); // NOI18N
         Create.setText("CREATE!!");
         Create.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        Create.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                CreateMouseClicked(evt);
+            }
+        });
         Create.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 CreateActionPerformed(evt);
@@ -228,18 +240,18 @@ public class NewGame extends javax.swing.JFrame {
             .addComponent(ClassSection, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(MiddleRightLayout.createSequentialGroup()
                 .addComponent(HorizontalVerticalPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 462, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 93, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
             .addComponent(CreateLayout1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(MiddleRightLayout.createSequentialGroup()
                 .addGap(54, 54, 54)
                 .addComponent(AutoGen)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(111, Short.MAX_VALUE))
         );
         MiddleRightLayout.setVerticalGroup(
             MiddleRightLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(MiddleRightLayout.createSequentialGroup()
                 .addComponent(ClassSection, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(HorizontalVerticalPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 96, Short.MAX_VALUE)
                 .addComponent(AutoGen)
@@ -293,6 +305,23 @@ public class NewGame extends javax.swing.JFrame {
     private void AutoGenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AutoGenActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_AutoGenActionPerformed
+
+    private void ProgramacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ProgramacionActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ProgramacionActionPerformed
+
+    private void CreateMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CreateMouseClicked
+        // TODO add your handling code here:
+        try
+        {
+            int Horizontal = Integer.parseInt(HorizontalText.getText());
+            int Vertical = Integer.parseInt(VerticalText.getText());
+        }
+            catch (java.lang.NumberFormatException e)
+                    {
+                    int x = JOptionPane.showConfirmDialog(this, "MASSIVE ERROR!!", "OH MY GOSH!", JOptionPane.OK_CANCEL_OPTION);
+                    }
+    }//GEN-LAST:event_CreateMouseClicked
 
     /**
      * @param args the command line arguments

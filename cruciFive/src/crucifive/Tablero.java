@@ -11,7 +11,7 @@ import java.util.LinkedList;
  *
  * @author fernando
  */
-public class Tablero{
+public class  Tablero{
     private int x;
     private int y;
     private float score;

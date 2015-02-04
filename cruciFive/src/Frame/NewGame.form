@@ -166,7 +166,7 @@
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
                       <ComponentRef name="DiccionaryGroup"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="Cultura General"/>
+                    <Property name="text" type="java.lang.String" value="General Culture"/>
                     <Property name="horizontalAlignment" type="int" value="0"/>
                   </Properties>
                 </Component>
@@ -175,7 +175,7 @@
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
                       <ComponentRef name="DiccionaryGroup"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="Adjetivos"/>
+                    <Property name="text" type="java.lang.String" value="Adjetives"/>
                     <Property name="horizontalAlignment" type="int" value="0"/>
                   </Properties>
                 </Component>
@@ -184,7 +184,7 @@
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
                       <ComponentRef name="DiccionaryGroup"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="Biologia"/>
+                    <Property name="text" type="java.lang.String" value="Biology"/>
                     <Property name="horizontalAlignment" type="int" value="0"/>
                   </Properties>
                 </Component>
@@ -193,9 +193,12 @@
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
                       <ComponentRef name="DiccionaryGroup"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="Programacion"/>
+                    <Property name="text" type="java.lang.String" value="Programation"/>
                     <Property name="horizontalAlignment" type="int" value="0"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ProgramacionActionPerformed"/>
+                  </Events>
                 </Component>
               </SubComponents>
             </Container>
@@ -210,6 +213,7 @@
                     <Property name="horizontalTextPosition" type="int" value="0"/>
                   </Properties>
                   <Events>
+                    <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="CreateMouseClicked"/>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CreateActionPerformed"/>
                   </Events>
                 </Component>
@@ -285,13 +289,13 @@
                   <Component id="ClassSection" max="32767" attributes="0"/>
                   <Group type="102" attributes="0">
                       <Component id="HorizontalVerticalPanel" min="-2" pref="462" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="93" max="32767" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
                   <Component id="CreateLayout1" alignment="0" max="32767" attributes="0"/>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="54" max="-2" attributes="0"/>
                       <Component id="AutoGen" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
+                      <EmptySpace pref="111" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -299,11 +303,11 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="ClassSection" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" min="-2" max="-2" attributes="0"/>
                       <Component id="HorizontalVerticalPanel" min="-2" max="-2" attributes="0"/>
                       <EmptySpace pref="96" max="32767" attributes="0"/>
                       <Component id="AutoGen" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" min="-2" max="-2" attributes="0"/>
                       <Component id="CreateLayout1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="119" max="-2" attributes="0"/>
                   </Group>
