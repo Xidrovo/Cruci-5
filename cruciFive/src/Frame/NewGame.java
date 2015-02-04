@@ -39,6 +39,8 @@ public class NewGame extends javax.swing.JFrame {
         Diccionario2 = new javax.swing.JRadioButton();
         Diccionario3 = new javax.swing.JRadioButton();
         Diccionario4 = new javax.swing.JRadioButton();
+        CreateLayout = new javax.swing.JPanel();
+        Create = new javax.swing.JButton();
         MiddleRight = new javax.swing.JPanel();
         ClassSection = new javax.swing.JPanel();
         CruciClass = new javax.swing.JPanel();
@@ -49,17 +51,19 @@ public class NewGame extends javax.swing.JFrame {
         jTextArea1 = new javax.swing.JTextArea();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTextArea2 = new javax.swing.JTextArea();
-        jPanel1 = new javax.swing.JPanel();
+        HorizontalVerticalPanel = new javax.swing.JPanel();
         Horizontal = new java.awt.Label();
         HorizontalText = new java.awt.TextField();
         Vertical = new java.awt.Label();
         VerticalText = new java.awt.TextField();
+        CreateLayout1 = new javax.swing.JPanel();
+        Create1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Diction");
         setPreferredSize(new java.awt.Dimension(1141, 662));
 
-        Everything.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        Everything.setPreferredSize(new java.awt.Dimension(1141, 613));
 
         Tittle.setBackground(new java.awt.Color(238, 238, 238));
         Tittle.setFont(new java.awt.Font("Earth", 0, 36)); // NOI18N
@@ -74,7 +78,7 @@ public class NewGame extends javax.swing.JFrame {
             UpperTittleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(UpperTittleLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(Tittle, javax.swing.GroupLayout.DEFAULT_SIZE, 547, Short.MAX_VALUE)
+                .addComponent(Tittle, javax.swing.GroupLayout.DEFAULT_SIZE, 543, Short.MAX_VALUE)
                 .addContainerGap())
         );
         UpperTittleLayout.setVerticalGroup(
@@ -106,27 +110,46 @@ public class NewGame extends javax.swing.JFrame {
         Diccionario4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         DiccionariosLay.add(Diccionario4);
 
+        java.awt.FlowLayout flowLayout1 = new java.awt.FlowLayout();
+        flowLayout1.setAlignOnBaseline(true);
+        CreateLayout.setLayout(flowLayout1);
+
+        Create.setFont(new java.awt.Font("Earth", 1, 18)); // NOI18N
+        Create.setText("CREATE!!");
+        Create.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        Create.setPreferredSize(new java.awt.Dimension(165, 25));
+        Create.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CreateActionPerformed(evt);
+            }
+        });
+        CreateLayout.add(Create);
+
         javax.swing.GroupLayout MiddleLeftLayout = new javax.swing.GroupLayout(MiddleLeft);
         MiddleLeft.setLayout(MiddleLeftLayout);
         MiddleLeftLayout.setHorizontalGroup(
             MiddleLeftLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(UpperTittle, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(MiddleLeftLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(CreateLayout, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
             .addGroup(MiddleLeftLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(DiccionariosLay, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 571, Short.MAX_VALUE))
+                .addComponent(DiccionariosLay, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 567, Short.MAX_VALUE))
         );
         MiddleLeftLayout.setVerticalGroup(
             MiddleLeftLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(MiddleLeftLayout.createSequentialGroup()
                 .addComponent(UpperTittle, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(797, Short.MAX_VALUE))
+                .addGap(375, 375, 375)
+                .addComponent(CreateLayout, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(536, Short.MAX_VALUE))
             .addGroup(MiddleLeftLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(MiddleLeftLayout.createSequentialGroup()
                     .addGap(167, 167, 167)
                     .addComponent(DiccionariosLay, javax.swing.GroupLayout.PREFERRED_SIZE, 276, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(521, Short.MAX_VALUE)))
+                    .addContainerGap(648, Short.MAX_VALUE)))
         );
-
-        Everything.add(MiddleLeft, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 0, -1, -1));
 
         CruciClass.setLayout(new java.awt.GridLayout(2, 1, 0, 50));
 
@@ -163,52 +186,86 @@ public class NewGame extends javax.swing.JFrame {
             .addGroup(ClassSectionLayout.createSequentialGroup()
                 .addComponent(CruciClass, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(CruciImage, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(CruciImage, javax.swing.GroupLayout.PREFERRED_SIZE, 367, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         ClassSectionLayout.setVerticalGroup(
             ClassSectionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(ClassSectionLayout.createSequentialGroup()
-                .addGroup(ClassSectionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(CruciClass, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(CruciImage, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap()
+                .addGroup(ClassSectionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(CruciImage, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(CruciClass, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(0, 4, Short.MAX_VALUE))
         );
 
-        jPanel1.setLayout(new java.awt.GridLayout(2, 2, 50, 100));
+        HorizontalVerticalPanel.setLayout(new java.awt.GridLayout(2, 2, 50, 100));
 
         Horizontal.setAlignment(java.awt.Label.CENTER);
         Horizontal.setName("Horizontal"); // NOI18N
         Horizontal.setText("Horizontal Words");
-        jPanel1.add(Horizontal);
+        HorizontalVerticalPanel.add(Horizontal);
 
         HorizontalText.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
-        jPanel1.add(HorizontalText);
+        HorizontalVerticalPanel.add(HorizontalText);
 
         Vertical.setAlignment(java.awt.Label.CENTER);
         Vertical.setName("Vertical"); // NOI18N
         Vertical.setText("Vertical Words");
-        jPanel1.add(Vertical);
-        jPanel1.add(VerticalText);
+        HorizontalVerticalPanel.add(Vertical);
+        HorizontalVerticalPanel.add(VerticalText);
+
+        java.awt.FlowLayout flowLayout2 = new java.awt.FlowLayout();
+        flowLayout2.setAlignOnBaseline(true);
+        CreateLayout1.setLayout(flowLayout2);
+
+        Create1.setFont(new java.awt.Font("Earth", 1, 18)); // NOI18N
+        Create1.setText("Auto mother fucker gen!");
+        Create1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        Create1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Create1ActionPerformed(evt);
+            }
+        });
+        CreateLayout1.add(Create1);
 
         javax.swing.GroupLayout MiddleRightLayout = new javax.swing.GroupLayout(MiddleRight);
         MiddleRight.setLayout(MiddleRightLayout);
         MiddleRightLayout.setHorizontalGroup(
             MiddleRightLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(ClassSection, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, MiddleRightLayout.createSequentialGroup()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+            .addGroup(MiddleRightLayout.createSequentialGroup()
+                .addComponent(HorizontalVerticalPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 462, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(CreateLayout1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         MiddleRightLayout.setVerticalGroup(
             MiddleRightLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(MiddleRightLayout.createSequentialGroup()
                 .addComponent(ClassSection, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(44, 44, 44)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addComponent(HorizontalVerticalPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 139, Short.MAX_VALUE)
+                .addComponent(CreateLayout1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(119, 119, 119))
         );
 
-        Everything.add(MiddleRight, new org.netbeans.lib.awtextra.AbsoluteConstraints(589, 0, -1, 701));
+        javax.swing.GroupLayout EverythingLayout = new javax.swing.GroupLayout(Everything);
+        Everything.setLayout(EverythingLayout);
+        EverythingLayout.setHorizontalGroup(
+            EverythingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(EverythingLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(MiddleLeft, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(MiddleRight, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        EverythingLayout.setVerticalGroup(
+            EverythingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(MiddleLeft, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(MiddleRight, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -220,11 +277,19 @@ public class NewGame extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Everything, javax.swing.GroupLayout.DEFAULT_SIZE, 701, Short.MAX_VALUE)
+            .addComponent(Everything, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void CreateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CreateActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CreateActionPerformed
+
+    private void Create1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Create1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Create1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -263,6 +328,10 @@ public class NewGame extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel ClassSection;
+    private javax.swing.JButton Create;
+    private javax.swing.JButton Create1;
+    private javax.swing.JPanel CreateLayout;
+    private javax.swing.JPanel CreateLayout1;
     private javax.swing.JPanel CruciClass;
     private javax.swing.JPanel CruciImage;
     private javax.swing.ButtonGroup CrucigramClass;
@@ -275,6 +344,7 @@ public class NewGame extends javax.swing.JFrame {
     private javax.swing.JPanel Everything;
     private java.awt.Label Horizontal;
     private java.awt.TextField HorizontalText;
+    private javax.swing.JPanel HorizontalVerticalPanel;
     private javax.swing.JPanel MiddleLeft;
     private javax.swing.JPanel MiddleRight;
     private javax.swing.JTextField Tittle;
@@ -283,7 +353,6 @@ public class NewGame extends javax.swing.JFrame {
     private java.awt.TextField VerticalText;
     private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JCheckBox jCheckBox2;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextArea jTextArea1;

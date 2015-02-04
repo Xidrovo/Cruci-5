@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+<Form version="1.8" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <NonVisualComponents>
     <Component class="javax.swing.ButtonGroup" name="DiccionaryGroup">
     </Component>
@@ -41,30 +41,51 @@
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="Everything" alignment="0" pref="701" max="32767" attributes="0"/>
+          <Component id="Everything" alignment="0" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
   </Layout>
   <SubComponents>
     <Container class="javax.swing.JPanel" name="Everything">
+      <Properties>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[1141, 613]"/>
+        </Property>
+      </Properties>
 
-      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
-        <Property name="useNullLayout" type="boolean" value="false"/>
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="MiddleLeft" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="MiddleRight" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Component id="MiddleLeft" min="-2" max="-2" attributes="0"/>
+              <Component id="MiddleRight" min="-2" max="-2" attributes="0"/>
+          </Group>
+        </DimensionLayout>
       </Layout>
       <SubComponents>
         <Container class="javax.swing.JPanel" name="MiddleLeft">
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="12" y="0" width="-1" height="-1"/>
-            </Constraint>
-          </Constraints>
 
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="UpperTittle" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="CreateLayout" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
                   <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
-                      <Component id="DiccionariosLay" alignment="1" pref="571" max="32767" attributes="0"/>
+                      <Component id="DiccionariosLay" alignment="1" pref="567" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -72,13 +93,15 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="UpperTittle" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="797" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="375" max="-2" attributes="0"/>
+                      <Component id="CreateLayout" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="536" max="32767" attributes="0"/>
                   </Group>
                   <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="167" max="-2" attributes="0"/>
                           <Component id="DiccionariosLay" min="-2" pref="276" max="-2" attributes="0"/>
-                          <EmptySpace pref="521" max="32767" attributes="0"/>
+                          <EmptySpace pref="648" max="32767" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -92,7 +115,7 @@
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="Tittle" pref="547" max="32767" attributes="0"/>
+                          <Component id="Tittle" pref="543" max="32767" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
                       </Group>
                   </Group>
@@ -169,23 +192,98 @@
                 </Component>
               </SubComponents>
             </Container>
+            <Container class="javax.swing.JPanel" name="CreateLayout">
+              <SubComponents>
+                <Component class="javax.swing.JButton" name="Create">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Earth" size="18" style="1"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="CREATE!!"/>
+                    <Property name="horizontalTextPosition" type="int" value="0"/>
+                    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+                      <Dimension value="[165, 25]"/>
+                    </Property>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CreateActionPerformed"/>
+                  </Events>
+                </Component>
+              </SubComponents>
+              <LayoutCode>
+                <CodeStatement>
+                  <CodeExpression id="1_flowLayout1">
+                    <CodeVariable name="flowLayout1" type="4096" declaredType="java.awt.FlowLayout"/>
+                    <ExpressionOrigin>
+                      <ExpressionProvider type="CodeConstructor">
+                        <CodeConstructor class="java.awt.FlowLayout" parameterTypes=""/>
+                      </ExpressionProvider>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <StatementProvider type="CodeExpression">
+                    <CodeExpression id="1_flowLayout1"/>
+                  </StatementProvider>
+                </CodeStatement>
+                <CodeStatement>
+                  <CodeExpression id="1_flowLayout1"/>
+                  <StatementProvider type="CodeMethod">
+                    <CodeMethod name="setAlignOnBaseline" class="java.awt.FlowLayout" parameterTypes="boolean"/>
+                  </StatementProvider>
+                  <Parameters>
+                    <CodeExpression id="2">
+                      <ExpressionOrigin>
+                        <Value type="boolean" value="true"/>
+                      </ExpressionOrigin>
+                    </CodeExpression>
+                  </Parameters>
+                </CodeStatement>
+                <CodeStatement>
+                  <CodeExpression id="3_CreateLayout">
+                    <CodeVariable name="CreateLayout" type="8194" declaredType="javax.swing.JPanel"/>
+                    <ExpressionOrigin>
+                      <ExpressionProvider type="ComponentRef">
+                        <ComponentRef name="CreateLayout"/>
+                      </ExpressionProvider>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <StatementProvider type="CodeMethod">
+                    <CodeMethod name="setLayout" class="java.awt.Container" parameterTypes="java.awt.LayoutManager"/>
+                  </StatementProvider>
+                  <Parameters>
+                    <CodeExpression id="1_flowLayout1"/>
+                  </Parameters>
+                </CodeStatement>
+                <CodeStatement>
+                  <CodeExpression id="3_CreateLayout"/>
+                  <StatementProvider type="CodeMethod">
+                    <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component"/>
+                  </StatementProvider>
+                  <Parameters>
+                    <CodeExpression id="4_Create">
+                      <CodeVariable name="Create" type="8194" declaredType="javax.swing.JButton"/>
+                      <ExpressionOrigin>
+                        <ExpressionProvider type="ComponentRef">
+                          <ComponentRef name="Create"/>
+                        </ExpressionProvider>
+                      </ExpressionOrigin>
+                    </CodeExpression>
+                  </Parameters>
+                </CodeStatement>
+              </LayoutCode>
+            </Container>
           </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="MiddleRight">
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="589" y="0" width="-1" height="701"/>
-            </Constraint>
-          </Constraints>
 
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="ClassSection" max="32767" attributes="0"/>
-                  <Group type="102" alignment="1" attributes="0">
-                      <Component id="jPanel1" max="32767" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <Component id="HorizontalVerticalPanel" min="-2" pref="462" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
+                  <Component id="CreateLayout1" alignment="0" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
@@ -193,8 +291,10 @@
                   <Group type="102" alignment="0" attributes="0">
                       <Component id="ClassSection" min="-2" max="-2" attributes="0"/>
                       <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
-                      <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <Component id="HorizontalVerticalPanel" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="139" max="32767" attributes="0"/>
+                      <Component id="CreateLayout1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="119" max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -208,16 +308,18 @@
                       <Group type="102" alignment="0" attributes="0">
                           <Component id="CruciClass" min="-2" pref="170" max="-2" attributes="0"/>
                           <EmptySpace max="-2" attributes="0"/>
-                          <Component id="CruciImage" max="32767" attributes="0"/>
+                          <Component id="CruciImage" min="-2" pref="367" max="-2" attributes="0"/>
+                          <EmptySpace max="32767" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
-                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="CruciClass" max="32767" attributes="0"/>
-                              <Component id="CruciImage" max="32767" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="1" attributes="0">
+                              <Component id="CruciImage" min="-2" pref="194" max="-2" attributes="0"/>
+                              <Component id="CruciClass" min="-2" pref="204" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace min="0" pref="4" max="32767" attributes="0"/>
                       </Group>
@@ -297,7 +399,7 @@
                 </Container>
               </SubComponents>
             </Container>
-            <Container class="javax.swing.JPanel" name="jPanel1">
+            <Container class="javax.swing.JPanel" name="HorizontalVerticalPanel">
 
               <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
                 <Property name="columns" type="int" value="2"/>
@@ -330,6 +432,82 @@
                 <Component class="java.awt.TextField" name="VerticalText">
                 </Component>
               </SubComponents>
+            </Container>
+            <Container class="javax.swing.JPanel" name="CreateLayout1">
+              <SubComponents>
+                <Component class="javax.swing.JButton" name="Create1">
+                  <Properties>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Earth" size="18" style="1"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="Auto mother fucker gen!"/>
+                    <Property name="horizontalTextPosition" type="int" value="0"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="Create1ActionPerformed"/>
+                  </Events>
+                </Component>
+              </SubComponents>
+              <LayoutCode>
+                <CodeStatement>
+                  <CodeExpression id="5_flowLayout2">
+                    <CodeVariable name="flowLayout2" type="4096" declaredType="java.awt.FlowLayout"/>
+                    <ExpressionOrigin>
+                      <ExpressionProvider type="CodeConstructor">
+                        <CodeConstructor class="java.awt.FlowLayout" parameterTypes=""/>
+                      </ExpressionProvider>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <StatementProvider type="CodeExpression">
+                    <CodeExpression id="5_flowLayout2"/>
+                  </StatementProvider>
+                </CodeStatement>
+                <CodeStatement>
+                  <CodeExpression id="5_flowLayout2"/>
+                  <StatementProvider type="CodeMethod">
+                    <CodeMethod name="setAlignOnBaseline" class="java.awt.FlowLayout" parameterTypes="boolean"/>
+                  </StatementProvider>
+                  <Parameters>
+                    <CodeExpression id="6">
+                      <ExpressionOrigin>
+                        <Value type="boolean" value="true"/>
+                      </ExpressionOrigin>
+                    </CodeExpression>
+                  </Parameters>
+                </CodeStatement>
+                <CodeStatement>
+                  <CodeExpression id="7_CreateLayout1">
+                    <CodeVariable name="CreateLayout1" type="8194" declaredType="javax.swing.JPanel"/>
+                    <ExpressionOrigin>
+                      <ExpressionProvider type="ComponentRef">
+                        <ComponentRef name="CreateLayout1"/>
+                      </ExpressionProvider>
+                    </ExpressionOrigin>
+                  </CodeExpression>
+                  <StatementProvider type="CodeMethod">
+                    <CodeMethod name="setLayout" class="java.awt.Container" parameterTypes="java.awt.LayoutManager"/>
+                  </StatementProvider>
+                  <Parameters>
+                    <CodeExpression id="5_flowLayout2"/>
+                  </Parameters>
+                </CodeStatement>
+                <CodeStatement>
+                  <CodeExpression id="7_CreateLayout1"/>
+                  <StatementProvider type="CodeMethod">
+                    <CodeMethod name="add" class="java.awt.Container" parameterTypes="java.awt.Component"/>
+                  </StatementProvider>
+                  <Parameters>
+                    <CodeExpression id="8_Create1">
+                      <CodeVariable name="Create1" type="8194" declaredType="javax.swing.JButton"/>
+                      <ExpressionOrigin>
+                        <ExpressionProvider type="ComponentRef">
+                          <ComponentRef name="Create1"/>
+                        </ExpressionProvider>
+                      </ExpressionOrigin>
+                    </CodeExpression>
+                  </Parameters>
+                </CodeStatement>
+              </LayoutCode>
             </Container>
           </SubComponents>
         </Container>
