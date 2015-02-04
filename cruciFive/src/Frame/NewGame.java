@@ -35,29 +35,27 @@ public class NewGame extends javax.swing.JFrame {
         UpperTittle = new javax.swing.JPanel();
         Tittle = new javax.swing.JTextField();
         DiccionariosLay = new javax.swing.JPanel();
-        Diccionario1 = new javax.swing.JRadioButton();
-        Diccionario2 = new javax.swing.JRadioButton();
-        Diccionario3 = new javax.swing.JRadioButton();
-        Diccionario4 = new javax.swing.JRadioButton();
+        CGeneral = new javax.swing.JRadioButton();
+        Adjetivos = new javax.swing.JRadioButton();
+        Biologia = new javax.swing.JRadioButton();
+        Programacion = new javax.swing.JRadioButton();
         CreateLayout = new javax.swing.JPanel();
         Create = new javax.swing.JButton();
         MiddleRight = new javax.swing.JPanel();
         ClassSection = new javax.swing.JPanel();
         CruciClass = new javax.swing.JPanel();
-        jCheckBox1 = new javax.swing.JCheckBox();
-        jCheckBox2 = new javax.swing.JCheckBox();
+        Normal = new javax.swing.JCheckBox();
+        Cascada = new javax.swing.JCheckBox();
         CruciImage = new javax.swing.JPanel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        jTextArea2 = new javax.swing.JTextArea();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         HorizontalVerticalPanel = new javax.swing.JPanel();
         Horizontal = new java.awt.Label();
         HorizontalText = new java.awt.TextField();
         Vertical = new java.awt.Label();
         VerticalText = new java.awt.TextField();
         CreateLayout1 = new javax.swing.JPanel();
-        Create1 = new javax.swing.JButton();
+        AutoGen = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Diction");
@@ -90,25 +88,25 @@ public class NewGame extends javax.swing.JFrame {
 
         DiccionariosLay.setLayout(new java.awt.GridLayout(4, 3, 0, 20));
 
-        DiccionaryGroup.add(Diccionario1);
-        Diccionario1.setText("Diccionario 1");
-        Diccionario1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        DiccionariosLay.add(Diccionario1);
+        DiccionaryGroup.add(CGeneral);
+        CGeneral.setText("Cultura General");
+        CGeneral.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        DiccionariosLay.add(CGeneral);
 
-        DiccionaryGroup.add(Diccionario2);
-        Diccionario2.setText("Diccionario 2");
-        Diccionario2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        DiccionariosLay.add(Diccionario2);
+        DiccionaryGroup.add(Adjetivos);
+        Adjetivos.setText("Adjetivos");
+        Adjetivos.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        DiccionariosLay.add(Adjetivos);
 
-        DiccionaryGroup.add(Diccionario3);
-        Diccionario3.setText("Diccionario 3");
-        Diccionario3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        DiccionariosLay.add(Diccionario3);
+        DiccionaryGroup.add(Biologia);
+        Biologia.setText("Biologia");
+        Biologia.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        DiccionariosLay.add(Biologia);
 
-        DiccionaryGroup.add(Diccionario4);
-        Diccionario4.setText("Diccionario 4");
-        Diccionario4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        DiccionariosLay.add(Diccionario4);
+        DiccionaryGroup.add(Programacion);
+        Programacion.setText("Programacion");
+        Programacion.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        DiccionariosLay.add(Programacion);
 
         java.awt.FlowLayout flowLayout1 = new java.awt.FlowLayout();
         flowLayout1.setAlignOnBaseline(true);
@@ -117,7 +115,6 @@ public class NewGame extends javax.swing.JFrame {
         Create.setFont(new java.awt.Font("Earth", 1, 18)); // NOI18N
         Create.setText("CREATE!!");
         Create.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        Create.setPreferredSize(new java.awt.Dimension(165, 25));
         Create.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 CreateActionPerformed(evt);
@@ -153,31 +150,25 @@ public class NewGame extends javax.swing.JFrame {
 
         CruciClass.setLayout(new java.awt.GridLayout(2, 1, 0, 50));
 
-        CrucigramClass.add(jCheckBox1);
-        jCheckBox1.setText("Normal");
-        jCheckBox1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        CruciClass.add(jCheckBox1);
+        CrucigramClass.add(Normal);
+        Normal.setText("Normal");
+        Normal.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        CruciClass.add(Normal);
 
-        CrucigramClass.add(jCheckBox2);
-        jCheckBox2.setText("Cascada");
-        jCheckBox2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        CruciClass.add(jCheckBox2);
+        CrucigramClass.add(Cascada);
+        Cascada.setText("Cascada");
+        Cascada.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        CruciClass.add(Cascada);
 
         CruciImage.setLayout(new java.awt.GridLayout(2, 1, 0, 50));
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jTextArea1.setText("Insert Normal Crucigram Icon Here\n");
-        jScrollPane1.setViewportView(jTextArea1);
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Sprites/Normal.png"))); // NOI18N
+        CruciImage.add(jLabel1);
 
-        CruciImage.add(jScrollPane1);
-
-        jTextArea2.setColumns(20);
-        jTextArea2.setRows(5);
-        jTextArea2.setText("Insert Cascada Crucigram Icon Here\n");
-        jScrollPane2.setViewportView(jTextArea2);
-
-        CruciImage.add(jScrollPane2);
+        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Sprites/Cascada.png"))); // NOI18N
+        CruciImage.add(jLabel2);
 
         javax.swing.GroupLayout ClassSectionLayout = new javax.swing.GroupLayout(ClassSection);
         ClassSection.setLayout(ClassSectionLayout);
@@ -186,17 +177,19 @@ public class NewGame extends javax.swing.JFrame {
             .addGroup(ClassSectionLayout.createSequentialGroup()
                 .addComponent(CruciClass, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(CruciImage, javax.swing.GroupLayout.PREFERRED_SIZE, 367, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(CruciImage, javax.swing.GroupLayout.PREFERRED_SIZE, 248, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         ClassSectionLayout.setVerticalGroup(
             ClassSectionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(ClassSectionLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(ClassSectionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(CruciImage, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(CruciClass, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 4, Short.MAX_VALUE))
+                .addComponent(CruciClass, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ClassSectionLayout.createSequentialGroup()
+                .addContainerGap(28, Short.MAX_VALUE)
+                .addComponent(CruciImage, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 17, Short.MAX_VALUE))
         );
 
         HorizontalVerticalPanel.setLayout(new java.awt.GridLayout(2, 2, 50, 100));
@@ -219,15 +212,14 @@ public class NewGame extends javax.swing.JFrame {
         flowLayout2.setAlignOnBaseline(true);
         CreateLayout1.setLayout(flowLayout2);
 
-        Create1.setFont(new java.awt.Font("Earth", 1, 18)); // NOI18N
-        Create1.setText("Auto mother fucker gen!");
-        Create1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        Create1.addActionListener(new java.awt.event.ActionListener() {
+        AutoGen.setFont(new java.awt.Font("Earth", 1, 18)); // NOI18N
+        AutoGen.setText("Auto mother fucker gen!");
+        AutoGen.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        AutoGen.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                Create1ActionPerformed(evt);
+                AutoGenActionPerformed(evt);
             }
         });
-        CreateLayout1.add(Create1);
 
         javax.swing.GroupLayout MiddleRightLayout = new javax.swing.GroupLayout(MiddleRight);
         MiddleRight.setLayout(MiddleRightLayout);
@@ -236,16 +228,22 @@ public class NewGame extends javax.swing.JFrame {
             .addComponent(ClassSection, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(MiddleRightLayout.createSequentialGroup()
                 .addComponent(HorizontalVerticalPanel, javax.swing.GroupLayout.PREFERRED_SIZE, 462, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(0, 93, Short.MAX_VALUE))
             .addComponent(CreateLayout1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(MiddleRightLayout.createSequentialGroup()
+                .addGap(54, 54, 54)
+                .addComponent(AutoGen)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         MiddleRightLayout.setVerticalGroup(
             MiddleRightLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(MiddleRightLayout.createSequentialGroup()
                 .addComponent(ClassSection, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(44, 44, 44)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(HorizontalVerticalPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 139, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 96, Short.MAX_VALUE)
+                .addComponent(AutoGen)
+                .addGap(18, 18, 18)
                 .addComponent(CreateLayout1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(119, 119, 119))
         );
@@ -263,8 +261,13 @@ public class NewGame extends javax.swing.JFrame {
         );
         EverythingLayout.setVerticalGroup(
             EverythingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(MiddleLeft, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(MiddleRight, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(EverythingLayout.createSequentialGroup()
+                .addComponent(MiddleLeft, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(EverythingLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(MiddleRight, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -277,7 +280,7 @@ public class NewGame extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Everything, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(Everything, javax.swing.GroupLayout.DEFAULT_SIZE, 1113, Short.MAX_VALUE)
         );
 
         pack();
@@ -287,9 +290,9 @@ public class NewGame extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_CreateActionPerformed
 
-    private void Create1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Create1ActionPerformed
+    private void AutoGenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AutoGenActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_Create1ActionPerformed
+    }//GEN-LAST:event_AutoGenActionPerformed
 
     /**
      * @param args the command line arguments
@@ -327,18 +330,18 @@ public class NewGame extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JRadioButton Adjetivos;
+    private javax.swing.JButton AutoGen;
+    private javax.swing.JRadioButton Biologia;
+    private javax.swing.JRadioButton CGeneral;
+    private javax.swing.JCheckBox Cascada;
     private javax.swing.JPanel ClassSection;
     private javax.swing.JButton Create;
-    private javax.swing.JButton Create1;
     private javax.swing.JPanel CreateLayout;
     private javax.swing.JPanel CreateLayout1;
     private javax.swing.JPanel CruciClass;
     private javax.swing.JPanel CruciImage;
     private javax.swing.ButtonGroup CrucigramClass;
-    private javax.swing.JRadioButton Diccionario1;
-    private javax.swing.JRadioButton Diccionario2;
-    private javax.swing.JRadioButton Diccionario3;
-    private javax.swing.JRadioButton Diccionario4;
     private javax.swing.JPanel DiccionariosLay;
     private javax.swing.ButtonGroup DiccionaryGroup;
     private javax.swing.JPanel Everything;
@@ -347,15 +350,13 @@ public class NewGame extends javax.swing.JFrame {
     private javax.swing.JPanel HorizontalVerticalPanel;
     private javax.swing.JPanel MiddleLeft;
     private javax.swing.JPanel MiddleRight;
+    private javax.swing.JCheckBox Normal;
+    private javax.swing.JRadioButton Programacion;
     private javax.swing.JTextField Tittle;
     private javax.swing.JPanel UpperTittle;
     private java.awt.Label Vertical;
     private java.awt.TextField VerticalText;
-    private javax.swing.JCheckBox jCheckBox1;
-    private javax.swing.JCheckBox jCheckBox2;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JTextArea jTextArea2;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     // End of variables declaration//GEN-END:variables
 }
