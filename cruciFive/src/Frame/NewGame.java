@@ -13,6 +13,7 @@ import javax.swing.JOptionPane;
  * @author JorLuis
  */
 public class NewGame extends javax.swing.JFrame {
+    private Exception ButtonException;
 
     /**
      * Creates new form NewGame
@@ -322,8 +323,7 @@ public class NewGame extends javax.swing.JFrame {
         try
         {
             CanDoIt();
-            if (CGeneral.isSelected() == false && Adjetivos.isSelected() == false && Biologia.isSelected() == false && Programacion.isSelected() == false)
-                y = JOptionPane.showConfirmDialog(this, "MASSIVE ERROR!!", "OH MY GOSH!", JOptionPane.OK_CANCEL_OPTION);
+            YesYouCan();
         }
             catch (java.lang.NumberFormatException e)
                     {
@@ -337,7 +337,10 @@ public class NewGame extends javax.swing.JFrame {
             {
                     int x = JOptionPane.showConfirmDialog(this, "Unsopported number!", "OH MY GOSH!", JOptionPane.OK_CANCEL_OPTION);
             }
-        System.out.println( DictionarySelect.getElements() );
+        catch(ButtonException Be)
+        {
+            int x = JOptionPane.showConfirmDialog(this, "whats wrong with you!!!", "OH MY GOSH!", JOptionPane.OK_CANCEL_OPTION );
+        }
     }//GEN-LAST:event_CreateMouseClicked
 
     private void CGeneralActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CGeneralActionPerformed
@@ -354,6 +357,14 @@ public class NewGame extends javax.swing.JFrame {
             if (Horizontal < 1 || Vertical < 1)
                 throw new UnderNumberException("Numero menor a 1");
     }
+    
+    public void YesYouCan() throws ButtonException
+            {
+                            if (CGeneral.isSelected() == false && Adjetivos.isSelected() == false && Biologia.isSelected() == false && Programacion.isSelected() == false)
+                                throw new ButtonException("No Todos los botones elegidos");
+                            if(Normal.isSelected() == false && Cascada.isSelected() == false)
+                                throw new ButtonException("No Todos los botones elegidos");
+            }
     /**
      * @param args the command line arguments
      */
@@ -430,6 +441,13 @@ public class NewGame extends javax.swing.JFrame {
     private static class UnderNumberException extends Exception {
 
         public UnderNumberException(String Mensaje) {
+            super(Mensaje);
+        }
+    }
+
+    private static class ButtonException extends Exception {
+
+        public ButtonException(String Mensaje) {
             super(Mensaje);
         }
     }
