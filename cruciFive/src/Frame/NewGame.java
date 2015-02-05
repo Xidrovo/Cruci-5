@@ -234,6 +234,11 @@ public class NewGame extends javax.swing.JFrame {
         AutoGen.setFont(new java.awt.Font("Earth", 1, 18)); // NOI18N
         AutoGen.setText("Auto mother fucker gen!");
         AutoGen.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        AutoGen.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                AutoGenMouseClicked(evt);
+            }
+        });
         AutoGen.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 AutoGenActionPerformed(evt);
@@ -346,6 +351,32 @@ public class NewGame extends javax.swing.JFrame {
     private void CGeneralActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CGeneralActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_CGeneralActionPerformed
+
+    private void AutoGenMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AutoGenMouseClicked
+        // TODO add your handling code here:
+            int y;
+        try
+        {
+            CanDoIt();
+            YesYouCan();
+        }
+            catch (java.lang.NumberFormatException e)
+                    {
+                    int x = JOptionPane.showConfirmDialog(this, "MASSIVE ERROR!!", "OH MY GOSH!", JOptionPane.OK_CANCEL_OPTION);
+                    }
+            catch(OverNumberException OnE)
+            {
+                    int x = JOptionPane.showConfirmDialog(this, "Unsupported number!", "OH MY GOSH!", JOptionPane.OK_CANCEL_OPTION);
+            }
+            catch(UnderNumberException UnE)
+            {
+                    int x = JOptionPane.showConfirmDialog(this, "Unsopported number!", "OH MY GOSH!", JOptionPane.OK_CANCEL_OPTION);
+            }
+        catch(ButtonException Be)
+        {
+            int x = JOptionPane.showConfirmDialog(this, "whats wrong with you!!!", "OH MY GOSH!", JOptionPane.OK_CANCEL_OPTION );
+        }
+    }//GEN-LAST:event_AutoGenMouseClicked
 
     public void CanDoIt() throws java.lang.NumberFormatException, OverNumberException, UnderNumberException
     {
