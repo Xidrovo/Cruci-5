@@ -5,6 +5,7 @@
  */
 package Frame;
 
+import javax.swing.ButtonModel;
 import javax.swing.JOptionPane;
 
 /**
@@ -30,7 +31,7 @@ public class NewGame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        DiccionaryGroup = new javax.swing.ButtonGroup();
+        DictionarySelect = new javax.swing.ButtonGroup();
         CrucigramClass = new javax.swing.ButtonGroup();
         Everything = new javax.swing.JPanel();
         MiddleLeft = new javax.swing.JPanel();
@@ -90,22 +91,27 @@ public class NewGame extends javax.swing.JFrame {
 
         DiccionariosLay.setLayout(new java.awt.GridLayout(4, 3, 0, 20));
 
-        DiccionaryGroup.add(CGeneral);
+        DictionarySelect.add(CGeneral);
         CGeneral.setText("General Culture");
         CGeneral.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        CGeneral.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CGeneralActionPerformed(evt);
+            }
+        });
         DiccionariosLay.add(CGeneral);
 
-        DiccionaryGroup.add(Adjetivos);
+        DictionarySelect.add(Adjetivos);
         Adjetivos.setText("Adjetives");
         Adjetivos.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         DiccionariosLay.add(Adjetivos);
 
-        DiccionaryGroup.add(Biologia);
+        DictionarySelect.add(Biologia);
         Biologia.setText("Biology");
         Biologia.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         DiccionariosLay.add(Biologia);
 
-        DiccionaryGroup.add(Programacion);
+        DictionarySelect.add(Programacion);
         Programacion.setText("Programation");
         Programacion.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         Programacion.addActionListener(new java.awt.event.ActionListener() {
@@ -312,9 +318,12 @@ public class NewGame extends javax.swing.JFrame {
 
     private void CreateMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CreateMouseClicked
         // TODO add your handling code here:
+        int y;
         try
         {
             CanDoIt();
+            if (CGeneral.isSelected() == false && Adjetivos.isSelected() == false && Biologia.isSelected() == false && Programacion.isSelected() == false)
+                y = JOptionPane.showConfirmDialog(this, "MASSIVE ERROR!!", "OH MY GOSH!", JOptionPane.OK_CANCEL_OPTION);
         }
             catch (java.lang.NumberFormatException e)
                     {
@@ -328,7 +337,12 @@ public class NewGame extends javax.swing.JFrame {
             {
                     int x = JOptionPane.showConfirmDialog(this, "Unsopported number!", "OH MY GOSH!", JOptionPane.OK_CANCEL_OPTION);
             }
+        System.out.println( DictionarySelect.getElements() );
     }//GEN-LAST:event_CreateMouseClicked
+
+    private void CGeneralActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CGeneralActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_CGeneralActionPerformed
 
     public void CanDoIt() throws java.lang.NumberFormatException, OverNumberException, UnderNumberException
     {
@@ -389,7 +403,7 @@ public class NewGame extends javax.swing.JFrame {
     private javax.swing.JPanel CruciImage;
     private javax.swing.ButtonGroup CrucigramClass;
     private javax.swing.JPanel DiccionariosLay;
-    private javax.swing.ButtonGroup DiccionaryGroup;
+    private javax.swing.ButtonGroup DictionarySelect;
     private javax.swing.JPanel Everything;
     private java.awt.Label Horizontal;
     private java.awt.TextField HorizontalText;

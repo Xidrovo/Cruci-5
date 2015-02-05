@@ -2,7 +2,7 @@
 
 <Form version="1.8" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <NonVisualComponents>
-    <Component class="javax.swing.ButtonGroup" name="DiccionaryGroup">
+    <Component class="javax.swing.ButtonGroup" name="DictionarySelect">
     </Component>
     <Component class="javax.swing.ButtonGroup" name="CrucigramClass">
     </Component>
@@ -164,16 +164,19 @@
                 <Component class="javax.swing.JRadioButton" name="CGeneral">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="DiccionaryGroup"/>
+                      <ComponentRef name="DictionarySelect"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="General Culture"/>
                     <Property name="horizontalAlignment" type="int" value="0"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CGeneralActionPerformed"/>
+                  </Events>
                 </Component>
                 <Component class="javax.swing.JRadioButton" name="Adjetivos">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="DiccionaryGroup"/>
+                      <ComponentRef name="DictionarySelect"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Adjetives"/>
                     <Property name="horizontalAlignment" type="int" value="0"/>
@@ -182,7 +185,7 @@
                 <Component class="javax.swing.JRadioButton" name="Biologia">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="DiccionaryGroup"/>
+                      <ComponentRef name="DictionarySelect"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Biology"/>
                     <Property name="horizontalAlignment" type="int" value="0"/>
@@ -191,7 +194,7 @@
                 <Component class="javax.swing.JRadioButton" name="Programacion">
                   <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                      <ComponentRef name="DiccionaryGroup"/>
+                      <ComponentRef name="DictionarySelect"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Programation"/>
                     <Property name="horizontalAlignment" type="int" value="0"/>
