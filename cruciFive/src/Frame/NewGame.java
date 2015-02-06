@@ -14,6 +14,7 @@ import javax.swing.JOptionPane;
  */
 public class NewGame extends javax.swing.JFrame {
     private Exception ButtonException;
+    private LittleInmortal InmortalWindows = new LittleInmortal();
 
     /**
      * Creates new form NewGame
@@ -330,6 +331,10 @@ public class NewGame extends javax.swing.JFrame {
             CanDoIt();
             YesYouCan();
         }
+            catch (JaminsonException Je)
+            {
+                InmortalWindows.setVisible(true);
+            }
             catch (java.lang.NumberFormatException e)
                     {
                     int x = JOptionPane.showConfirmDialog(this, "MASSIVE ERROR!!", "OH MY GOSH!", JOptionPane.OK_CANCEL_OPTION);
@@ -360,29 +365,37 @@ public class NewGame extends javax.swing.JFrame {
             CanDoIt();
             YesYouCan();
         }
+            catch (JaminsonException Je)
+            {
+                LittleInmortal InmortalWindows = new LittleInmortal();
+                InmortalWindows.setVisible(true);
+                System.out.println("Debe salir");
+            }
             catch (java.lang.NumberFormatException e)
-                    {
+            {
                     int x = JOptionPane.showConfirmDialog(this, "MASSIVE ERROR!!", "OH MY GOSH!", JOptionPane.OK_CANCEL_OPTION);
-                    }
+            }
             catch(OverNumberException OnE)
             {
                     int x = JOptionPane.showConfirmDialog(this, "Unsupported number!", "OH MY GOSH!", JOptionPane.OK_CANCEL_OPTION);
             }
-            catch(UnderNumberException UnE)
+                catch(UnderNumberException UnE)
             {
                     int x = JOptionPane.showConfirmDialog(this, "Unsopported number!", "OH MY GOSH!", JOptionPane.OK_CANCEL_OPTION);
             }
-        catch(ButtonException Be)
-        {
-            int x = JOptionPane.showConfirmDialog(this, "whats wrong with you!!!", "OH MY GOSH!", JOptionPane.OK_CANCEL_OPTION );
-        }
+                catch(ButtonException Be)
+            {
+                    int x = JOptionPane.showConfirmDialog(this, "whats wrong with you!!!", "OH MY GOSH!", JOptionPane.OK_CANCEL_OPTION );
+            }
     }//GEN-LAST:event_AutoGenMouseClicked
 
-    public void CanDoIt() throws java.lang.NumberFormatException, OverNumberException, UnderNumberException
+    public void CanDoIt() throws java.lang.NumberFormatException, OverNumberException, UnderNumberException, JaminsonException
     {
             int Horizontal = Integer.parseInt(HorizontalText.getText());
             int Vertical = Integer.parseInt(VerticalText.getText());
             
+            if (Horizontal == 1995 || Vertical == 1995)
+                throw new JaminsonException("La Jamincepción");
             if (Horizontal >14 || Vertical > 14 || Vertical < 1)
                 throw new OverNumberException("Numero mayor a 14");
             if (Horizontal < 1 || Vertical < 1)
@@ -479,6 +492,13 @@ public class NewGame extends javax.swing.JFrame {
     private static class ButtonException extends Exception {
 
         public ButtonException(String Mensaje) {
+            super(Mensaje);
+        }
+    }
+
+    private static class JaminsonException extends Exception {
+
+        public JaminsonException(String Mensaje) {
             super(Mensaje);
         }
     }
