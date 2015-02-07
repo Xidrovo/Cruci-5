@@ -6,6 +6,7 @@
 package crucifive;
 
 import java.util.LinkedList;
+import javax.swing.JTextField;
 
 /**
  *
@@ -14,15 +15,15 @@ import java.util.LinkedList;
 public class  Tablero{
     private static int x;
     private static int y;
+    private static int tipo;
     private float score;
     private float time;
-    private LinkedList<Palabra> palabras_x;
-    private LinkedList<Palabra> palabras_y;
+    private LinkedList<PalabraT> palabras;
     private static Diccionario dictionary;
-    private static String DictionaryType;
-    
-    char tab1[][] = new char[14][14];
-    char tab2[][] = new char[14][14];
+    private static String GameType;
+    char matrizSolucion[][];
+    char matriz[][];
+   
     
     public void setHorizontal(int NumeroHorizontal)
     {
@@ -44,4 +45,21 @@ public class  Tablero{
         return y;
     }
 
+    public void setDictionary(Diccionario d)
+    {
+        dictionary=d;
+    }
+
+    
+    public void AutoGenCascada()
+    {
+        if (matrizSolucion==null)
+        {
+            matrizSolucion = new char[14][14];
+            
+            
+            
+        }
+        
+    }
 }
