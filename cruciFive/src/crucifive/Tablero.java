@@ -13,8 +13,8 @@ import javax.swing.JTextField;
  * @author fernando
  */
 public class  Tablero{
-    private static int x;
-    private static int y;
+    public static int x;
+    public static int y;
     private static int tipo;
     private float score;
     private float time;

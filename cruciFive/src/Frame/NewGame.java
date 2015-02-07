@@ -5,9 +5,9 @@
  */
 package Frame;
 
+import crucifive.Tablero;
 import javax.swing.ButtonModel;
 import javax.swing.JOptionPane;
-
 /**
  *
  * @author JorLuis
@@ -84,7 +84,7 @@ public class NewGame extends javax.swing.JFrame {
             UpperTittleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(UpperTittleLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(Tittle, javax.swing.GroupLayout.DEFAULT_SIZE, 543, Short.MAX_VALUE)
+                .addComponent(Tittle, javax.swing.GroupLayout.DEFAULT_SIZE, 547, Short.MAX_VALUE)
                 .addContainerGap())
         );
         UpperTittleLayout.setVerticalGroup(
@@ -217,11 +217,11 @@ public class NewGame extends javax.swing.JFrame {
             ClassSectionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(ClassSectionLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(CruciClass, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, ClassSectionLayout.createSequentialGroup()
-                .addContainerGap(28, Short.MAX_VALUE)
-                .addComponent(CruciImage, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(ClassSectionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(CruciClass, javax.swing.GroupLayout.PREFERRED_SIZE, 204, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(ClassSectionLayout.createSequentialGroup()
+                        .addGap(0, 17, Short.MAX_VALUE)
+                        .addComponent(CruciImage, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(0, 17, Short.MAX_VALUE))
         );
 
@@ -237,7 +237,12 @@ public class NewGame extends javax.swing.JFrame {
         });
         HorizontalVerticalPanel.add(Horizontal);
 
-        HorizontalText.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        HorizontalText.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        HorizontalText.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                HorizontalTextActionPerformed(evt);
+            }
+        });
         HorizontalVerticalPanel.add(HorizontalText);
 
         Vertical.setAlignment(java.awt.Label.CENTER);
@@ -276,7 +281,7 @@ public class NewGame extends javax.swing.JFrame {
             .addGroup(MiddleRightLayout.createSequentialGroup()
                 .addGap(54, 54, 54)
                 .addComponent(AutoGen)
-                .addContainerGap(111, Short.MAX_VALUE))
+                .addContainerGap())
         );
         MiddleRightLayout.setVerticalGroup(
             MiddleRightLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -310,7 +315,7 @@ public class NewGame extends javax.swing.JFrame {
             .addGroup(EverythingLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(MiddleRight, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -330,7 +335,16 @@ public class NewGame extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void CreateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CreateActionPerformed
-        // TODO add your handling code here:
+        
+        Tablero holi= new Tablero();
+        holi.setHorizontal(Integer.parseInt(HorizontalText.getText()));
+        holi.setVertical(Integer.parseInt(VerticalText.getText()));
+        
+        Game juego=new Game();
+           this.setVisible(false);
+           this.dispose();
+           juego.setVisible(true);
+        
     }//GEN-LAST:event_CreateActionPerformed
 
     private void AutoGenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AutoGenActionPerformed
@@ -428,6 +442,10 @@ public class NewGame extends javax.swing.JFrame {
             Vertical.setText("Number of words");
         }
     }//GEN-LAST:event_CascadaActionPerformed
+
+    private void HorizontalTextActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_HorizontalTextActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_HorizontalTextActionPerformed
 
     public void CanDoIt() throws java.lang.NumberFormatException, OverNumberException, UnderNumberException, JaminsonException
     {

@@ -6,6 +6,8 @@
 package Frame;
 
 import Atxy2k.CustomTextField.RestrictedTextField;
+import crucifive.Tablero;
+import java.awt.BorderLayout;
 import java.awt.GridLayout;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
@@ -21,8 +23,12 @@ public class Game extends javax.swing.JFrame {
      */
     private JTextField m[][];
     private  RestrictedTextField r[][];
+    private JPanel paneljuego;
     public Game() {
         initComponents();
+        Tablero holi=new Tablero();
+        crearTablero(holi.x,holi.y);
+        jPanel1.add(paneljuego);
     }
 
     /**
@@ -55,7 +61,7 @@ public class Game extends javax.swing.JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGap(0, 759, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -164,9 +170,10 @@ public class Game extends javax.swing.JFrame {
     {
          m= new JTextField[x][y];
          r= new RestrictedTextField[x][y];
-         jPanel1= new JPanel();
-         jPanel1.setLayout(new GridLayout (x,y));
-         jPanel1.setBounds(50, 50, y*27,x*27);
+          paneljuego= new JPanel();
+         paneljuego.setLayout(new GridLayout (x,y));
+         paneljuego.setBounds(50, 50, y*27,x*27);
+         
         for(int i=0;i<x; i++)
         {
             for(int j=0;j<y;j++)
@@ -178,7 +185,7 @@ public class Game extends javax.swing.JFrame {
                // m[i][j].setSize(5,10);
                 m[i][j].setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
                 m[i][j].setHorizontalAlignment(javax.swing.JTextField.CENTER);
-                jPanel1.add(m[i][j]);
+                paneljuego.add(m[i][j]);
             }
             
         }
