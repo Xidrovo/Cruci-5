@@ -12,64 +12,36 @@ import java.util.LinkedList;
  * @author fernando
  */
 public class  Tablero{
-    private int x;
-    private int y;
+    private static int x;
+    private static int y;
     private float score;
     private float time;
     private LinkedList<Palabra> palabras_x;
     private LinkedList<Palabra> palabras_y;
-    private Diccionario dictionary;
+    private static Diccionario dictionary;
+    private static String DictionaryType;
     
     char tab1[][] = new char[14][14];
     char tab2[][] = new char[14][14];
     
-    
-    public void ShowWords(Diccionario Dictionary)
+    public void setHorizontal(int NumeroHorizontal)
     {
-        //Muestra las palabras de un diccionario indicado.
-        //Creo que sólo se debería agregar con un String del nombre del diccionario.
+        x = NumeroHorizontal;
     }
     
-    public void SetWordX (Palabra palabra)
+    public void setVertical(int NumeroVertical)
     {
-        //Coloca una palabra y lo almacena en 'x'.
+        y = NumeroVertical;
     }
     
-    public void SetWordY (Palabra palabra)
+    public int getHorizontal()
     {
-        //Coloca una palabra y se lo almacena en 'y'.
-    }
-    
-    public int GetHorizontal (int x)
-    {
-        //Este método regresa la cantidad de letras horizontales colocadas.
         return x;
     }
     
-    public int GetVertical (int y)
+    public int getVertical()
     {
-        //Me recuerdan por qué coges algo en esta función... qué es que mismo hacía xD?
         return y;
     }
-    
-    public void GetScore()
-    {
-        //Muestra por pantalla el Score que está obteniendo, supongo que esta se actualiza frame by frame.
-    }
-    
-    public void GetTime()
-    {
-        //It gets the fucking time~
-    }
-    
-    public void AutoGen(Diccionario Dictionary)
-    {
-        //AutoGenera un crucigrama con las palabras de un diccionario.
-    }
-    
-    public void PrintCrucigram()
-    {
-        //It prints actual crucigram.
-    }
-    
+
 }

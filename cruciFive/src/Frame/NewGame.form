@@ -363,6 +363,9 @@
                         <Property name="text" type="java.lang.String" value="Normal"/>
                         <Property name="horizontalAlignment" type="int" value="0"/>
                       </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="NormalActionPerformed"/>
+                      </Events>
                     </Component>
                     <Component class="javax.swing.JCheckBox" name="Cascada">
                       <Properties>
@@ -372,6 +375,9 @@
                         <Property name="text" type="java.lang.String" value="Cascada"/>
                         <Property name="horizontalAlignment" type="int" value="0"/>
                       </Properties>
+                      <Events>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CascadaActionPerformed"/>
+                      </Events>
                     </Component>
                   </SubComponents>
                 </Container>
@@ -418,6 +424,9 @@
                     <Property name="name" type="java.lang.String" value="Horizontal" noResource="true"/>
                     <Property name="text" type="java.lang.String" value="Horizontal Words"/>
                   </Properties>
+                  <Events>
+                    <EventHandler event="propertyChange" listener="java.beans.PropertyChangeListener" parameters="java.beans.PropertyChangeEvent" handler="HorizontalPropertyChange"/>
+                  </Events>
                 </Component>
                 <Component class="java.awt.TextField" name="HorizontalText">
                   <Properties>

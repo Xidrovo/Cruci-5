@@ -15,6 +15,8 @@ import javax.swing.JOptionPane;
 public class NewGame extends javax.swing.JFrame {
     private Exception ButtonException;
     private LittleInmortal InmortalWindows = new LittleInmortal();
+    final int _NumMax = 14;
+    final int _NumMin = 6;
 
     /**
      * Creates new form NewGame
@@ -22,6 +24,7 @@ public class NewGame extends javax.swing.JFrame {
     public NewGame() {
         initComponents();
         setLocationRelativeTo(null);
+        Normal.setSelected(true);
     }
 
     /**
@@ -173,11 +176,21 @@ public class NewGame extends javax.swing.JFrame {
         CrucigramClass.add(Normal);
         Normal.setText("Normal");
         Normal.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Normal.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                NormalActionPerformed(evt);
+            }
+        });
         CruciClass.add(Normal);
 
         CrucigramClass.add(Cascada);
         Cascada.setText("Cascada");
         Cascada.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Cascada.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CascadaActionPerformed(evt);
+            }
+        });
         CruciClass.add(Cascada);
 
         CruciImage.setLayout(new java.awt.GridLayout(2, 1, 0, 50));
@@ -217,6 +230,11 @@ public class NewGame extends javax.swing.JFrame {
         Horizontal.setAlignment(java.awt.Label.CENTER);
         Horizontal.setName("Horizontal"); // NOI18N
         Horizontal.setText("Horizontal Words");
+        Horizontal.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
+            public void propertyChange(java.beans.PropertyChangeEvent evt) {
+                HorizontalPropertyChange(evt);
+            }
+        });
         HorizontalVerticalPanel.add(Horizontal);
 
         HorizontalText.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
@@ -389,6 +407,28 @@ public class NewGame extends javax.swing.JFrame {
             }
     }//GEN-LAST:event_AutoGenMouseClicked
 
+    private void NormalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_NormalActionPerformed
+        // TODO add your handling code here:        
+        if (Normal.isSelected() )
+        {
+            Horizontal.setText("Number of row");
+            Vertical.setText("Number of Column");
+        }
+    }//GEN-LAST:event_NormalActionPerformed
+
+    private void HorizontalPropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_HorizontalPropertyChange
+        // TODO add your handling code here:
+    }//GEN-LAST:event_HorizontalPropertyChange
+
+    private void CascadaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CascadaActionPerformed
+        // TODO add your handling code here:
+        if (Cascada.isSelected() )
+        {
+            Horizontal.setText("Number of words");
+            Vertical.setText("Number of words");
+        }
+    }//GEN-LAST:event_CascadaActionPerformed
+
     public void CanDoIt() throws java.lang.NumberFormatException, OverNumberException, UnderNumberException, JaminsonException
     {
             int Horizontal = Integer.parseInt(HorizontalText.getText());
@@ -396,9 +436,9 @@ public class NewGame extends javax.swing.JFrame {
             
             if (Horizontal == 1995 || Vertical == 1995)
                 throw new JaminsonException("La Jamincepción");
-            if (Horizontal >14 || Vertical > 14 || Vertical < 1)
+            if (Horizontal >_NumMax || Vertical > _NumMax || Vertical < _NumMin)
                 throw new OverNumberException("Numero mayor a 14");
-            if (Horizontal < 1 || Vertical < 1)
+            if (Horizontal < _NumMin || Vertical < _NumMin)
                 throw new UnderNumberException("Numero menor a 1");
     }
     
