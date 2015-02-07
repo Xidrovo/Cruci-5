@@ -281,7 +281,7 @@ public class NewGame extends javax.swing.JFrame {
             .addGroup(MiddleRightLayout.createSequentialGroup()
                 .addGap(54, 54, 54)
                 .addComponent(AutoGen)
-                .addContainerGap())
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         MiddleRightLayout.setVerticalGroup(
             MiddleRightLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -315,7 +315,7 @@ public class NewGame extends javax.swing.JFrame {
             .addGroup(EverythingLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(MiddleRight, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -336,15 +336,6 @@ public class NewGame extends javax.swing.JFrame {
 
     private void CreateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CreateActionPerformed
         
-        Tablero holi= new Tablero();
-        holi.setHorizontal(Integer.parseInt(HorizontalText.getText()));
-        holi.setVertical(Integer.parseInt(VerticalText.getText()));
-        
-        Game juego=new Game();
-           this.setVisible(false);
-           this.dispose();
-           juego.setVisible(true);
-        
     }//GEN-LAST:event_CreateActionPerformed
 
     private void AutoGenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AutoGenActionPerformed
@@ -361,7 +352,15 @@ public class NewGame extends javax.swing.JFrame {
         try
         {
             CanDoIt();
-            YesYouCan();
+            YesYouCan();                    
+            Tablero holi= new Tablero();
+            holi.setHorizontal(Integer.parseInt(HorizontalText.getText()));
+            holi.setVertical(Integer.parseInt(VerticalText.getText()));
+
+            Game juego=new Game();
+               this.setVisible(false);
+               this.dispose();
+               juego.setVisible(true);
         }
             catch (JaminsonException Je)
             {

@@ -8,6 +8,7 @@ package Frame;
 import Atxy2k.CustomTextField.RestrictedTextField;
 import crucifive.Tablero;
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.GridLayout;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
@@ -172,6 +173,7 @@ public class Game extends javax.swing.JFrame {
          r= new RestrictedTextField[x][y];
           paneljuego= new JPanel();
          paneljuego.setLayout(new GridLayout (x,y));
+         paneljuego.setBackground(Color.red);
          paneljuego.setBounds(50, 50, y*27,x*27);
          
         for(int i=0;i<x; i++)
