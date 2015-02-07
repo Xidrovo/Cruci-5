@@ -18,6 +18,7 @@ public class LittleInmortal extends javax.swing.JFrame {
      */
     public LittleInmortal() {
         initComponents();
+        setLocationRelativeTo(null);
 
     }
 

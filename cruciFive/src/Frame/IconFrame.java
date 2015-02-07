@@ -8,14 +8,14 @@ package Frame;
 import java.applet.AudioClip;
 import javax.swing.ImageIcon;
 
-/**
- *
- * @author fernando
+ /*
+ * @author Jorge,Xavier, Julio
  */
 public class IconFrame extends javax.swing.JFrame {
 
     /**
-     * Creates new form IconFrame
+     * Cre
+/**ates new form IconFrame
      */
     private AudioClip sonido;
     public IconFrame() {
