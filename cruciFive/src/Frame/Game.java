@@ -5,6 +5,11 @@
  */
 package Frame;
 
+import Atxy2k.CustomTextField.RestrictedTextField;
+import java.awt.GridLayout;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
 /**
  *
  * @author fernando
@@ -14,6 +19,8 @@ public class Game extends javax.swing.JFrame {
     /**
      * Creates new form Game
      */
+    private JTextField m[][];
+    private  RestrictedTextField r[][];
     public Game() {
         initComponents();
     }
@@ -153,6 +160,30 @@ public class Game extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
+    public void crearTablero(int x, int y)
+    {
+         m= new JTextField[x][y];
+         r= new RestrictedTextField[x][y];
+         jPanel1= new JPanel();
+         jPanel1.setLayout(new GridLayout (x,y));
+         jPanel1.setBounds(50, 50, y*27,x*27);
+        for(int i=0;i<x; i++)
+        {
+            for(int j=0;j<y;j++)
+            {
+                m[i][j]=new JTextField();
+                r[i][j] = new RestrictedTextField(m[i][j]);
+                r[i][j].setLimit(1);
+                m[i][j].setText("h");
+               // m[i][j].setSize(5,10);
+                m[i][j].setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+                m[i][j].setHorizontalAlignment(javax.swing.JTextField.CENTER);
+                jPanel1.add(m[i][j]);
+            }
+            
+        }
+        
+    }
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -199,3 +230,4 @@ public class Game extends javax.swing.JFrame {
     private javax.swing.JTextArea jTextArea1;
     // End of variables declaration//GEN-END:variables
 }
+
