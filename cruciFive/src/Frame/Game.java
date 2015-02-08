@@ -32,6 +32,7 @@ public class Game extends javax.swing.JFrame {
     private JTextField m[][];
     private  RestrictedTextField r[][];
     private JPanel paneljuego;
+    
     public Game() {
         initComponents();
         imprimirTextArea();
@@ -112,6 +113,11 @@ public class Game extends javax.swing.JFrame {
         Botones.setLayout(BotonesLayout);
 
         AddWord.setText("¡new Word!");
+        AddWord.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                AddWordMouseClicked(evt);
+            }
+        });
         AddWord.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 AddWordActionPerformed(evt);
@@ -179,6 +185,12 @@ public class Game extends javax.swing.JFrame {
     private void AddWordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AddWordActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_AddWordActionPerformed
+
+    private void AddWordMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AddWordMouseClicked
+        // TODO add your handling code here:
+        AddWord nuevoJuego = new AddWord();
+        nuevoJuego.setVisible(true);
+    }//GEN-LAST:event_AddWordMouseClicked
 
     /**
      * @param args the command line arguments

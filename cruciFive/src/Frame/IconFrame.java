@@ -80,6 +80,11 @@ public class IconFrame extends javax.swing.JFrame {
         newGame.setText("New game");
         newGame.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         newGame.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        newGame.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                newGameMouseClicked(evt);
+            }
+        });
         newGame.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 newGameActionPerformed(evt);
@@ -196,6 +201,10 @@ public class IconFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
         System.exit(0);
     }//GEN-LAST:event_exitMouseClicked
+
+    private void newGameMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_newGameMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_newGameMouseClicked
 
     private boolean continueEnable()
     {
