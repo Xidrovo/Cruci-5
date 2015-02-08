@@ -5,7 +5,9 @@
  */
 package crucifive;
 
+import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.Random;
 
 /**
  *
@@ -20,7 +22,7 @@ public class Diccionario {
     
     public void AddWord(Palabra Word)
     {
-        //This Method will add a word on the Dictionary.
+        words.add(Word);
     }
     
     public void ViewDictionariesList()
@@ -33,10 +35,19 @@ public class Diccionario {
         //This Method will show all the word of an Specific Dictionary.
     }
     
-    public String GetWord()
+    public Palabra GetWord()    //me devuelve una palabra aleatoria del diccionario
     {
-        //This Method will return a word of the Dictionary's words.
-        //Esto es una prueba 
-        return "Hello Word";
+        Iterator <Palabra> i  = words.iterator();
+        int c=0, d;
+        Random rnd = new Random();
+        
+        while(i.hasNext())
+        {
+            i.next();
+            c++;
+        }
+        d=rnd.nextInt(c);
+        
+        return words.get(d);
     }
 }

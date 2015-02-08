@@ -27,10 +27,32 @@ public class Palabra {
         this.word = Word;
         this.wordLong = Word.length();
     }
-    
-    public int GetLong()
-    {
+
+    public String getWord() {
+        return word;
+    }
+
+    public void setWord(String word) {
+        this.word = word;
+    }
+
+    public String getPista() {
+        return pista;
+    }
+
+    public void setPista(String pista) {
+        this.pista = pista;
+    }
+
+    public int getWordLong() {
         return wordLong;
     }
+
+    public void setWordLong(int wordLong) {
+        this.wordLong = wordLong;
+    }
+
+    
+    
 
 }
