@@ -9,21 +9,36 @@ package crucifive;
  *
  * @author JorLuis
  */
-public class PalabraT extends Palabra{
+public class PalabraT
+{
     
     private boolean orientacion;      //  true para horizontal, false vertical
-    private int posicioni[] = new int[2];    //aqui ira la posicion en el tablero de la palabra
-    private int posicionf[] = new int[2];
+    private int[] posicioni;     //la posicion en el tablero de la palabra
+    private int[] posicionf;
+    private Palabra word;
 
-    
-    
-    public PalabraT(boolean orientacion) {
+    public PalabraT(boolean orientacion, Palabra word, int posx, int posy) {
         this.orientacion = orientacion;
+        this.word = word;
+        posicioni=new int[2];
+        posicionf=new int[2];
+        posicioni[0]=posx;
+        posicioni[1]=posy;
+        if(orientacion)
+        {
+            posicionf[0]=posx;
+            posicionf[1]=posy+word.wordLong;
+        }
+        else
+        {
+           {
+            posicionf[0]=posx+word.wordLong;
+            posicionf[1]=posy;
+        } 
+        }
     }
 
-    public PalabraT(String Word, String Pista, boolean orientacion) {
-        super(Word, Pista);
-        this.orientacion = orientacion;
+    public PalabraT() {
     }
 
     public boolean isOrientacion() {
@@ -49,6 +64,18 @@ public class PalabraT extends Palabra{
     public void setPosicionf(int[] posicionf) {
         this.posicionf = posicionf;
     }
+
+    public Palabra getWord() {
+        return word;
+    }
+
+    public void setWord(Palabra word) {
+        this.word = word;
+    }
+
+    
+    
+
     
     
 }
