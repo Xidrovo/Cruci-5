@@ -5,6 +5,7 @@
  */
 package Frame;
 
+import crucifive.Tablero;
 import java.applet.AudioClip;
 import java.io.File;
 import javax.swing.ImageIcon;
@@ -163,6 +164,7 @@ public class IconFrame extends javax.swing.JFrame {
 
     private void ContinueActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ContinueActionPerformed
         // TODO add your handling code here:
+        Tablero t = new Tablero();
         Game LinkToGame = new Game();
         LinkToGame.setVisible(true);
         sonido.stop();

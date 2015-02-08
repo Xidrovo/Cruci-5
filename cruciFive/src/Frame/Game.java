@@ -37,7 +37,7 @@ public class Game extends javax.swing.JFrame {
         imprimirTextArea();
         TituloDiccionario.setText( Dictionary.getName() );
         Tablero holi=new Tablero();
-        crearTablero(holi.x,holi.y);
+        crearTablero(14,14);
         jPanel1.add(paneljuego);
     }
 
@@ -187,10 +187,22 @@ public class Game extends javax.swing.JFrame {
     {
          m= new JTextField[x][y];
          r= new RestrictedTextField[x][y];
-          paneljuego= new JPanel();
+         paneljuego= new JPanel();
          paneljuego.setLayout(new GridLayout (x,y));
          paneljuego.setBackground(Color.red);
          paneljuego.setBounds(50, 50, y*27,x*27);
+         
+         Tablero holi = new Tablero();
+         holi.matrizSolucion = new char[14][14];
+            for(int i = 0; i<14; i++)
+            {
+                for(int j = 0; j<14; j++)
+                {
+                    holi.matrizSolucion[i][j]='0';
+                }
+            }
+
+        //holi.AutoGenCascada();
          
         for(int i=0;i<x; i++)
         {
@@ -199,7 +211,7 @@ public class Game extends javax.swing.JFrame {
                 m[i][j]=new JTextField();
                 r[i][j] = new RestrictedTextField(m[i][j]);
                 r[i][j].setLimit(1);
-                m[i][j].setText("h");
+                m[i][j].setText("0");
                // m[i][j].setSize(5,10);
                 m[i][j].setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
                 m[i][j].setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -247,6 +259,7 @@ public class Game extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
+                Tablero t = new Tablero();
                 new Game().setVisible(true);
             }
         });

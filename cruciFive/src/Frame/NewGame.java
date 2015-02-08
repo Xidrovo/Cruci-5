@@ -12,6 +12,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.util.HashMap;
+import java.util.LinkedList;
 import javax.swing.ButtonModel;
 import javax.swing.JOptionPane;
 /**
@@ -95,7 +96,7 @@ public class NewGame extends javax.swing.JFrame {
             UpperTittleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(UpperTittleLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(Tittle, javax.swing.GroupLayout.DEFAULT_SIZE, 547, Short.MAX_VALUE)
+                .addComponent(Tittle, javax.swing.GroupLayout.DEFAULT_SIZE, 555, Short.MAX_VALUE)
                 .addContainerGap())
         );
         UpperTittleLayout.setVerticalGroup(
@@ -366,9 +367,12 @@ public class NewGame extends javax.swing.JFrame {
             YesYouCan();
             putDictionaryName();
             readingDictionary();
-            Tablero holi= new Tablero();
-            holi.setHorizontal(Integer.parseInt(HorizontalText.getText()));
-            holi.setVertical(Integer.parseInt(VerticalText.getText()));
+            Tablero holi = new Tablero();
+            holi.h=Integer.parseInt(HorizontalText.getText());
+            holi.v=Integer.parseInt(VerticalText.getText());
+            holi.setDictionary(Dictionary);
+            
+
 
             Game juego=new Game();
                this.setVisible(false);
@@ -403,13 +407,26 @@ public class NewGame extends javax.swing.JFrame {
 
     private void AutoGenMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AutoGenMouseClicked
         // TODO add your handling code here:
-            int y;
+        int y;
         try
         {
             CanDoIt();
             YesYouCan();
             putDictionaryName();
             readingDictionary();
+            Tablero holi = new Tablero();
+            holi.setPalabras(new LinkedList());
+            holi.setPalabras1(new LinkedList());
+            holi.setDictionary(Dictionary);
+            holi.h=Integer.parseInt(HorizontalText.getText());
+            holi.v=Integer.parseInt(VerticalText.getText());
+            holi.AutoGenCascada();
+            
+            Game juego=new Game();
+               this.setVisible(false);
+               juego.setVisible(true);
+               this.dispose();
+               
         }
             catch (JaminsonException Je)
             {
