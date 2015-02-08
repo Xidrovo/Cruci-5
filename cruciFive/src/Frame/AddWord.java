@@ -27,6 +27,8 @@ public class AddWord extends javax.swing.JFrame {
     /**
      * Creates new form AddWord
      */
+    
+    private         File Archivo = new File("Files/GeneralCulture.txt");
     public AddWord() {
         initComponents();
         
@@ -196,13 +198,14 @@ public class AddWord extends javax.swing.JFrame {
 
     private void AddWordMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AddWordMouseClicked
         // TODO add your handling code here:
-        
+ 
+        System.out.println(Archivo.getAbsolutePath());
+        System.out.println(Archivo.getName() );
+
         try{
-           InputStream input = new FileInputStream("./GeneralCulture.txt");
-           System.out.println(input.toString());
-           File Archivo = new File(input.toString()); 
-        
-        FileReader fr = new FileReader(Archivo);
+        File probarEsto = Archivo.getAbsoluteFile();
+            
+        FileReader fr = new FileReader("Files/GeneralCulture.txt");
         BufferedReader Br = new BufferedReader(fr);
         System.out.println( Br.readLine() );
         

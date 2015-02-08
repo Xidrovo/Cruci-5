@@ -6,10 +6,14 @@
 package Frame;
 
 import Atxy2k.CustomTextField.RestrictedTextField;
+import crucifive.Diccionario;
+import crucifive.Palabra;
 import crucifive.Tablero;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.GridLayout;
+import java.util.Iterator;
+import java.util.LinkedList;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
@@ -19,6 +23,7 @@ import javax.swing.JTextField;
  */
 public class Game extends javax.swing.JFrame {
 
+    private Diccionario Dictionary = new Diccionario();
     /**
      * Creates new form Game
      */
@@ -27,6 +32,7 @@ public class Game extends javax.swing.JFrame {
     private JPanel paneljuego;
     public Game() {
         initComponents();
+        TituloDiccionario.setText( Dictionary.getName() );
         Tablero holi=new Tablero();
         crearTablero(holi.x,holi.y);
         jPanel1.add(paneljuego);
@@ -44,7 +50,7 @@ public class Game extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         TituloDiccionario = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        palabrasArea = new javax.swing.JTextArea();
         Filtro = new javax.swing.JTextField();
         Pistas = new javax.swing.JPanel();
         PistaField = new javax.swing.JTextField();
@@ -75,12 +81,11 @@ public class Game extends javax.swing.JFrame {
         TituloDiccionario.setText("Aquí Diccionario");
         TituloDiccionario.setEnabled(false);
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jScrollPane1.setViewportView(jTextArea1);
+        palabrasArea.setColumns(20);
+        palabrasArea.setRows(5);
+        jScrollPane1.setViewportView(palabrasArea);
 
         Filtro.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        Filtro.setText("Aquí va el filtro");
 
         PistaField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         PistaField.setText("(Aquí va la pista)");
@@ -201,6 +206,7 @@ public class Game extends javax.swing.JFrame {
         }
         
     }
+
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -245,7 +251,7 @@ public class Game extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextArea palabrasArea;
     // End of variables declaration//GEN-END:variables
 }
 

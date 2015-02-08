@@ -15,28 +15,27 @@ public class Diccionario {
     //Aquí un pequeño cambio, en el escrito habíamos puesto un "Array" de clase "Palabra"
     //Ahora hay una lista vinculada que guarda palabras.
     
-    private LinkedList<Palabra> words;
-    private String name;
+    private static LinkedList<Palabra> words;
+    private static String name;
     
-    public void AddWord(Palabra Word)
+    public void setName(String name)
     {
-        //This Method will add a word on the Dictionary.
+        this.name = name;
     }
     
-    public void ViewDictionariesList()
+    public String getName()
     {
-        //This Method will show to the user all the Dictionaries.
+        return name;
     }
-    
-    public void ViewDictionary(String DictionaryName)
-    {
-        //This Method will show all the word of an Specific Dictionary.
+    public void putWord(Palabra word)
+    {       
+        if (words == null)
+            words = new LinkedList();
+        
+        words.add(word);        
     }
-    
-    public String GetWord()
+    public  LinkedList<Palabra> getWordsList()
     {
-        //This Method will return a word of the Dictionary's words.
-        //Esto es una prueba 
-        return "Hello Word";
+        return words;
     }
 }

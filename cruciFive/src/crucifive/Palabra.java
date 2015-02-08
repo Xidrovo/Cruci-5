@@ -32,5 +32,15 @@ public class Palabra {
     {
         return wordLong;
     }
+    
+    public String getWord()
+    {
+        return word;
+    }
+    
+    public String getPista()
+    {
+        return pista;
+    }
 
 }

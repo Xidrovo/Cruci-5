@@ -5,7 +5,13 @@
  */
 package Frame;
 
+import crucifive.Diccionario;
+import crucifive.Palabra;
 import crucifive.Tablero;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.util.HashMap;
 import javax.swing.ButtonModel;
 import javax.swing.JOptionPane;
 /**
@@ -17,7 +23,8 @@ public class NewGame extends javax.swing.JFrame {
     private LittleInmortal InmortalWindows = new LittleInmortal();
     final int _NumMax = 14;
     final int _NumMin = 6;
-
+    private HashMap< String, String > nombresDiccionario = new HashMap();
+    private Diccionario Dictionary = new Diccionario();
     /**
      * Creates new form NewGame
      */
@@ -25,6 +32,10 @@ public class NewGame extends javax.swing.JFrame {
         initComponents();
         setLocationRelativeTo(null);
         Normal.setSelected(true);
+        nombresDiccionario.put("GC", "GeneralCulture");
+        nombresDiccionario.put("Ad", "Adjetives");
+        nombresDiccionario.put("Bio", "Biology");
+        nombresDiccionario.put("Pro", "Programation");
     }
 
     /**
@@ -352,7 +363,9 @@ public class NewGame extends javax.swing.JFrame {
         try
         {
             CanDoIt();
-            YesYouCan();                    
+            YesYouCan();
+            putDictionaryName();
+            readingDictionary();
             Tablero holi= new Tablero();
             holi.setHorizontal(Integer.parseInt(HorizontalText.getText()));
             holi.setVertical(Integer.parseInt(VerticalText.getText()));
@@ -395,6 +408,8 @@ public class NewGame extends javax.swing.JFrame {
         {
             CanDoIt();
             YesYouCan();
+            putDictionaryName();
+            readingDictionary();
         }
             catch (JaminsonException Je)
             {
@@ -466,6 +481,44 @@ public class NewGame extends javax.swing.JFrame {
                             if(Normal.isSelected() == false && Cascada.isSelected() == false)
                                 throw new ButtonException("No Todos los botones elegidos");
             }
+    
+    public void putDictionaryName()
+    {
+        Diccionario Dictionary = new Diccionario();
+        if( CGeneral.isSelected() )
+            Dictionary.setName(nombresDiccionario.get("GC"));
+        else if ( Adjetivos.isSelected() )
+            Dictionary.setName(nombresDiccionario.get("Ad"));
+        else if ( Biologia.isSelected() )
+            Dictionary.setName(nombresDiccionario.get("Bio"));
+        else if ( Programacion.isSelected() )
+            Dictionary.setName(nombresDiccionario.get("Pro"));
+    }
+    
+    public void readingDictionary()
+    {
+        Diccionario Dictionary = new Diccionario();
+        Palabra word;
+        String palabra;
+        String pista;
+        String nombreFile = Dictionary.getName() + ".txt";
+        File file = new File(nombreFile);
+        try{
+        FileReader Fr = new FileReader(file);
+        BufferedReader Br = new BufferedReader (Fr);
+        while ( (palabra = Br.readLine() ) != null)
+            {
+                pista = Br.readLine();
+                word = new Palabra(palabra, pista);
+                
+                Dictionary.putWord(word);
+            }
+        }
+        catch(Exception ex)
+        {
+            System.out.println(ex.getMessage());
+        }
+    }
     /**
      * @param args the command line arguments
      */
