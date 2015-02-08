@@ -6,6 +6,7 @@
 package Frame;
 
 import java.applet.AudioClip;
+import java.io.File;
 import javax.swing.ImageIcon;
 
  /*
@@ -20,6 +21,8 @@ public class IconFrame extends javax.swing.JFrame {
     private AudioClip sonido;
     public IconFrame() {
         initComponents();
+        Continue.setEnabled( continueEnable() );
+        
         setLocationRelativeTo(null);
         setTitle("Main Menu");
         try{
@@ -192,6 +195,15 @@ public class IconFrame extends javax.swing.JFrame {
         System.exit(0);
     }//GEN-LAST:event_exitMouseClicked
 
+    private boolean continueEnable()
+    {
+        File archivo = new File("SaveState.txt");
+        
+        if (archivo.length() == 0)
+            return false;
+        else
+            return true;
+    }
     /**
      * @param args the command line arguments
      */

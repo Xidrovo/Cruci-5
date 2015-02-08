@@ -24,6 +24,8 @@ import javax.swing.JTextField;
 public class Game extends javax.swing.JFrame {
 
     private Diccionario Dictionary = new Diccionario();
+    private LinkedList<Palabra> listaPalabra = Dictionary.getWordsList();
+    private Iterator <Palabra> iterador = listaPalabra.iterator();
     /**
      * Creates new form Game
      */
@@ -32,6 +34,7 @@ public class Game extends javax.swing.JFrame {
     private JPanel paneljuego;
     public Game() {
         initComponents();
+        imprimirTextArea();
         TituloDiccionario.setText( Dictionary.getName() );
         Tablero holi=new Tablero();
         crearTablero(holi.x,holi.y);
@@ -205,6 +208,16 @@ public class Game extends javax.swing.JFrame {
             
         }
         
+    }
+    
+    public void imprimirTextArea()
+    {
+        while (iterador.hasNext() )
+        {
+            Palabra palabra = iterador.next();
+            palabrasArea.append( palabra.getWord() );
+            palabrasArea.append("\n");
+        }
     }
 
     public static void main(String args[]) {
