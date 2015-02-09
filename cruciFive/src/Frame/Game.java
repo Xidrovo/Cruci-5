@@ -16,6 +16,8 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
+import javax.swing.event.DocumentEvent;
+import javax.swing.event.DocumentListener;
 
 /**
  *
@@ -37,6 +39,7 @@ public class Game extends javax.swing.JFrame {
         initComponents();
         setResizable(false);
         imprimirTextArea();
+        filtrarPalabras();
         TituloDiccionario.setText( Dictionary.getName() );
         Tablero holi=new Tablero();
         crearTablero(14,14);
@@ -92,6 +95,16 @@ public class Game extends javax.swing.JFrame {
         jScrollPane1.setViewportView(palabrasArea);
 
         Filtro.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        Filtro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FiltroActionPerformed(evt);
+            }
+        });
+        Filtro.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                FiltroKeyTyped(evt);
+            }
+        });
 
         PistaField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         PistaField.setText("(Aquí va la pista)");
@@ -194,6 +207,16 @@ public class Game extends javax.swing.JFrame {
         nuevoJuego.setVisible(true);
     }//GEN-LAST:event_AddWordMouseClicked
 
+    private void FiltroKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_FiltroKeyTyped
+
+    }//GEN-LAST:event_FiltroKeyTyped
+
+    private void FiltroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FiltroActionPerformed
+        // TODO add your handling code here:
+     
+                
+    }//GEN-LAST:event_FiltroActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -235,6 +258,40 @@ public class Game extends javax.swing.JFrame {
         }
         
     }
+    public void filtrarPalabras(){
+        
+         Filtro.getDocument().addDocumentListener(new DocumentListener() {
+            @Override
+            public void insertUpdate(DocumentEvent e) {
+                filtrado();
+            }
+
+            @Override
+            public void removeUpdate(DocumentEvent e) {
+                filtrado();
+            }
+
+            @Override
+            public void changedUpdate(DocumentEvent e) {
+               filtrado();
+               }
+             private void filtrado(){
+               palabrasArea.setText("");
+               iterador = listaPalabra.iterator();
+            while (iterador.hasNext() )
+                {
+            Palabra palabra = iterador.next();
+            if("".equals(Filtro.getText())){
+            palabrasArea.append( palabra.getWord() );
+            palabrasArea.append("\n");
+            }else if(palabra.getWord().toLowerCase().startsWith(Filtro.getText().toLowerCase())){
+            palabrasArea.append( palabra.getWord() );
+            palabrasArea.append("\n");
+                     }
+                }
+            }
+         }
+    );}
     
     public void imprimirTextArea()
     {
