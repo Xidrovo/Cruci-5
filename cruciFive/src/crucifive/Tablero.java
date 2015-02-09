@@ -101,14 +101,16 @@ public class  Tablero{
         }
         
         cont1=0;
-        while((x<h || y<v) && palabras.size()<14)
+        while((x<h || y<v))
         {
             num=r.nextInt(palabras.size());
+
             pt1=palabras.get(num);
+            
             p1=pt1.getWord();
             num=r.nextInt(p1.wordLong);
             c=p1.word.charAt(num);
-            if(pt1.isOrientacion()&& x<h)
+            if(pt1.isOrientacion()&& y<v)
             {
                 d=false;
                 posx=pt1.getPosicioni()[0];
@@ -248,7 +250,7 @@ public class  Tablero{
                 }
                 
             }
-            else if (!pt1.isOrientacion()&& y<v)
+            else if (!pt1.isOrientacion()&& x<h)
             {
                 d=true;
                 posx=pt1.getPosicioni()[0];
@@ -432,11 +434,11 @@ public class  Tablero{
     public boolean comprobarpalabra(PalabraT pt)
     {
         char c, a;
-        if (x>=h && pt.isOrientacion())
+        if (x==h && pt.isOrientacion())
         {
             return false;
         }
-        else if(y>=v && !pt.isOrientacion())
+        else if(y==v && !pt.isOrientacion())
         {
             return false;
         }

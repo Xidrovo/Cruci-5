@@ -23,7 +23,7 @@ public class NewGame extends javax.swing.JFrame {
     private Exception ButtonException;
     private LittleInmortal InmortalWindows = new LittleInmortal();
     final int _NumMax = 14;
-    final int _NumMin = 6;
+    final int _NumMin = 2;
     private HashMap< String, String > nombresDiccionario = new HashMap();
     private Diccionario Dictionary = new Diccionario();
     /**
