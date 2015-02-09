@@ -5,6 +5,8 @@
  */
 package Frame;
 
+import crucifive.Diccionario;
+import crucifive.Palabra;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
@@ -15,6 +17,8 @@ import java.io.InputStream;
 import java.net.URL;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.Iterator;
+import java.util.LinkedList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -27,8 +31,10 @@ public class AddWord extends javax.swing.JFrame {
     /**
      * Creates new form AddWord
      */
+    private Diccionario Dictionary = new Diccionario();
+    private LinkedList<Palabra> listaPalabras = Dictionary.getWordsList();
+    private Iterator <Palabra> iterador = listaPalabras.iterator();
     
-    private         File Archivo = new File("Files/GeneralCulture.txt");
     public AddWord() {
         initComponents();
         
@@ -198,23 +204,6 @@ public class AddWord extends javax.swing.JFrame {
 
     private void AddWordMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AddWordMouseClicked
         // TODO add your handling code here:
- 
-        System.out.println(Archivo.getAbsolutePath());
-        System.out.println(Archivo.getName() );
-
-        try{
-        File probarEsto = Archivo.getAbsoluteFile();
-            
-        FileReader fr = new FileReader("Files/GeneralCulture.txt");
-        BufferedReader Br = new BufferedReader(fr);
-        System.out.println( Br.readLine() );
-        
-        } catch (FileNotFoundException ex) {
-            System.out.println("Hubo un error en el FileReader");
-        }
-          catch (IOException ex) {
-            System.out.println("Hubo un error en el BufferedReader");
-        }
     }//GEN-LAST:event_AddWordMouseClicked
 
     /**

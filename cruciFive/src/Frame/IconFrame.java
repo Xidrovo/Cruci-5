@@ -20,6 +20,7 @@ public class IconFrame extends javax.swing.JFrame {
 /**ates new form IconFrame
      */
     private AudioClip sonido;
+    private int Musica = 1;
     public IconFrame() {
         initComponents();
         Continue.setEnabled( continueEnable() );
@@ -58,6 +59,7 @@ public class IconFrame extends javax.swing.JFrame {
         setLocationRelativeTo(null);
         exit = new javax.swing.JButton();
         setLocationRelativeTo(null);
+        MusicIcon = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Cruci5");
@@ -126,31 +128,40 @@ public class IconFrame extends javax.swing.JFrame {
             }
         });
 
+        MusicIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Sprites/SoundIconOn.png"))); // NOI18N
+        MusicIcon.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                MusicIconMouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 1117, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(501, 501, 501)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(exit, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(aboutUs, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Options, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(newGame, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Continue, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 501, Short.MAX_VALUE)))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 1059, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(MusicIcon, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
+            .addGroup(layout.createSequentialGroup()
+                .addGap(501, 501, 501)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(exit, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(aboutUs, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Options, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(newGame, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Continue, javax.swing.GroupLayout.PREFERRED_SIZE, 125, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(515, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(MusicIcon, javax.swing.GroupLayout.PREFERRED_SIZE, 52, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(30, 30, 30)
                 .addComponent(Continue)
                 .addGap(50, 50, 50)
@@ -173,6 +184,7 @@ public class IconFrame extends javax.swing.JFrame {
         Game LinkToGame = new Game();
         LinkToGame.setVisible(true);
         sonido.stop();
+        Musica = 0;
         dispose();
         
     }//GEN-LAST:event_ContinueActionPerformed
@@ -182,6 +194,7 @@ public class IconFrame extends javax.swing.JFrame {
         NewGame LinkToGame = new NewGame();
         LinkToGame.setVisible(true);
         sonido.stop();
+        Musica = 0;
         dispose();
     }//GEN-LAST:event_newGameActionPerformed
 
@@ -205,6 +218,22 @@ public class IconFrame extends javax.swing.JFrame {
     private void newGameMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_newGameMouseClicked
         // TODO add your handling code here:
     }//GEN-LAST:event_newGameMouseClicked
+
+    private void MusicIconMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MusicIconMouseClicked
+        // TODO add your handling code here:
+        if (Musica == 1)
+        {
+            sonido.stop();
+            MusicIcon.setIcon (new javax.swing.ImageIcon(getClass().getResource("/Sprites/SoundIconOff.png")) );
+            Musica = 0;
+        }
+        else
+        {
+            sonido.play();
+            MusicIcon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Sprites/SoundIconOn.png")));
+            Musica = 1;
+        }
+    }//GEN-LAST:event_MusicIconMouseClicked
 
     private boolean continueEnable()
     {
@@ -231,6 +260,7 @@ public class IconFrame extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton Continue;
+    private javax.swing.JLabel MusicIcon;
     private javax.swing.JButton Options;
     private javax.swing.JButton aboutUs;
     private javax.swing.JButton exit;
