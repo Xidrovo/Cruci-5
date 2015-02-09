@@ -23,7 +23,7 @@ public class NewGame extends javax.swing.JFrame {
     private Exception ButtonException;
     private LittleInmortal InmortalWindows = new LittleInmortal();
     final int _NumMax = 14;
-    final int _NumMin = 6;
+    final int _NumMin = 4;
     private HashMap< String, String > nombresDiccionario = new HashMap();
     private Diccionario Dictionary = new Diccionario();
     /**
@@ -77,6 +77,10 @@ public class NewGame extends javax.swing.JFrame {
         VerticalText = new java.awt.TextField();
         CreateLayout1 = new javax.swing.JPanel();
         AutoGen = new javax.swing.JButton();
+        MenuBar = new javax.swing.JMenuBar();
+        File = new javax.swing.JMenu();
+        Back = new javax.swing.JMenuItem();
+        Exit = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Diction");
@@ -331,6 +335,24 @@ public class NewGame extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        File.setText("File");
+
+        Back.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_Z, java.awt.event.InputEvent.CTRL_MASK));
+        Back.setText("Back");
+        Back.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BackActionPerformed(evt);
+            }
+        });
+        File.add(Back);
+
+        MenuBar.add(File);
+
+        Exit.setText("Edit");
+        MenuBar.add(Exit);
+
+        setJMenuBar(MenuBar);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -479,6 +501,13 @@ public class NewGame extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_HorizontalTextActionPerformed
 
+    private void BackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BackActionPerformed
+        // TODO add your handling code here:
+        IconFrame inicio = new IconFrame();
+        inicio.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_BackActionPerformed
+
     public void CanDoIt() throws java.lang.NumberFormatException, OverNumberException, UnderNumberException, JaminsonException
     {
             int Horizontal = Integer.parseInt(HorizontalText.getText());
@@ -575,6 +604,7 @@ public class NewGame extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JRadioButton Adjetivos;
     private javax.swing.JButton AutoGen;
+    private javax.swing.JMenuItem Back;
     private javax.swing.JRadioButton Biologia;
     private javax.swing.JRadioButton CGeneral;
     private javax.swing.JCheckBox Cascada;
@@ -588,9 +618,12 @@ public class NewGame extends javax.swing.JFrame {
     private javax.swing.JPanel DiccionariosLay;
     private javax.swing.ButtonGroup DictionarySelect;
     private javax.swing.JPanel Everything;
+    private javax.swing.JMenu Exit;
+    private javax.swing.JMenu File;
     private java.awt.Label Horizontal;
     private java.awt.TextField HorizontalText;
     private javax.swing.JPanel HorizontalVerticalPanel;
+    private javax.swing.JMenuBar MenuBar;
     private javax.swing.JPanel MiddleLeft;
     private javax.swing.JPanel MiddleRight;
     private javax.swing.JCheckBox Normal;

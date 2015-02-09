@@ -101,7 +101,7 @@ public class  Tablero{
         }
         
         cont1=0;
-        while((x<h || y<v) && palabras.size()<14)
+        while( (x < h) || (y < v) )
         {
             num=r.nextInt(palabras.size());
             pt1=palabras.get(num);
