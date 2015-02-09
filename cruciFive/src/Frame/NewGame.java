@@ -400,7 +400,7 @@ public class NewGame extends javax.swing.JFrame {
             
 
 
-            Game juego=new Game();
+            Game juego= new Game();
                this.setVisible(false);
                this.dispose();
                juego.setVisible(true);

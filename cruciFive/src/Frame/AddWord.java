@@ -12,6 +12,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
@@ -204,6 +205,25 @@ public class AddWord extends javax.swing.JFrame {
 
     private void AddWordMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AddWordMouseClicked
         // TODO add your handling code here:
+        File file = new File(Dictionary.getName() + ".txt");
+        Palabra palabra = new Palabra();
+        palabra.setPista(MoreClueSection.getText() );
+        palabra.setWord(WordAdder.getText() );
+        
+        
+        try
+        {
+            FileWriter Fw = new FileWriter(file,true);            
+            Fw.write("\r\n" + palabra.getWord() + "\r\n" + palabra.getPista() );
+            Fw.close();
+        }
+        catch(Exception ex)
+                {
+                    System.out.println("Oh my gosh, there's and error!");
+                }
+        finally{
+            this.dispose();
+        }
     }//GEN-LAST:event_AddWordMouseClicked
 
     /**

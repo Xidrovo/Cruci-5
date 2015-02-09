@@ -33,7 +33,7 @@ public class Game extends javax.swing.JFrame {
      */
     private JTextField m[][];
     private  RestrictedTextField r[][];
-    private JPanel paneljuego;
+    private JPanel paneljuego = new JPanel();
     
     public Game() {
         initComponents();
