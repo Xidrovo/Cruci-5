@@ -101,7 +101,7 @@ public class  Tablero{
         }
         
         cont1=0;
-        while((x<=h || y<=v))
+        while((x<h || y<v) && palabras.size()<14)
         {
             num=r.nextInt(palabras.size());
             pt1=palabras.get(num);
@@ -390,9 +390,18 @@ public class  Tablero{
                 
             }
             
-        cont1++;
-        System.out.println("intento");
+        //cont1++;
+        //System.out.println("intento");
         
+        }
+        
+        if(x==h && y==v)
+        {
+            System.out.println("YAAAA");
+        }
+        if (palabras.size()==11)
+        {
+            System.out.println("YA");
         }
     } 
     public void ponerpalabraenmatriz(PalabraT pt)
@@ -407,7 +416,7 @@ public class  Tablero{
                 c=pt.getWord().getWord().charAt(i);
                 matrizSolucion[pt.getPosicioni()[0]][pt.getPosicioni()[1]+i]=c;
             }
-            x++;
+            x=x+1;
         }
         else
         {
@@ -416,7 +425,7 @@ public class  Tablero{
                 c=pt.getWord().getWord().charAt(i);
                 matrizSolucion[pt.getPosicioni()[0]+i][pt.getPosicioni()[1]]=c;
             }
-            y++;
+            y=y+1;
         }
     }
     
