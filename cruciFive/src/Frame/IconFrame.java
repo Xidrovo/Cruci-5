@@ -23,6 +23,7 @@ public class IconFrame extends javax.swing.JFrame {
     private int Musica = 1;
     public IconFrame() {
         initComponents();
+        setResizable(false);
         Continue.setEnabled( continueEnable() );
         
         setLocationRelativeTo(null);
