@@ -31,6 +31,7 @@ public class NewGame extends javax.swing.JFrame {
      */
     public NewGame() {
         initComponents();
+        setResizable(false);
         setLocationRelativeTo(null);
         Normal.setSelected(true);
         nombresDiccionario.put("GC", "GeneralCulture");
@@ -268,8 +269,8 @@ public class NewGame extends javax.swing.JFrame {
         CreateLayout1.setLayout(flowLayout2);
 
         AutoGen.setFont(new java.awt.Font("Earth", 1, 18)); // NOI18N
-        AutoGen.setText("Auto mother fucker gen!");
         AutoGen.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        AutoGen.setLabel("Auto motherfucking gen!");
         AutoGen.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 AutoGenMouseClicked(evt);
@@ -340,7 +341,7 @@ public class NewGame extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Everything, javax.swing.GroupLayout.DEFAULT_SIZE, 1113, Short.MAX_VALUE)
+            .addComponent(Everything, javax.swing.GroupLayout.PREFERRED_SIZE, 1113, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();

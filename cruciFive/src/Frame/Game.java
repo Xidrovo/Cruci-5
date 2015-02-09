@@ -35,6 +35,7 @@ public class Game extends javax.swing.JFrame {
     
     public Game() {
         initComponents();
+        setResizable(false);
         imprimirTextArea();
         TituloDiccionario.setText( Dictionary.getName() );
         Tablero holi=new Tablero();
@@ -66,6 +67,7 @@ public class Game extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Cruci-5 Game");
+        setResizable(false);
 
         jPanel1.setBackground(new java.awt.Color(255, 51, 51));
 
