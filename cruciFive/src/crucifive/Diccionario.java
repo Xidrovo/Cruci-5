@@ -5,6 +5,7 @@
  */
 package crucifive;
 
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Random;
@@ -19,6 +20,7 @@ public class Diccionario {
     
     private static LinkedList<Palabra> words;
     private static String name;
+    private static HashMap <String,String> MapaDic;
     
     public void setName(String name)
     {

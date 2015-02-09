@@ -1,2 +1,102 @@
-YAquí
-HayAlgoEscrito
+ADN
+Polimero formado por una base nitrogenada y desoxirribosa.
+ARN
+Polimero formado por una base nitrogenada y ribosa.
+UNICELULAR
+De una sola celula.
+AEROBIO
+Ser que necesita aire.
+ANAEROBIO
+Ser que no necesita aire.
+GEN
+Segmento corto de ADN.
+CROMOSOMA
+Estructura altamente organizada formada por ADN y proteinas.
+MITOSIS
+Reproduccion Asexual.
+MEIOSIS
+Reproduccion sexual.
+HABITAT
+ambiente que ocupa una poblacion biologica.
+PROTEINA
+Formado de aminoácidos.
+LIPIDO
+Comunmente llamados grasa.
+CELULA
+elemento de menor tamaño que puede considerarse vivo.
+EVOLUCION
+Teoria de Charles Darwin
+NUCLEO
+Organulo membranoso que se encuentre en el centro de las celulas eucariotas.
+EUCARIOTA
+Celula con nucleo definido.
+PROCARIOTA
+Celula sin nucleo definido.
+UNICELULAR
+Que solo contiene una celula.
+ANTERA
+Contiene el polen que vemos como un polvo.
+OVARIO
+Contiene las celulas sexuales femeninas.
+FILAMENTOS
+Sostiene a la antera en lo alto, para facilitar la dispecion del polen.
+SEPALOS
+Grupo de estructuras que forman el caliz.
+FLOR
+Parte de la planta que le permite reproducirse sexualmente.
+FRUTO
+Lugar en el que se guarda la semilla
+COROLA
+Conjunto de petalos que protegen a la flor.
+PETALOS
+Son de colores llamativos, protegen los organos internos de la flor.
+CALIZ
+Estructura de forma de copa que sostiene y protege a la flor.
+SINAPSIS
+A traves de ellas, la celulas del cerebro reciben mensajes de otras neuronas.
+HIGIENE
+Principio basico para prevenir una enfermedad infecto-contagiosa.
+SIDA
+síndrome de inmunodeficiencia adquirida
+VIH
+Virus de la inmunodeficiencia humana.
+ESTRES
+Dos mas uno.
+CAPILARES
+Vasos sanguineos mas finos.
+CORAZON
+Organo muscular hueco localizado en la cavidad toracica entre los pulmones y levemente desplazado.
+PLEURA
+Membrana que protege a los pulmones del roce con la caja toracica.
+ESOFAGO
+Tubo alargado que transporta el bolo alimenticio al estomago.
+PLAQUETAS
+Evita la perdida de sangre por hemorragias.
+SANGRE
+Tejido conectivo circulante liquido que transporta nutrientes y otras sustancias del cuerpo.
+BOCA
+Su funcion es triturar y humedeces con saliva el alimento y convertirlo e bolo alimenticio.
+LAGRIMAS
+Liquido de lubricacion de los ojos.
+APENDICE
+Prolongacion en forma de gusano del intestino grueso.
+TIMO
+Formado por dos partes ovaladas que se unen sobre la traquea.
+SUDOR
+Liquido levemente acido que refrigera el cuerpo.
+PIEL
+Capa que evita el ingreso de agentes patogenos al organismo.
+ERITROCITOS
+comunmente llamados globulos rojos.
+LEUCOCITOS
+Comunmente llamados globulos blancos.
+ENZIMAS
+Proteina que cataliza reacciones.
+AUTOTROFO
+Organismo capaz de producir su propio alimento.
+HETEROTROFO
+Organismo incapaz de producir su propio alimento.
+CADUCIFOLIO
+Planta que despega sus hojas en epocas seca.
+PERENNIFOLIO
+Planta que no despega sus hojas en toda su vida.

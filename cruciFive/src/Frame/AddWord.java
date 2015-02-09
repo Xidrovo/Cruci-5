@@ -38,7 +38,7 @@ public class AddWord extends javax.swing.JFrame {
     
     public AddWord() {
         initComponents();
-        
+        DictionaryName.setText(Dictionary.getName() );
     }
 
     /**
@@ -219,7 +219,7 @@ public class AddWord extends javax.swing.JFrame {
         }
         catch(Exception ex)
                 {
-                    System.out.println("Oh my gosh, there's and error!");
+                    System.out.println("Oh my gosh, there's an error!");
                 }
         finally{
             this.dispose();
