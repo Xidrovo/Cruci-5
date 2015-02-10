@@ -148,3 +148,5 @@ ALMOHADA
 Soporte de la cabeza al dormir
 BARCO
 Viaja por el mar, entre las olas.
+MOCHILA
+donde se guardan los cuadernos
