@@ -60,4 +60,13 @@ public class Diccionario {
         return words.get(d);
 
     }
+    
+    public void putMapa (String Palabra, String Pista){
+       MapaDic.put(Palabra,Pista);
+    }
+    
+    public String getPista (String Palabra)
+    {
+        return MapaDic.get(Palabra);
+    }
 }

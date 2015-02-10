@@ -12,6 +12,9 @@ import crucifive.Tablero;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.GridLayout;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 import java.util.Iterator;
 import java.util.LinkedList;
 import javax.swing.DefaultListModel;
@@ -42,6 +45,7 @@ public class Game extends javax.swing.JFrame {
     public Game() {
         initComponents();
         setResizable(false);
+        setPista();
         imprimirTextArea();
         filtrarPalabras();
         TituloDiccionario.setText( Dictionary.getName() );
@@ -301,6 +305,27 @@ public class Game extends javax.swing.JFrame {
             }
          }
     );}
+    
+    public void setPista(){
+        MouseListener mouseListener;
+        
+        mouseListener = new MouseAdapter() {
+            public void mouseClicked(MouseEvent mouseEvent) {
+                palabrasArea = (JList) mouseEvent.getSource();
+                if (mouseEvent.getClickCount() == 1) {
+                    int index = palabrasArea.locationToIndex(mouseEvent.getPoint());
+                    if (index >= 0) {
+                        Diccionario dc= new Diccionario();
+                        Object palabra = palabrasArea.getModel().getElementAt(index);
+                        PistaField.setText(dc.getPista(palabra.toString()));
+                    }
+                }
+            }
+        };
+        
+    palabrasArea.addMouseListener(mouseListener);
+   
+    }
     
    public void imprimirTextArea()
     {

@@ -560,7 +560,7 @@ public class NewGame extends javax.swing.JFrame {
             {
                 pista = Br.readLine();
                 word = new Palabra(palabra, pista);
-                
+                Dictionary.putMapa(palabra,pista);
                 Dictionary.putWord(word);
             }
         }
