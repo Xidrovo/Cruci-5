@@ -5,6 +5,7 @@
  */
 package crucifive;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Random;
 import javax.swing.JTextField;
@@ -27,6 +28,8 @@ public class  Tablero{
     private static String GameType;
     public static char matrizSolucion[][];
     char matriz[][];
+    public static ArrayList<Posicion> posiciones;
+
    
     
     public void setHorizontal(int NumeroHorizontal)
@@ -117,8 +120,8 @@ public class  Tablero{
             if(pt1.isOrientacion()&& y<v)
             {
                 d=false;
-                posx=pt1.getPosicioni()[0];
-                posy=pt1.getPosicioni()[1];
+                posx=pt1.getPosicioni().x;
+                posy=pt1.getPosicioni().y;
                 if(posx==0)
                 {
                 if((matrizSolucion[posx+1][posy+num]=='0'|| matrizSolucion[posx+2][posy+num]=='0'))
@@ -257,8 +260,8 @@ public class  Tablero{
             else if (!pt1.isOrientacion()&& x<h)
             {
                 d=true;
-                posx=pt1.getPosicioni()[0];
-                posy=pt1.getPosicioni()[1];
+                posx=pt1.getPosicioni().x;
+                posy=pt1.getPosicioni().y;
                 if(posy==0)
                 {
                 if((matrizSolucion[posx+num][posy+1]=='0'|| matrizSolucion[posx+num][posy+2]=='0'))
@@ -415,12 +418,25 @@ public class  Tablero{
         char c;
         palabras.add(pt);
         palabras1.add(pt.getWord());
+        
+        if (posiciones==null)
+        {
+            posiciones = new ArrayList();
+        }
+        {
+            posiciones=new ArrayList();
+        }
+
+        posiciones.add(pt.getPosicioni());
+        
+        
+        
         if(pt.isOrientacion())    //
         {
             for (int i=0; i<pt.getWord().wordLong; i++)
             {
                 c=pt.getWord().getWord().charAt(i);
-                matrizSolucion[pt.getPosicioni()[0]][pt.getPosicioni()[1]+i]=c;
+                matrizSolucion[pt.getPosicioni().x][pt.getPosicioni().y+i]=c;
             }
             x=x+1;
         }
@@ -429,7 +445,7 @@ public class  Tablero{
             for (int i=0; i<pt.getWord().wordLong; i++)
             {
                 c=pt.getWord().getWord().charAt(i);
-                matrizSolucion[pt.getPosicioni()[0]+i][pt.getPosicioni()[1]]=c;
+                matrizSolucion[pt.getPosicioni().x+i][pt.getPosicioni().y]=c;
             }
             y=y+1;
         }
@@ -450,14 +466,14 @@ public class  Tablero{
         {
             for (int i=0; i<pt.getWord().wordLong; i++)
             {
-                if(pt.getPosicioni()[1]+i >= 13)
+                if(pt.getPosicioni().y+i >= 13)
                 {
                     System.out.println("Palabra no valida");
                     return false;
                 }
                 
                 c=pt.getWord().word.charAt(i);
-                a=matrizSolucion[pt.getPosicioni()[0]][pt.getPosicioni()[1]+i];
+                a=matrizSolucion[pt.getPosicioni().x][pt.getPosicioni().y+i];
                 if((a!=c) && (a!='0'))
                 {
                     System.out.println("Palabra no valida");
@@ -469,14 +485,14 @@ public class  Tablero{
         {
             for (int i=0; i<pt.getWord().wordLong; i++)
             {
-                if(pt.getPosicioni()[0]+i >= 13)
+                if(pt.getPosicioni().x+i >= 13)
                 {
                     System.out.println("Palabra no valida");
                     return false;
                 }
                 
                 c=pt.getWord().word.charAt(i);
-                a=matrizSolucion[pt.getPosicioni()[0]+i][pt.getPosicioni()[1]];
+                a=matrizSolucion[pt.getPosicioni().x+i][pt.getPosicioni().y];
                 if((a!=c) && (a!='0'))
                 {
                     System.out.println("Palabra no valida");

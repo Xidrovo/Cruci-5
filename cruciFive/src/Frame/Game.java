@@ -253,6 +253,14 @@ public class Game extends javax.swing.JFrame {
          
          Tablero holi = new Tablero();
 
+<<<<<<< Updated upstream
+=======
+
+        holi.AutoGenCascada();
+        
+        
+         
+>>>>>>> Stashed changes
         for(int i=0;i<x; i++)
         {
             for(int j=0;j<y;j++)
