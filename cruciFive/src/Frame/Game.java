@@ -15,13 +15,20 @@ import java.awt.GridLayout;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+import java.awt.event.WindowEvent;
+import java.awt.event.WindowListener;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
 import java.util.Iterator;
 import java.util.LinkedList;
 import javax.swing.DefaultListModel;
+import javax.swing.JFrame;
 import javax.swing.JList;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.ListModel;
+import javax.swing.WindowConstants;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 import javax.swing.event.ListDataListener;
@@ -217,6 +224,7 @@ public class Game extends javax.swing.JFrame {
 
     private void AddWordMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AddWordMouseClicked
         // TODO add your handling code here:
+        dispose();
         AddWord nuevoJuego = new AddWord();
         nuevoJuego.setVisible(true);
     }//GEN-LAST:event_AddWordMouseClicked
@@ -245,9 +253,6 @@ public class Game extends javax.swing.JFrame {
          
          Tablero holi = new Tablero();
 
-
-        holi.AutoGenCascada();
-         
         for(int i=0;i<x; i++)
         {
             for(int j=0;j<y;j++)
@@ -256,12 +261,7 @@ public class Game extends javax.swing.JFrame {
                 r[i][j] = new RestrictedTextField(m[i][j]);
                 r[i][j].setLimit(1);
                 if(holi.matrizSolucion[i][j]=='0')
-                    m[i][j].setText(" ");
-                else
-                {
-                    m[i][j].setText(""+holi.matrizSolucion[i][j]);
-                    m[i][j].setBackground(Color.yellow);
-                }
+                    m[i][j].setText("");
                 
                // m[i][j].setSize(5,10);
                 m[i][j].setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
@@ -272,6 +272,32 @@ public class Game extends javax.swing.JFrame {
         }
         
     }
+    
+    public void readingDictionary()
+    {
+        Dictionary = new Diccionario();
+        Palabra word;
+        String palabra;
+        String pista;
+        String nombreFile = Dictionary.getName() + ".txt";
+        File file = new File(nombreFile);
+        try{
+        FileReader Fr = new FileReader(file);
+        BufferedReader Br = new BufferedReader (Fr);
+        while ( (palabra = Br.readLine() ) != null)
+            {
+                pista = Br.readLine();
+                word = new Palabra(palabra, pista);
+                Dictionary.putMapa(palabra,pista);
+                Dictionary.putWord(word);
+            }
+        }
+        catch(Exception ex)
+        {
+            System.out.println(ex.getMessage());
+        }
+    }
+    
     public void filtrarPalabras(){
         
          Filtro.getDocument().addDocumentListener(new DocumentListener() {
@@ -330,9 +356,12 @@ public class Game extends javax.swing.JFrame {
    
     }
     
+ 
    public void imprimirTextArea()
     {
         DefaultListModel modelo = new DefaultListModel();
+        listaPalabra = Dictionary.getWordsList();
+        iterador = listaPalabra.iterator();
         while (iterador.hasNext() )
         {
             Palabra palabra = iterador.next();
@@ -373,6 +402,7 @@ public class Game extends javax.swing.JFrame {
             }
         });
     }
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton AddWord;

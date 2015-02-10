@@ -331,7 +331,7 @@ public class NewGame extends javax.swing.JFrame {
             EverythingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(EverythingLayout.createSequentialGroup()
                 .addComponent(MiddleLeft, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 1, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
             .addGroup(EverythingLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(MiddleRight, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -398,7 +398,14 @@ public class NewGame extends javax.swing.JFrame {
             holi.v=Integer.parseInt(VerticalText.getText());
             holi.setDictionary(Dictionary);
             
-            //falta crear matriz llena de ceros
+            holi.matrizSolucion = new char[14][14];
+         for(int i = 0; i<14; i++)
+            {
+                for(int j = 0; j<14; j++)
+                {
+                    holi.matrizSolucion[i][j]='0';
+                }
+            }
 
             Game juego= new Game();
                this.setVisible(false);

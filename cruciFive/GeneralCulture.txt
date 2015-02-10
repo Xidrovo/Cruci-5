@@ -124,3 +124,27 @@ CANAS
 Cabellos que se han vuelto blancos.
 quito
 CAPITAL DEL ECUADOR
+HOLA
+Saludo.
+EMELEC
+Bicampeon de la copa Pilsener.
+CHAO
+Despedida.
+CARRO
+Vehiculo de cuatro ruedas.
+LUNA
+Satelite natural de la Tierra.
+ORNITORRINCO
+Mamifero que pone huevos.
+JUPITER
+Nombre del dios principal de los romanos.
+FURGONETA
+Mas grande que un coche, mas pequena que un camion.
+BICICLETA
+Tiene dos ruedas y pedales.
+TREN
+Una maquina tira de muchos vagones
+ALMOHADA
+Soporte de la cabeza al dormir
+BARCO
+Viaja por el mar, entre las olas.

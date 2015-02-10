@@ -7,6 +7,8 @@ package Frame;
 
 import crucifive.Diccionario;
 import crucifive.Palabra;
+import java.awt.event.WindowEvent;
+import java.awt.event.WindowListener;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
@@ -22,7 +24,9 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
+import javax.swing.WindowConstants;
 
 /**
  *
@@ -42,6 +46,7 @@ public class AddWord extends javax.swing.JFrame {
         setResizable(false);
         setLocationRelativeTo(null);
         DictionaryName.setText(Dictionary.getName() );
+        
     }
 
     /**
@@ -64,13 +69,18 @@ public class AddWord extends javax.swing.JFrame {
         MoreClueSection = new javax.swing.JTextArea();
         ButtonPanel = new javax.swing.JPanel();
         AddWord = new javax.swing.JButton();
-        Cancel = new javax.swing.JButton();
+        Finish = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Add Word");
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setResizable(false);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowClosed(java.awt.event.WindowEvent evt) {
+                formWindowClosed(evt);
+            }
+        });
 
         DictionaryName.setFont(new java.awt.Font("Earth", 0, 14)); // NOI18N
         DictionaryName.setHorizontalAlignment(javax.swing.JTextField.CENTER);
@@ -132,15 +142,25 @@ public class AddWord extends javax.swing.JFrame {
                 AddWordMouseClicked(evt);
             }
         });
-        ButtonPanel.add(AddWord);
-
-        Cancel.setText("Cancel");
-        Cancel.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                CancelMouseClicked(evt);
+        AddWord.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AddWordActionPerformed(evt);
             }
         });
-        ButtonPanel.add(Cancel);
+        ButtonPanel.add(AddWord);
+
+        Finish.setText("Finish");
+        Finish.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                FinishMouseClicked(evt);
+            }
+        });
+        Finish.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                FinishActionPerformed(evt);
+            }
+        });
+        ButtonPanel.add(Finish);
 
         jLabel1.setText("*Recuerda poner una pista que sea fácil de entender");
 
@@ -201,10 +221,13 @@ public class AddWord extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void CancelMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_CancelMouseClicked
+    private void FinishMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_FinishMouseClicked
         // TODO add your handling code here:
         dispose();
-    }//GEN-LAST:event_CancelMouseClicked
+        Game juego = new Game();
+        juego.readingDictionary();
+        juego.setVisible(true);
+    }//GEN-LAST:event_FinishMouseClicked
 
     private void AddWordMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AddWordMouseClicked
         // TODO add your handling code here:
@@ -229,9 +252,23 @@ public class AddWord extends javax.swing.JFrame {
         }
 
         finally{
-            this.dispose();
-        }
+            MoreClueSection.setText("");
+            WordAdder.setText("");
+                   }
     }//GEN-LAST:event_AddWordMouseClicked
+
+    private void FinishActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FinishActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_FinishActionPerformed
+
+    private void formWindowClosed(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosed
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_formWindowClosed
+
+    private void AddWordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AddWordActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_AddWordActionPerformed
 
     public void VerificadorTextFields() throws EmptyFieldException
     {
@@ -240,6 +277,8 @@ public class AddWord extends javax.swing.JFrame {
             throw new EmptyFieldException("Mensaje");
         }
     }
+    
+    
     /**
      * @param args the command line arguments
      */
@@ -278,11 +317,11 @@ public class AddWord extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton AddWord;
     private javax.swing.JPanel ButtonPanel;
-    private javax.swing.JButton Cancel;
     private javax.swing.JLabel ClueAdder;
     private javax.swing.JPanel CluePanel;
     private javax.swing.JScrollPane ClueSection;
     private javax.swing.JTextField DictionaryName;
+    private javax.swing.JButton Finish;
     private javax.swing.JTextArea MoreClueSection;
     private javax.swing.JLabel Obligador;
     private javax.swing.JPanel Tittle;
@@ -290,6 +329,8 @@ public class AddWord extends javax.swing.JFrame {
     private javax.swing.JPanel WordPanel;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
+
+  
 
     private static class EmptyFieldException extends Exception {
 
