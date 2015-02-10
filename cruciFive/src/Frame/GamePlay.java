@@ -12,6 +12,7 @@ import java.awt.GridLayout;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 import crucifive.Diccionario;
+import crucifive.Palabra;
 import crucifive.PalabraT;
 import crucifive.Posicion;
 import java.applet.AudioClip;
@@ -57,6 +58,7 @@ public class GamePlay extends javax.swing.JFrame {
         Tablero holi=new Tablero();
         crearTablero(14,14);
         Crucigram.add(paneljuego);
+        escribirPistas();
 
     }
     
@@ -93,6 +95,38 @@ public class GamePlay extends javax.swing.JFrame {
                  cronometro = minutos + ":" + segundos;
          }
          TiempoAdv.setText(cronometro);
+     }
+     
+     public void escribirPistas()
+     {
+         Tablero tableu = new Tablero();
+         LinkedList<PalabraT> palabrit = new LinkedList();
+         PalabraT temp = new PalabraT();
+         Palabra wordtemp = new Palabra();
+         palabrit = tableu.getListaPalabraT();
+         Iterator<PalabraT> iterador = palabrit.iterator();
+         palabraHorizontal = 1;
+         palabraVertical = 1;
+
+         while(iterador.hasNext() )
+         {
+             temp = iterador.next();
+             wordtemp = temp.getWord();
+             
+             if (temp.isOrientacion() )
+             {
+                 HorizontalClue.setText(HorizontalClue.getText() + palabraHorizontal + ".- " + wordtemp.getPista() + "\r\n" );
+                 palabraHorizontal++;
+             }
+             
+             if (temp.isOrientacion() == false)
+             {
+                 VerticalClue.setText(VerticalClue.getText() + palabraVertical + ".- " + wordtemp.getPista() + "\r\n");
+                 palabraVertical++;
+             }
+         }
+         
+         
      }
 
 
