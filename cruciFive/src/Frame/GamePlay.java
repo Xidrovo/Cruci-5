@@ -14,14 +14,14 @@ import javax.swing.JTextField;
 import crucifive.Diccionario;
 import crucifive.Palabra;
 import crucifive.PalabraT;
-import crucifive.PosDir;
 import crucifive.Posicion;
 import java.applet.AudioClip;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.util.Iterator;
 import java.util.LinkedList;
-import java.util.Random;
 import javax.swing.Timer;
 
 /**
@@ -42,6 +42,7 @@ public class GamePlay extends javax.swing.JFrame {
     private Tablero tableau = new Tablero();
     private static int palabraHorizontal = 1;
     private static int palabraVertical = 1;
+    private MouseAdapter mouseListener[][];
     
     
     public GamePlay() {
@@ -51,6 +52,10 @@ public class GamePlay extends javax.swing.JFrame {
         t.start();
         Horizontal.setSelected(true);
         setResizable(false);
+        X.setVisible(false);
+        Y.setVisible(false);
+        Xseleccionado.setVisible(false);
+        Yseleccionado.setVisible(false);
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("../SoundTrack/EnglishMan.wav"));
         sonido.play();
         sonido.loop();
@@ -146,6 +151,10 @@ public class GamePlay extends javax.swing.JFrame {
         Crucigram = new javax.swing.JPanel();
         DictionaryPanel = new javax.swing.JPanel();
         TituloDiccionario = new javax.swing.JTextField();
+        X = new javax.swing.JTextField();
+        Y = new javax.swing.JTextField();
+        Xseleccionado = new javax.swing.JTextField();
+        Yseleccionado = new javax.swing.JTextField();
         TimePanel = new javax.swing.JPanel();
         jTextField3 = new javax.swing.JTextField();
         TiempoAdv = new javax.swing.JLabel();
@@ -192,13 +201,31 @@ public class GamePlay extends javax.swing.JFrame {
             }
         });
 
+        X.setText("jTextField1");
+
+        Y.setText("jTextField2");
+
+        Xseleccionado.setText("jTextField2");
+
+        Yseleccionado.setText("jTextField2");
+
         javax.swing.GroupLayout DictionaryPanelLayout = new javax.swing.GroupLayout(DictionaryPanel);
         DictionaryPanel.setLayout(DictionaryPanelLayout);
         DictionaryPanelLayout.setHorizontalGroup(
             DictionaryPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DictionaryPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(TituloDiccionario)
+                .addGroup(DictionaryPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(TituloDiccionario)
+                    .addGroup(DictionaryPanelLayout.createSequentialGroup()
+                        .addComponent(X, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Y, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Xseleccionado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Yseleccionado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         DictionaryPanelLayout.setVerticalGroup(
@@ -206,6 +233,12 @@ public class GamePlay extends javax.swing.JFrame {
             .addGroup(DictionaryPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(TituloDiccionario, javax.swing.GroupLayout.DEFAULT_SIZE, 59, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(DictionaryPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(X, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Y, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Xseleccionado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Yseleccionado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
         );
 
@@ -266,7 +299,7 @@ public class GamePlay extends javax.swing.JFrame {
                     .addGroup(PistaPanelLayout.createSequentialGroup()
                         .addGap(157, 157, 157)
                         .addComponent(VerticalLabel)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
             .addComponent(VerticalCluePanel)
         );
         PistaPanelLayout.setVerticalGroup(
@@ -357,11 +390,11 @@ public class GamePlay extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(18, 18, 18)
                         .addComponent(ButtonsPannel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(36, Short.MAX_VALUE))
+                        .addGap(0, 18, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(1, 1, 1)
-                        .addComponent(ControlPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addContainerGap())))
+                        .addComponent(ControlPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addContainerGap())
         );
 
         pack();
@@ -448,6 +481,7 @@ public class GamePlay extends javax.swing.JFrame {
          paneljuego.setLayout(new GridLayout (x,y));
          paneljuego.setBackground(Color.magenta);
          paneljuego.setBounds(50, 50, y*27,x*27);
+         mouseListener= new MouseAdapter[x][y];
          
         Tablero holi = new Tablero();
 
@@ -473,6 +507,19 @@ public class GamePlay extends javax.swing.JFrame {
                // m[i][j].setSize(5,10);
                 m[i][j].setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
                 m[i][j].setHorizontalAlignment(javax.swing.JTextField.CENTER);
+                X.setText(""+i);
+                Y.setText(""+j);
+                mouseListener[i][j] = new MouseAdapter() {
+            public void mouseClicked(MouseEvent mouseEvent) {
+                m[Integer.parseInt(X.getText())][Integer.parseInt(Y.getText())] = (JTextField) mouseEvent.getSource();
+                if (mouseEvent.getClickCount() == 1) {
+                    Xseleccionado.setText(""+m[Integer.parseInt(X.getText())][Integer.parseInt(Y.getText())].getY()/27);
+                    Yseleccionado.setText(""+m[Integer.parseInt(X.getText())][Integer.parseInt(Y.getText())].getX()/27);
+                }
+            }
+        };
+        
+            m[i][j].addMouseListener(mouseListener[i][j]);
                 
                 paneljuego.add(m[i][j]);
                 
@@ -481,118 +528,14 @@ public class GamePlay extends javax.swing.JFrame {
         }
         Colorear(m);
     }
-    
-    public PosDir buscaposin(Posicion po)
-    {
+
+   
+    public Posicion posicionSeleccionada(){
         
-        Random r = new Random();
-        int b=1;
-        Posicion posi=new Posicion(po.getX(),po.getY());
-  
-        boolean d = r.nextBoolean();
-        if(d)
-        {
-            if((posi.getX()>0 && (tableau.matrizSolucion[posi.getX()-1][posi.getY()]!='0'))||(posi.getX()<13 && (tableau.matrizSolucion[posi.getX()+1][posi.getY()]!='0')))
-            {
-                if(tableau.posiciones.contains(posi))
-                {
-                    return new PosDir(posi, d);
-                }
-                while(!tableau.posiciones.contains(posi))
-                {
-                    if(posi.getX()>0)
-                        posi.setX(posi.getX()-1);
-                    else
-                    {
-                        b =0;
-                        break;
-                    }
-                        
-                }
-                if(b==1)
-                {
-                    return new PosDir(posi, d);
-                }
-                
-            }
-            else
-            {
-                if(tableau.posiciones.contains(posi))
-                {
-                    return new PosDir(posi, d);
-                }
-                while(!tableau.posiciones.contains(posi))
-                {
-                    if(posi.getY()>0)
-                        posi.setY(posi.getY()-1);
-                    else
-                    {
-                        b =0;
-                        break;
-                    }
-                        
-                }
-                if(b==1)
-                {
-                    return new PosDir(posi, d);
-                }
-            }
-
-                    
-        }
-        else
-            {
-            if((posi.getY()>0 && (tableau.matrizSolucion[posi.getX()][posi.getY()-1]!='0'))||(posi.getX()<13 && (tableau.matrizSolucion[posi.getX()][posi.getY()+1]!='0')))
-            {
-                if(tableau.posiciones.contains(posi))
-                {
-                    return new PosDir(posi, d);
-                }
-                while(!tableau.posiciones.contains(posi))
-                {
-                    if(posi.getY()>0)
-                        posi.setY(posi.getY()-1);
-                    else
-                    {
-                        b =0;
-                        break;
-                    }
-                        
-                }
-                if(b==1)
-                {
-                    return new PosDir(posi, d);
-                }
-                
-            }
-            else
-            {
-                if(tableau.posiciones.contains(posi))
-                {
-                    return new PosDir(posi, d);
-                }
-                while(!tableau.posiciones.contains(posi))
-                {
-                    if(posi.getX()>0)
-                        posi.setX(posi.getX()-1);
-                    else
-                    {
-                        b =0;
-                        break;
-                    }
-                        
-                }
-                if(b==1)
-                {
-                    return new PosDir(posi, d);
-                }
-            }
-
-                    
-        }
-        return new PosDir(new Posicion(0,0), true);
+      Posicion posi= new Posicion(Integer.parseInt(Xseleccionado.getText()),Integer.parseInt(Xseleccionado.getText()));
+          return posi;
+        
     }
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel ButtonsPannel;
     private javax.swing.JPanel ControlPanel;
@@ -617,6 +560,10 @@ public class GamePlay extends javax.swing.JFrame {
     private javax.swing.JTextArea VerticalClue;
     private javax.swing.JScrollPane VerticalCluePanel;
     private javax.swing.JLabel VerticalLabel;
+    private javax.swing.JTextField X;
+    private javax.swing.JTextField Xseleccionado;
+    private javax.swing.JTextField Y;
+    private javax.swing.JTextField Yseleccionado;
     private javax.swing.JTextField jTextField3;
     // End of variables declaration//GEN-END:variables
 }
