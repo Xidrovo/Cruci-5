@@ -64,7 +64,6 @@ public class GamePlay extends javax.swing.JFrame {
                 segundos = 0;
             }
             actualizarTiempo();
-            System.out.println(segundos);
         }
     };
             
