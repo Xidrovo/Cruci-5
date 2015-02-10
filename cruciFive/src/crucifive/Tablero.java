@@ -34,6 +34,10 @@ public class  Tablero{
 
    
     
+    public LinkedList<PalabraT> getListaPalabraT()
+    {
+        return palabras;
+    }
     public void putin(PosDir posin, PalabraT Palat)
     {
         if (Hashti == null)
@@ -498,7 +502,7 @@ public class  Tablero{
         {
             for (int i=0; i<pt.getWord().wordLong; i++)
             {
-                if(pt.getPosicioni().y+i-1 > 13)
+                if(pt.getPosicioni().y+i-1 >= 13)
                 {
                     System.out.println("Palabra no valida");
                     return false;
@@ -519,7 +523,7 @@ public class  Tablero{
         {
             for (int i=0; i<pt.getWord().wordLong; i++)
             {
-                if(pt.getPosicioni().x+i > 13)
+                if(pt.getPosicioni().x+i >= 13)
                 {
                     System.out.println("Palabra no valida");
                     return false;

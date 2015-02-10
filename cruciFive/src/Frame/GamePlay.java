@@ -12,9 +12,13 @@ import java.awt.GridLayout;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 import crucifive.Diccionario;
+import crucifive.PalabraT;
+import crucifive.Posicion;
 import java.applet.AudioClip;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Iterator;
+import java.util.LinkedList;
 import javax.swing.Timer;
 
 /**
@@ -33,6 +37,9 @@ public class GamePlay extends javax.swing.JFrame {
     private AudioClip sonido;
     private int segundos = 0, minutos = 0;
     private Tablero tableau = new Tablero();
+    private static int palabraHorizontal = 1;
+    private static int palabraVertical = 1;
+    
     
     public GamePlay() {
         initComponents();
@@ -107,8 +114,12 @@ public class GamePlay extends javax.swing.JFrame {
         jTextField3 = new javax.swing.JTextField();
         TiempoAdv = new javax.swing.JLabel();
         PistaPanel = new javax.swing.JPanel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        HorizontalLabel = new javax.swing.JLabel();
+        HorizontalCluePanel = new javax.swing.JScrollPane();
+        HorizontalClue = new javax.swing.JTextArea();
+        VerticalLabel = new javax.swing.JLabel();
+        VerticalCluePanel = new javax.swing.JScrollPane();
+        VerticalClue = new javax.swing.JTextArea();
         ButtonsPannel = new javax.swing.JPanel();
         HorizontalButtonPanel = new javax.swing.JPanel();
         Horizontal = new javax.swing.JRadioButton();
@@ -192,27 +203,46 @@ public class GamePlay extends javax.swing.JFrame {
                 .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        jTextArea1.setEditable(false);
-        jTextArea1.setColumns(20);
-        jTextArea1.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        jTextArea1.setRows(5);
-        jTextArea1.setText("(Aquí irá la pista)\n");
-        jScrollPane1.setViewportView(jTextArea1);
+        HorizontalLabel.setText("Horizontal");
+
+        HorizontalClue.setEditable(false);
+        HorizontalClue.setColumns(20);
+        HorizontalClue.setRows(5);
+        HorizontalCluePanel.setViewportView(HorizontalClue);
+
+        VerticalLabel.setText("Vertical");
+
+        VerticalClue.setEditable(false);
+        VerticalClue.setColumns(20);
+        VerticalClue.setRows(5);
+        VerticalCluePanel.setViewportView(VerticalClue);
 
         javax.swing.GroupLayout PistaPanelLayout = new javax.swing.GroupLayout(PistaPanel);
         PistaPanel.setLayout(PistaPanelLayout);
         PistaPanelLayout.setHorizontalGroup(
             PistaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(HorizontalCluePanel)
             .addGroup(PistaPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jScrollPane1)
-                .addContainerGap())
+                .addGroup(PistaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(PistaPanelLayout.createSequentialGroup()
+                        .addGap(148, 148, 148)
+                        .addComponent(HorizontalLabel))
+                    .addGroup(PistaPanelLayout.createSequentialGroup()
+                        .addGap(157, 157, 157)
+                        .addComponent(VerticalLabel)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(VerticalCluePanel)
         );
         PistaPanelLayout.setVerticalGroup(
             PistaPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PistaPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jScrollPane1)
+                .addComponent(HorizontalLabel)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(HorizontalCluePanel, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(VerticalLabel)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(VerticalCluePanel, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
@@ -349,7 +379,31 @@ public class GamePlay extends javax.swing.JFrame {
     public void setPista(){
     
     }
-    
+    public void Colorear(JTextField[][] m)
+    {
+        Tablero tableu = new Tablero();
+        LinkedList<PalabraT> ListPalabraT = tableu.getListaPalabraT();
+        PalabraT palabriT = new PalabraT();
+        Iterator<PalabraT> iterador = ListPalabraT.iterator();
+        Posicion indice = new Posicion(0,0);
+        while (iterador.hasNext() )
+        {
+            palabriT = iterador.next();
+            indice = palabriT.getPosicioni();
+            if (palabriT.isOrientacion())
+            {
+                m[indice.getX()][indice.getY()].setBackground(Color.CYAN);
+                m[indice.getX()][indice.getY()].setText("" + palabraHorizontal);
+                palabraHorizontal++;
+            }
+            
+            if(palabriT.isOrientacion() == false){
+                m[indice.getX()][indice.getY()].setBackground(Color.GREEN);
+                m[indice.getX()][indice.getY()].setText("" + palabraVertical);
+                palabraVertical++;
+            }
+        }
+    }
     public void crearTablero(int x, int y)
     {
          m= new JTextField[x][y];
@@ -376,18 +430,20 @@ public class GamePlay extends javax.swing.JFrame {
                 }
                 else
                 {
-                    m[i][j].setText(""+holi.matrizSolucion[i][j]);
+                    m[i][j].setText("");
                     m[i][j].setBackground(Color.white);
                 }
                 
                // m[i][j].setSize(5,10);
                 m[i][j].setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
                 m[i][j].setHorizontalAlignment(javax.swing.JTextField.CENTER);
+                
                 paneljuego.add(m[i][j]);
+                
             }
             
         }
-        
+        Colorear(m);
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -398,6 +454,9 @@ public class GamePlay extends javax.swing.JFrame {
     private javax.swing.JButton GIVEUP;
     private javax.swing.JRadioButton Horizontal;
     private javax.swing.JPanel HorizontalButtonPanel;
+    private javax.swing.JTextArea HorizontalClue;
+    private javax.swing.JScrollPane HorizontalCluePanel;
+    private javax.swing.JLabel HorizontalLabel;
     private javax.swing.JPanel PistaPanel;
     private javax.swing.ButtonGroup PositionButton;
     private javax.swing.JButton QUIT;
@@ -408,8 +467,9 @@ public class GamePlay extends javax.swing.JFrame {
     private javax.swing.JButton VERIFIED;
     private javax.swing.JRadioButton Vertical;
     private javax.swing.JPanel VerticalButtonPanel;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextArea VerticalClue;
+    private javax.swing.JScrollPane VerticalCluePanel;
+    private javax.swing.JLabel VerticalLabel;
     private javax.swing.JTextField jTextField3;
     // End of variables declaration//GEN-END:variables
 }
