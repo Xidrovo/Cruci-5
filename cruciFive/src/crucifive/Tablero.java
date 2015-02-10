@@ -475,6 +475,7 @@ public class  Tablero{
     
     public boolean comprobarpalabra(PalabraT pt)
     {
+        int cont=0;
         char c, a;
         if (x==h && pt.isOrientacion())
         {
@@ -484,11 +485,20 @@ public class  Tablero{
         {
             return false;
         }
+        if (palabras==null){
+            palabras= new LinkedList();
+        }
+        if (palabras1==null){
+            palabras1= new LinkedList();
+        }
+        
+       
+        
         if(pt.isOrientacion())
         {
             for (int i=0; i<pt.getWord().wordLong; i++)
             {
-                if(pt.getPosicioni().y+i >= 13)
+                if(pt.getPosicioni().y+i-1 > 13)
                 {
                     System.out.println("Palabra no valida");
                     return false;
@@ -501,13 +511,15 @@ public class  Tablero{
                     System.out.println("Palabra no valida");
                     return false;
                 }
+                if((a==c))
+                    cont=cont+1;
             }
         }
         else
         {
             for (int i=0; i<pt.getWord().wordLong; i++)
             {
-                if(pt.getPosicioni().x+i >= 13)
+                if(pt.getPosicioni().x+i > 13)
                 {
                     System.out.println("Palabra no valida");
                     return false;
@@ -520,10 +532,20 @@ public class  Tablero{
                     System.out.println("Palabra no valida");
                     return false;
                 }
+                if((a==c))
+                    cont=cont+1;
             }
         }
-        System.out.println("Palabra valida"+pt.getWord().word);
-        return true;
+        if (palabras1.size()==0)
+            return true;
+        else if(palabras1.contains(pt.getWord()))
+            return false;
+        else if(cont==0)
+            return false;
+        else
+            return true;
+        
+        
     }
     
     //public void 
