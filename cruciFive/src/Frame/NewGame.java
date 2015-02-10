@@ -301,7 +301,7 @@ public class NewGame extends javax.swing.JFrame {
             .addGroup(MiddleRightLayout.createSequentialGroup()
                 .addGap(54, 54, 54)
                 .addComponent(AutoGen)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
         MiddleRightLayout.setVerticalGroup(
             MiddleRightLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -335,7 +335,7 @@ public class NewGame extends javax.swing.JFrame {
             .addGroup(EverythingLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(MiddleRight, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         File.setText("File");
