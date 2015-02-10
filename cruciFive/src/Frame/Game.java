@@ -89,6 +89,10 @@ public class Game extends javax.swing.JFrame {
         Y = new javax.swing.JTextField();
         Xseleccionado = new javax.swing.JTextField();
         Yseleccionado = new javax.swing.JTextField();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        jMenu1 = new javax.swing.JMenu();
+        jMenuItem1 = new javax.swing.JMenuItem();
+        jMenu2 = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Cruci-5 Game");
@@ -140,7 +144,7 @@ public class Game extends javax.swing.JFrame {
             PistasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(PistasLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(PistaField, javax.swing.GroupLayout.DEFAULT_SIZE, 105, Short.MAX_VALUE))
+                .addComponent(PistaField, javax.swing.GroupLayout.DEFAULT_SIZE, 82, Short.MAX_VALUE))
         );
 
         Botones.setLayout(new java.awt.GridLayout(2, 2));
@@ -191,6 +195,24 @@ public class Game extends javax.swing.JFrame {
         Xseleccionado.setText("jTextField1");
 
         Yseleccionado.setText("jTextField2");
+
+        jMenu1.setText("File");
+
+        jMenuItem1.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.CTRL_MASK));
+        jMenuItem1.setText("Create");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
+        jMenu1.add(jMenuItem1);
+
+        jMenuBar1.add(jMenu1);
+
+        jMenu2.setText("Edit");
+        jMenuBar1.add(jMenu2);
+
+        setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -289,6 +311,13 @@ public class Game extends javax.swing.JFrame {
     private void VerticalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VerticalActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_VerticalActionPerformed
+
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        // TODO add your handling code here:
+        GamePlay gamin = new GamePlay();
+        gamin.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -522,6 +551,10 @@ public class Game extends javax.swing.JFrame {
     private javax.swing.JTextField Yseleccionado;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JList palabrasArea;
