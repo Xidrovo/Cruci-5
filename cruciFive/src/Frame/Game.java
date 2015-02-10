@@ -110,6 +110,8 @@ public class Game extends javax.swing.JFrame {
             }
         });
 
+        PistaField.setEditable(false);
+        PistaField.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         PistaField.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         PistaField.setText("(Aquí va la pista)");
         PistaField.setEnabled(false);
