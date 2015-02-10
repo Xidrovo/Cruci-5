@@ -416,6 +416,12 @@ public class  Tablero{
     public void ponerpalabraenmatriz(PalabraT pt)
     {
         char c;
+        if (palabras==null){
+            palabras= new LinkedList();
+        }
+        if (palabras1==null){
+            palabras1= new LinkedList();
+        }
         palabras.add(pt);
         palabras1.add(pt.getWord());
         

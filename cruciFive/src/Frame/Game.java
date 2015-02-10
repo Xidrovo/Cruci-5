@@ -8,6 +8,8 @@ package Frame;
 import Atxy2k.CustomTextField.RestrictedTextField;
 import crucifive.Diccionario;
 import crucifive.Palabra;
+import crucifive.PalabraT;
+import crucifive.Posicion;
 import crucifive.Tablero;
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -15,6 +17,7 @@ import java.awt.GridLayout;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 import java.io.BufferedReader;
@@ -25,6 +28,7 @@ import java.util.LinkedList;
 import javax.swing.DefaultListModel;
 import javax.swing.JFrame;
 import javax.swing.JList;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.ListModel;
@@ -42,9 +46,7 @@ public class Game extends javax.swing.JFrame {
     private Diccionario Dictionary = new Diccionario();
     private LinkedList<Palabra> listaPalabra = Dictionary.getWordsList();
     private Iterator <Palabra> iterador = listaPalabra.iterator();
-    /**
-     * Creates new form Game
-     */
+    private MouseAdapter mouseListener[][];
     private JTextField m[][];
     private  RestrictedTextField r[][];
     private JPanel paneljuego = new JPanel();
@@ -57,6 +59,10 @@ public class Game extends javax.swing.JFrame {
         setPista();
         imprimirTextArea();
         filtrarPalabras();
+       /* X.setVisible(false);
+        Y.setVisible(false);
+        Xseleccionado.setVisible(false);
+        Yseleccionado.setVisible(false);*/
         TituloDiccionario.setText( Dictionary.getName() );
         Tablero holi=new Tablero();
         crearTablero(14,14);
@@ -87,6 +93,10 @@ public class Game extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         palabrasArea = new javax.swing.JList();
+        X = new javax.swing.JTextField();
+        Y = new javax.swing.JTextField();
+        Xseleccionado = new javax.swing.JTextField();
+        Yseleccionado = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Cruci-5 Game");
@@ -165,6 +175,11 @@ public class Game extends javax.swing.JFrame {
 
         GrupoBotones.add(Vertical);
         Vertical.setText("Vertical");
+        Vertical.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                VerticalActionPerformed(evt);
+            }
+        });
         Botones.add(Vertical);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Sprites/Lupita.png"))); // NOI18N
@@ -176,6 +191,14 @@ public class Game extends javax.swing.JFrame {
         });
         jScrollPane2.setViewportView(palabrasArea);
         palabrasArea.getAccessibleContext().setAccessibleName("");
+
+        X.setText("jTextField1");
+
+        Y.setText("jTextField1");
+
+        Xseleccionado.setText("jTextField1");
+
+        Yseleccionado.setText("jTextField2");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -189,18 +212,28 @@ public class Game extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(TituloDiccionario)
-                    .addComponent(Botones, javax.swing.GroupLayout.DEFAULT_SIZE, 345, Short.MAX_VALUE)
+                    .addComponent(Botones, javax.swing.GroupLayout.DEFAULT_SIZE, 417, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(12, 12, 12)
+                                        .addComponent(jLabel2)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(Filtro)
+                                .addGap(6, 6, 6))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(12, 12, 12)
-                                .addComponent(jLabel2)))
+                                .addComponent(jScrollPane2)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jScrollPane2)
-                            .addComponent(Filtro))
-                        .addGap(21, 21, 21)))
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(X, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(Y, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(Xseleccionado, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(Yseleccionado, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -210,13 +243,25 @@ public class Game extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(TituloDiccionario, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jScrollPane2)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(jScrollPane2))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(130, 130, 130)
+                                .addComponent(X, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(Y, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(22, 22, 22)
+                                .addComponent(Xseleccionado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(Yseleccionado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(Filtro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel1)
-                            .addComponent(jLabel2)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(jLabel1)
+                                .addComponent(jLabel2))
+                            .addComponent(Filtro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -249,6 +294,10 @@ public class Game extends javax.swing.JFrame {
                 
     }//GEN-LAST:event_FiltroActionPerformed
 
+    private void VerticalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VerticalActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_VerticalActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -256,6 +305,7 @@ public class Game extends javax.swing.JFrame {
     {
          m= new JTextField[x][y];
          r= new RestrictedTextField[x][y];
+         mouseListener= new MouseAdapter[x][y];
          paneljuego= new JPanel();
          paneljuego.setLayout(new GridLayout (x,y));
          paneljuego.setBackground(Color.red);
@@ -274,15 +324,47 @@ public class Game extends javax.swing.JFrame {
                 r[i][j].setLimit(1);
                 if(holi.matrizSolucion[i][j]=='0')
                     m[i][j].setText("");
-                
+
                // m[i][j].setSize(5,10);
                 m[i][j].setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
                 m[i][j].setHorizontalAlignment(javax.swing.JTextField.CENTER);
+                X.setText(""+i);
+                Y.setText(""+j);
+                mouseListener[i][j] = new MouseAdapter() {
+            public void mouseClicked(MouseEvent mouseEvent) {
+                m[Integer.parseInt(X.getText())][Integer.parseInt(Y.getText())] = (JTextField) mouseEvent.getSource();
+                if (mouseEvent.getClickCount() == 1) {
+                    Xseleccionado.setText(""+m[Integer.parseInt(X.getText())][Integer.parseInt(Y.getText())].getY()/27);
+                    Yseleccionado.setText(""+m[Integer.parseInt(X.getText())][Integer.parseInt(Y.getText())].getX()/27);
+                    seleccionarPalabra();
+                    update();
+                }
+            }
+        };
+        
+            m[i][j].addMouseListener(mouseListener[i][j]);
                 paneljuego.add(m[i][j]);
+                
             }
             
         }
         
+    }
+   
+    public void update(){
+        Tablero holi = new Tablero();
+        for(int i=0;i<14; i++)
+        {
+            for(int j=0;j<14;j++)
+            {
+                if(holi.matrizSolucion[i][j]=='0')
+                    m[i][j].setText("");
+                else
+                    m[i][j].setText(""+holi.matrizSolucion[i][j]);
+                
+            }
+        }
+            
     }
     
     public void readingDictionary()
@@ -363,9 +445,24 @@ public class Game extends javax.swing.JFrame {
                 }
             }
         };
-        
+         
     palabrasArea.addMouseListener(mouseListener);
    
+    }
+    
+    public void seleccionarPalabra(){
+        
+        if(palabrasArea.getSelectedValue()!=null){
+           Palabra pala= new Palabra((String) palabrasArea.getSelectedValue(),Dictionary.getPista((String) palabrasArea.getSelectedValue()));
+           PalabraT palaT= new PalabraT(Horizontal.isSelected(),pala,Integer.parseInt(Xseleccionado.getText()),Integer.parseInt(Yseleccionado.getText()));
+           Tablero t = new Tablero();
+           if(t.comprobarpalabra(palaT)){
+               t.ponerpalabraenmatriz(palaT);
+           } else{ 
+                int x = JOptionPane.showConfirmDialog(this, "La palabra no ha podido ser agregada a la matriz.", "Palabra Invalida", JOptionPane.OK_CANCEL_OPTION);            
+        }
+      }
+        
     }
     
  
@@ -409,7 +506,7 @@ public class Game extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                Tablero t = new Tablero();
+                
                 new Game().setVisible(true);
             }
         });
@@ -427,6 +524,10 @@ public class Game extends javax.swing.JFrame {
     private javax.swing.JPanel Pistas;
     private javax.swing.JTextField TituloDiccionario;
     private javax.swing.JRadioButton Vertical;
+    private javax.swing.JTextField X;
+    private javax.swing.JTextField Xseleccionado;
+    private javax.swing.JTextField Y;
+    private javax.swing.JTextField Yseleccionado;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
