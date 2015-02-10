@@ -32,7 +32,7 @@ public class GamePlay extends javax.swing.JFrame {
     private Diccionario Dictionary = new Diccionario();
     private AudioClip sonido;
     private int segundos = 0, minutos = 0;
-    
+    private Tablero tableau = new Tablero();
     
     public GamePlay() {
         initComponents();

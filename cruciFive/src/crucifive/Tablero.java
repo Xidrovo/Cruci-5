@@ -6,6 +6,7 @@
 package crucifive;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Random;
 import javax.swing.JTextField;
@@ -26,11 +27,25 @@ public class  Tablero{
     private static LinkedList<Palabra> palabras1;
     private static Diccionario dictionary;
     private static String GameType;
+    private static HashMap <PosDir, PalabraT> Hashti;
     public static char matrizSolucion[][];
     char matriz[][];
     public static ArrayList<Posicion> posiciones;
 
    
+    
+    public void putin(PosDir posin, PalabraT Palat)
+    {
+        if (Hashti == null)
+            Hashti = new HashMap();
+        
+        Hashti.put(posin, Palat);
+    }
+    
+    public PalabraT getPalabraT(PosDir posin)
+    {
+        return Hashti.get(posin);
+    }
     
     public void setHorizontal(int NumeroHorizontal)
     {
@@ -424,7 +439,8 @@ public class  Tablero{
         }
         palabras.add(pt);
         palabras1.add(pt.getWord());
-        
+        PosDir posin = new PosDir(pt.getPosicioni(), pt.isOrientacion() );
+        putin(posin, pt);
         if (posiciones==null)
         {
             posiciones = new ArrayList();
