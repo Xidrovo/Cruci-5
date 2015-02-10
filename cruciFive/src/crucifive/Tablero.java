@@ -485,8 +485,14 @@ public class  Tablero{
         {
             return false;
         }
+        if (palabras==null){
+            palabras= new LinkedList();
+        }
+        if (palabras1==null){
+            palabras1= new LinkedList();
+        }
         
-
+       
         
         if(pt.isOrientacion())
         {
@@ -530,12 +536,16 @@ public class  Tablero{
                     cont=cont+1;
             }
         }
-        if (palabras==null || palabras.size()==0)
+        if (palabras1.size()==0)
             return true;
+        else if(palabras1.contains(pt.getWord()))
+            return false;
         else if(cont==0)
             return false;
+        else
+            return true;
         
-        return true;
+        
     }
     
     //public void 
