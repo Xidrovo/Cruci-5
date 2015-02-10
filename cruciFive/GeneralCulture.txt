@@ -150,3 +150,5 @@ BARCO
 Viaja por el mar, entre las olas.
 MOCHILA
 donde se guardan los cuadernos
+PAYASO
+que usa maquillaje y entretiene a los chavos.
