@@ -108,6 +108,11 @@ public class IconFrame extends javax.swing.JFrame {
         aboutUs.setText("About us");
         aboutUs.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         aboutUs.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        aboutUs.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                aboutUsMouseClicked(evt);
+            }
+        });
         aboutUs.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 aboutUsActionPerformed(evt);
@@ -235,6 +240,12 @@ public class IconFrame extends javax.swing.JFrame {
             Musica = 1;
         }
     }//GEN-LAST:event_MusicIconMouseClicked
+
+    private void aboutUsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_aboutUsMouseClicked
+        // TODO add your handling code here:
+        AboutUs Au = new AboutUs();
+        Au.setVisible(true);
+    }//GEN-LAST:event_aboutUsMouseClicked
 
     private boolean continueEnable()
     {
