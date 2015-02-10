@@ -265,9 +265,7 @@ public class AddWord extends javax.swing.JFrame {
     private void FinishMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_FinishMouseClicked
         // TODO add your handling code here:
         dispose();
-        Game juego = new Game();
-        juego.readingDictionary();
-        juego.setVisible(true);
+       
     }//GEN-LAST:event_FinishMouseClicked
 
     private void AddWordMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_AddWordMouseClicked
