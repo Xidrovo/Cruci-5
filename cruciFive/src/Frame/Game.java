@@ -245,7 +245,7 @@ public class Game extends javax.swing.JFrame {
          Tablero holi = new Tablero();
 
 
-         holi.AutoGenCascada();
+        holi.AutoGenCascada();
          
         for(int i=0;i<x; i++)
         {

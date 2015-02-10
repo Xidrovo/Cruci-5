@@ -331,7 +331,7 @@ public class NewGame extends javax.swing.JFrame {
             EverythingLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(EverythingLayout.createSequentialGroup()
                 .addComponent(MiddleLeft, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(0, 1, Short.MAX_VALUE))
             .addGroup(EverythingLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(MiddleRight, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -398,7 +398,7 @@ public class NewGame extends javax.swing.JFrame {
             holi.v=Integer.parseInt(VerticalText.getText());
             holi.setDictionary(Dictionary);
             
-
+            //falta crear matriz llena de ceros
 
             Game juego= new Game();
                this.setVisible(false);
@@ -446,9 +446,18 @@ public class NewGame extends javax.swing.JFrame {
             holi.setDictionary(Dictionary);
             holi.h=Integer.parseInt(HorizontalText.getText());
             holi.v=Integer.parseInt(VerticalText.getText());
-            holi.AutoGenCascada();
             
-            Game juego=new Game();
+            
+            if(Cascada.isSelected())
+            {
+                holi.AutoGenCascada();
+            }
+            else if(Normal.isSelected())
+            {
+                //holi.AutoGenNormal();
+            }
+            
+            GamePlay juego=new GamePlay();
                this.setVisible(false);
                juego.setVisible(true);
                this.dispose();

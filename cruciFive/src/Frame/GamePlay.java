@@ -5,6 +5,14 @@
  */
 package Frame;
 
+import Atxy2k.CustomTextField.RestrictedTextField;
+import crucifive.Tablero;
+import java.awt.Color;
+import java.awt.GridLayout;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+import crucifive.Diccionario;
+
 /**
  *
  * @author fernando
@@ -14,8 +22,21 @@ public class GamePlay extends javax.swing.JFrame {
     /**
      * Creates new form GamePlay
      */
+    private JTextField m[][];
+    private  RestrictedTextField r[][];
+    private JPanel paneljuego = new JPanel();
+    private Diccionario Dictionary = new Diccionario();
+    
+    
     public GamePlay() {
         initComponents();
+        setResizable(false);
+        setPista();
+        TituloDiccionario.setText( Dictionary.getName() );
+        Tablero holi=new Tablero();
+        crearTablero(14,14);
+        Crucigram.add(paneljuego);
+
     }
 
     /**
@@ -31,7 +52,7 @@ public class GamePlay extends javax.swing.JFrame {
         PositionButton = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
         DictionaryPanel = new javax.swing.JPanel();
-        jTextField1 = new javax.swing.JTextField();
+        TituloDiccionario = new javax.swing.JTextField();
         TimePanel = new javax.swing.JPanel();
         jTextField2 = new javax.swing.JTextField();
         jTextField3 = new javax.swing.JTextField();
@@ -64,13 +85,13 @@ public class GamePlay extends javax.swing.JFrame {
             .addGap(0, 477, Short.MAX_VALUE)
         );
 
-        jTextField1.setFont(new java.awt.Font("Earth", 0, 18)); // NOI18N
-        jTextField1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField1.setText("(Dictionary here)");
-        jTextField1.setEnabled(false);
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        TituloDiccionario.setFont(new java.awt.Font("Earth", 0, 18)); // NOI18N
+        TituloDiccionario.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        TituloDiccionario.setText("(Dictionary here)");
+        TituloDiccionario.setEnabled(false);
+        TituloDiccionario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                TituloDiccionarioActionPerformed(evt);
             }
         });
 
@@ -80,14 +101,14 @@ public class GamePlay extends javax.swing.JFrame {
             DictionaryPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DictionaryPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jTextField1)
+                .addComponent(TituloDiccionario)
                 .addContainerGap())
         );
         DictionaryPanelLayout.setVerticalGroup(
             DictionaryPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DictionaryPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 59, Short.MAX_VALUE)
+                .addComponent(TituloDiccionario, javax.swing.GroupLayout.DEFAULT_SIZE, 59, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -141,7 +162,7 @@ public class GamePlay extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        ButtonsPannel.setLayout(new java.awt.GridLayout());
+        ButtonsPannel.setLayout(new java.awt.GridLayout(1, 0));
 
         HorizontalButtonPanel.setLayout(new java.awt.GridBagLayout());
 
@@ -226,9 +247,9 @@ public class GamePlay extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void TituloDiccionarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TituloDiccionarioActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_TituloDiccionarioActionPerformed
 
     private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
         // TODO add your handling code here:
@@ -269,6 +290,50 @@ public class GamePlay extends javax.swing.JFrame {
             }
         });
     }
+    
+    public void setPista(){
+    
+    }
+    
+    public void crearTablero(int x, int y)
+    {
+         m= new JTextField[x][y];
+         r= new RestrictedTextField[x][y];
+         paneljuego= new JPanel();
+         paneljuego.setLayout(new GridLayout (x,y));
+         paneljuego.setBackground(Color.magenta);
+         paneljuego.setBounds(50, 50, y*27,x*27);
+         
+        Tablero holi = new Tablero();
+
+         
+        for(int i=0;i<x; i++)
+        {
+            for(int j=0;j<y;j++)
+            {
+                m[i][j]=new JTextField();
+                r[i][j] = new RestrictedTextField(m[i][j]);
+                r[i][j].setLimit(1);
+                if(holi.matrizSolucion[i][j]=='0')
+                {
+                    m[i][j].setText(" ");
+                    m[i][j].setVisible(false);
+                }
+                else
+                {
+                    m[i][j].setText(""+holi.matrizSolucion[i][j]);
+                    m[i][j].setBackground(Color.white);
+                }
+                
+               // m[i][j].setSize(5,10);
+                m[i][j].setFont(new java.awt.Font("Lucida Grande", 0, 14)); // NOI18N
+                m[i][j].setHorizontalAlignment(javax.swing.JTextField.CENTER);
+                paneljuego.add(m[i][j]);
+            }
+            
+        }
+        
+    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel ButtonsPannel;
@@ -279,6 +344,7 @@ public class GamePlay extends javax.swing.JFrame {
     private javax.swing.JPanel PistaPanel;
     private javax.swing.ButtonGroup PositionButton;
     private javax.swing.JPanel TimePanel;
+    private javax.swing.JTextField TituloDiccionario;
     private javax.swing.JButton Verificar;
     private javax.swing.JRadioButton Vertical;
     private javax.swing.JPanel VerticalButtonPanel;
@@ -288,7 +354,6 @@ public class GamePlay extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
     // End of variables declaration//GEN-END:variables
