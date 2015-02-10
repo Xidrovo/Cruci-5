@@ -51,10 +51,10 @@ public class Game extends javax.swing.JFrame {
         setPista();
         imprimirTextArea();
         filtrarPalabras();
-       /* X.setVisible(false);
+        X.setVisible(false);
         Y.setVisible(false);
         Xseleccionado.setVisible(false);
-        Yseleccionado.setVisible(false);*/
+        Yseleccionado.setVisible(false);
         TituloDiccionario.setText( Dictionary.getName() );
         Tablero holi=new Tablero();
         crearTablero(14,14);
