@@ -52,6 +52,7 @@ public class Game extends javax.swing.JFrame {
     public Game() {
         initComponents();
         setLocationRelativeTo(null);
+        Horizontal.setSelected(true);
         setResizable(false);
         setPista();
         imprimirTextArea();
@@ -71,6 +72,7 @@ public class Game extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        GrupoBotones = new javax.swing.ButtonGroup();
         jPanel1 = new javax.swing.JPanel();
         TituloDiccionario = new javax.swing.JTextField();
         Filtro = new javax.swing.JTextField();
@@ -79,6 +81,8 @@ public class Game extends javax.swing.JFrame {
         Botones = new javax.swing.JPanel();
         AddWord = new javax.swing.JButton();
         AutoGen = new javax.swing.JButton();
+        Horizontal = new javax.swing.JRadioButton();
+        Vertical = new javax.swing.JRadioButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
@@ -137,9 +141,7 @@ public class Game extends javax.swing.JFrame {
                 .addComponent(PistaField, javax.swing.GroupLayout.DEFAULT_SIZE, 105, Short.MAX_VALUE))
         );
 
-        java.awt.GridBagLayout BotonesLayout = new java.awt.GridBagLayout();
-        BotonesLayout.columnWeights = new double[] {5.0, 5.0};
-        Botones.setLayout(BotonesLayout);
+        Botones.setLayout(new java.awt.GridLayout(2, 2));
 
         AddWord.setText("¡new Word!");
         AddWord.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -152,10 +154,18 @@ public class Game extends javax.swing.JFrame {
                 AddWordActionPerformed(evt);
             }
         });
-        Botones.add(AddWord, new java.awt.GridBagConstraints());
+        Botones.add(AddWord);
 
         AutoGen.setText("AutoGen");
-        Botones.add(AutoGen, new java.awt.GridBagConstraints());
+        Botones.add(AutoGen);
+
+        GrupoBotones.add(Horizontal);
+        Horizontal.setText("Horizontal");
+        Botones.add(Horizontal);
+
+        GrupoBotones.add(Vertical);
+        Vertical.setText("Vertical");
+        Botones.add(Vertical);
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Sprites/Lupita.png"))); // NOI18N
 
@@ -411,9 +421,12 @@ public class Game extends javax.swing.JFrame {
     private javax.swing.JButton AutoGen;
     private javax.swing.JPanel Botones;
     private javax.swing.JTextField Filtro;
+    private javax.swing.ButtonGroup GrupoBotones;
+    private javax.swing.JRadioButton Horizontal;
     private javax.swing.JTextField PistaField;
     private javax.swing.JPanel Pistas;
     private javax.swing.JTextField TituloDiccionario;
+    private javax.swing.JRadioButton Vertical;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
