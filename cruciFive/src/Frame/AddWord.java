@@ -22,6 +22,7 @@ import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -213,19 +214,30 @@ public class AddWord extends javax.swing.JFrame {
         
         try
         {
+            VerificadorTextFields();
             FileWriter Fw = new FileWriter(file,true);            
-            Fw.write("\r\n" + palabra.getWord() + "\r\n" + palabra.getPista() );
+            Fw.write("\r\n" + palabra.getWord().toUpperCase() + "\r\n" + palabra.getPista() );
             Fw.close();
         }
-        catch(Exception ex)
-                {
-                    System.out.println("Oh my gosh, there's an error!");
-                }
+        catch(EmptyFieldException EfE)
+        {
+            int x = JOptionPane.showConfirmDialog(this, "Dude!, why did you do that?!", "OH MY GOSH!", JOptionPane.OK_CANCEL_OPTION);
+        } catch (IOException ex) {
+            Logger.getLogger(AddWord.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
         finally{
             this.dispose();
         }
     }//GEN-LAST:event_AddWordMouseClicked
 
+    public void VerificadorTextFields() throws EmptyFieldException
+    {
+        if (MoreClueSection.getText().length() == 0 || WordAdder.getText().length() == 0)
+        {
+            throw new EmptyFieldException("Mensaje");
+        }
+    }
     /**
      * @param args the command line arguments
      */
@@ -276,4 +288,11 @@ public class AddWord extends javax.swing.JFrame {
     private javax.swing.JPanel WordPanel;
     private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
+
+    private static class EmptyFieldException extends Exception {
+
+        public EmptyFieldException(String mensaje) {
+            super(mensaje);
+        }
+    }
 }

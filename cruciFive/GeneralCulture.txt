@@ -1,7 +1,7 @@
 ARDOR
-sensación de calor o rubor.
+sensacion de calor o rubor.
 IRONICO
-Que denota o implica ironía.
+Que denota o implica ironia.
 UNTAS
 Embarras, unges.
 VENA
@@ -15,19 +15,19 @@ Usted.
 PODO
 Corto la hierba.
 SOLA
-Única en su especie.
+unica en su especie.
 RACHA
 periodo breve de fortuna.
 SANA
 Saludable.
 COMI
-Ingerí alimento.
+Ingeri alimento.
 COE
-Comité Olímpico ecuatoriano.
+Comite Olímpico ecuatoriano.
 RINDE
 De fruto o utilidad.
 CRIADERO
-Lugar donde se crían animales.
+Lugar donde se crian animales.
 AGRO
 Campo, tierra de labranza.
 ATINAR
@@ -37,13 +37,13 @@ Aparta.
 DECLINA
 Decae, degenera.
 TIMEN
-Hurten con engaño.
+Hurten con enganio.
 SORTEAR
 Rifar.
 REMO
 Palo para remar.
 OPTE
-Escogí, preferí.
+Escogi, preferi.
 RIO
 corriente de agua continua.
 ARO
@@ -57,19 +57,19 @@ Sodio
 ARES
 Dios griego de la guerra.
 ARMADURA
-Armazón de protección.
+Armazón de proteccion.
 INCA
 Habitante del Cuzco.
 TANTEAR
 Andar a tientas.
 AIRE
-fluído que forma la atmósfera.
+fluido que forma la atmosfera.
 LLORAIS
 Derramais lágrimas.
 ABEO
 Nombre que daban al dios Apolo
 ACORDES
-Con armonía (pl.)
+Con armonia (pl.)
 AERO
 Prefijo con significado de aire
 ROSE
@@ -79,17 +79,17 @@ Ato apretadamente
 PESTOSA
 Portadora de la peste
 THOR
-Hijo primogénito del dios escandinavo Odín
+Hijo primogenito del dios escandinavo Odin
 ALABA
 Elogia con palabras
 STA
 Abreviatura de Santa
 REVISARA
-Viera con atención y cuidado
+Viera con atencion y cuidado
 TERAN
 Ana Enriqueta …, poetisa venezolana
 MANAR
-Brotar o salir un líquido
+Brotar o salir un liquido
 LANOSA
 Que abunda en lana
 ATERRARA
@@ -99,7 +99,7 @@ Deja lelo
 ACAB
 Rey de Israel, esposo de Jezabel
 TIMORATO
-Tímido, indeciso
+Timido, indeciso
 TEDIOSA
 Fastidiosa, enojosa
 NADO
@@ -107,7 +107,7 @@ Braceo, buceo
 RODAS
 Isla griega en el mar Egeo
 BATERIAS
-Unidades tácticas de armas de artillería
+Unidades tacticas de armas de artilleria
 CARENAR
 Reparar el casco de una nave
 OLEOS
