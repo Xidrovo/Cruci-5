@@ -14,10 +14,14 @@ import java.awt.Color;
 import java.awt.GridLayout;
 import java.util.Iterator;
 import java.util.LinkedList;
+import javax.swing.DefaultListModel;
+import javax.swing.JList;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
+import javax.swing.ListModel;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
+import javax.swing.event.ListDataListener;
 
 /**
  *
@@ -57,8 +61,6 @@ public class Game extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         TituloDiccionario = new javax.swing.JTextField();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        palabrasArea = new javax.swing.JTextArea();
         Filtro = new javax.swing.JTextField();
         Pistas = new javax.swing.JPanel();
         PistaField = new javax.swing.JTextField();
@@ -67,6 +69,8 @@ public class Game extends javax.swing.JFrame {
         AutoGen = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        palabrasArea = new javax.swing.JList();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Cruci-5 Game");
@@ -89,10 +93,6 @@ public class Game extends javax.swing.JFrame {
         TituloDiccionario.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         TituloDiccionario.setText("Aquí Diccionario");
         TituloDiccionario.setEnabled(false);
-
-        palabrasArea.setColumns(20);
-        palabrasArea.setRows(5);
-        jScrollPane1.setViewportView(palabrasArea);
 
         Filtro.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         Filtro.addActionListener(new java.awt.event.ActionListener() {
@@ -145,6 +145,14 @@ public class Game extends javax.swing.JFrame {
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Sprites/Lupita.png"))); // NOI18N
 
+        palabrasArea.setModel(new javax.swing.AbstractListModel() {
+            String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
+            public int getSize() { return strings.length; }
+            public Object getElementAt(int i) { return strings[i]; }
+        });
+        jScrollPane2.setViewportView(palabrasArea);
+        palabrasArea.getAccessibleContext().setAccessibleName("");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -157,10 +165,7 @@ public class Game extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(TituloDiccionario)
-                    .addComponent(Botones, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(12, 12, 12)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 333, Short.MAX_VALUE))
+                    .addComponent(Botones, javax.swing.GroupLayout.DEFAULT_SIZE, 345, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -168,7 +173,9 @@ public class Game extends javax.swing.JFrame {
                                 .addGap(12, 12, 12)
                                 .addComponent(jLabel2)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(Filtro)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jScrollPane2)
+                            .addComponent(Filtro))
                         .addGap(21, 21, 21)))
                 .addContainerGap())
         );
@@ -176,12 +183,12 @@ public class Game extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(TituloDiccionario, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jScrollPane2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jScrollPane1)
-                        .addGap(12, 12, 12)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(Filtro, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel1)
@@ -276,31 +283,34 @@ public class Game extends javax.swing.JFrame {
                filtrado();
                }
              private void filtrado(){
-               palabrasArea.setText("");
+               
                iterador = listaPalabra.iterator();
+               DefaultListModel modelo = new DefaultListModel();
             while (iterador.hasNext() )
                 {
             Palabra palabra = iterador.next();
+            
             if("".equals(Filtro.getText())){
-            palabrasArea.append( palabra.getWord() );
-            palabrasArea.append("\n");
+                modelo.addElement(palabra.getWord());
+            
             }else if(palabra.getWord().toLowerCase().startsWith(Filtro.getText().toLowerCase())){
-            palabrasArea.append( palabra.getWord() );
-            palabrasArea.append("\n");
+                modelo.addElement(palabra.getWord()); 
                      }
                 }
+            palabrasArea.setModel(modelo);
             }
          }
     );}
     
-    public void imprimirTextArea()
+   public void imprimirTextArea()
     {
+        DefaultListModel modelo = new DefaultListModel();
         while (iterador.hasNext() )
         {
             Palabra palabra = iterador.next();
-            palabrasArea.append( palabra.getWord() );
-            palabrasArea.append("\n");
+            modelo.addElement(palabra.getWord());
         }
+        palabrasArea.setModel(modelo);
     }
 
     public static void main(String args[]) {
@@ -347,8 +357,8 @@ public class Game extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea palabrasArea;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JList palabrasArea;
     // End of variables declaration//GEN-END:variables
 }
 
