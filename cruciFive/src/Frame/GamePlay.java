@@ -13,6 +13,9 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import crucifive.Diccionario;
 import java.applet.AudioClip;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.Timer;
 
 /**
  *
@@ -28,9 +31,15 @@ public class GamePlay extends javax.swing.JFrame {
     private JPanel paneljuego = new JPanel();
     private Diccionario Dictionary = new Diccionario();
     private AudioClip sonido;
+    private int segundos = 0, minutos = 0;
+    
     
     public GamePlay() {
         initComponents();
+        setLocationRelativeTo(null);
+        Timer t = new Timer(1000, acciones);
+        t.start();
+        Horizontal.setSelected(true);
         setResizable(false);
         sonido = java.applet.Applet.newAudioClip(getClass().getResource("../SoundTrack/EnglishMan.wav"));
         sonido.play();
@@ -43,6 +52,43 @@ public class GamePlay extends javax.swing.JFrame {
         Crucigram.add(paneljuego);
 
     }
+    
+    private ActionListener acciones = new ActionListener(){
+        @Override
+        public void actionPerformed(ActionEvent ae)
+        {
+            segundos++;
+            if (segundos == 60)
+            {
+                minutos++;
+                segundos = 0;
+            }
+            actualizarTiempo();
+            System.out.println(segundos);
+        }
+    };
+            
+     public void actualizarTiempo()
+     {
+         String cronometro = new String();
+         if (minutos <= 9){
+             if (segundos <= 9)
+                 cronometro = "0" + minutos + ":" + "0" + segundos;
+             else
+                 cronometro = "0" + minutos + ":" + segundos;             
+         }
+         else
+         {
+             if (segundos < 9)
+             {
+                 cronometro = minutos + ":" + "0" + segundos;
+             }
+             else
+                 cronometro = minutos + ":" + segundos;
+         }
+         TiempoAdv.setText(cronometro);
+     }
+
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -59,8 +105,8 @@ public class GamePlay extends javax.swing.JFrame {
         DictionaryPanel = new javax.swing.JPanel();
         TituloDiccionario = new javax.swing.JTextField();
         TimePanel = new javax.swing.JPanel();
-        jTextField2 = new javax.swing.JTextField();
         jTextField3 = new javax.swing.JTextField();
+        TiempoAdv = new javax.swing.JLabel();
         PistaPanel = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
@@ -117,28 +163,32 @@ public class GamePlay extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jTextField2.setFont(new java.awt.Font("Earth", 0, 14)); // NOI18N
-        jTextField2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        jTextField2.setText("(Time Here)");
-        jTextField2.setEnabled(false);
-
         jTextField3.setFont(new java.awt.Font("Earth", 0, 14)); // NOI18N
         jTextField3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextField3.setText("(SCORE HERE)");
         jTextField3.setEnabled(false);
         jTextField3.setFocusable(false);
 
+        TiempoAdv.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        TiempoAdv.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        TiempoAdv.setText("(Tiempo)");
+
         javax.swing.GroupLayout TimePanelLayout = new javax.swing.GroupLayout(TimePanel);
         TimePanel.setLayout(TimePanelLayout);
         TimePanelLayout.setHorizontalGroup(
             TimePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 367, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 367, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(TimePanelLayout.createSequentialGroup()
+                .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 367, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, TimePanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(TiempoAdv, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         TimePanelLayout.setVerticalGroup(
             TimePanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(TimePanelLayout.createSequentialGroup()
-                .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(TiempoAdv)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
@@ -353,6 +403,7 @@ public class GamePlay extends javax.swing.JFrame {
     private javax.swing.ButtonGroup PositionButton;
     private javax.swing.JButton QUIT;
     private javax.swing.JButton SAVE;
+    private javax.swing.JLabel TiempoAdv;
     private javax.swing.JPanel TimePanel;
     private javax.swing.JTextField TituloDiccionario;
     private javax.swing.JButton VERIFIED;
@@ -360,7 +411,6 @@ public class GamePlay extends javax.swing.JFrame {
     private javax.swing.JPanel VerticalButtonPanel;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextArea1;
-    private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
     // End of variables declaration//GEN-END:variables
 }

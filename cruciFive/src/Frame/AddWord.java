@@ -40,6 +40,7 @@ public class AddWord extends javax.swing.JFrame {
     public AddWord() {
         initComponents();
         setResizable(false);
+        setLocationRelativeTo(null);
         DictionaryName.setText(Dictionary.getName() );
     }
 

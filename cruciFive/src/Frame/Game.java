@@ -44,6 +44,7 @@ public class Game extends javax.swing.JFrame {
     
     public Game() {
         initComponents();
+        setLocationRelativeTo(null);
         setResizable(false);
         setPista();
         imprimirTextArea();
