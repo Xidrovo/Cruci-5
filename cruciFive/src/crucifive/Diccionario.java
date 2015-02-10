@@ -62,6 +62,9 @@ public class Diccionario {
     }
     
     public void putMapa (String Palabra, String Pista){
+        if (MapaDic == null)
+            MapaDic = new HashMap();
+        
        MapaDic.put(Palabra,Pista);
     }
     
