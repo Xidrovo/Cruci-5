@@ -275,27 +275,27 @@
         <Property name="rows" type="int" value="2"/>
       </Layout>
       <SubComponents>
-        <Component class="javax.swing.JButton" name="Verificar">
+        <Component class="javax.swing.JButton" name="VERIFIED">
           <Properties>
             <Property name="text" type="java.lang.String" value="&#xa1;VERIFIED!"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton3">
+        <Component class="javax.swing.JButton" name="GIVEUP">
           <Properties>
             <Property name="text" type="java.lang.String" value="&#xa1;GIVE UP!"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton1">
+        <Component class="javax.swing.JButton" name="SAVE">
           <Properties>
             <Property name="text" type="java.lang.String" value="SAVE"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JButton" name="jButton2">
+        <Component class="javax.swing.JButton" name="QUIT">
           <Properties>
             <Property name="text" type="java.lang.String" value="QUIT"/>
           </Properties>
           <Events>
-            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButton2MouseClicked"/>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="QUITMouseClicked"/>
           </Events>
         </Component>
       </SubComponents>

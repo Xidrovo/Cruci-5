@@ -12,6 +12,7 @@ import java.awt.GridLayout;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 import crucifive.Diccionario;
+import java.applet.AudioClip;
 
 /**
  *
@@ -26,10 +27,14 @@ public class GamePlay extends javax.swing.JFrame {
     private  RestrictedTextField r[][];
     private JPanel paneljuego = new JPanel();
     private Diccionario Dictionary = new Diccionario();
-    
+    private AudioClip sonido;
     
     public GamePlay() {
         initComponents();
+        setResizable(false);
+        sonido = java.applet.Applet.newAudioClip(getClass().getResource("../SoundTrack/EnglishMan.wav"));
+        sonido.play();
+        sonido.loop();
         setResizable(false);
         setPista();
         TituloDiccionario.setText( Dictionary.getName() );
@@ -65,10 +70,10 @@ public class GamePlay extends javax.swing.JFrame {
         VerticalButtonPanel = new javax.swing.JPanel();
         Vertical = new javax.swing.JRadioButton();
         ControlPanel = new javax.swing.JPanel();
-        Verificar = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        VERIFIED = new javax.swing.JButton();
+        GIVEUP = new javax.swing.JButton();
+        SAVE = new javax.swing.JButton();
+        QUIT = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -187,22 +192,22 @@ public class GamePlay extends javax.swing.JFrame {
 
         ControlPanel.setLayout(new java.awt.GridLayout(2, 2));
 
-        Verificar.setText("¡VERIFIED!");
-        ControlPanel.add(Verificar);
+        VERIFIED.setText("¡VERIFIED!");
+        ControlPanel.add(VERIFIED);
 
-        jButton3.setText("¡GIVE UP!");
-        ControlPanel.add(jButton3);
+        GIVEUP.setText("¡GIVE UP!");
+        ControlPanel.add(GIVEUP);
 
-        jButton1.setText("SAVE");
-        ControlPanel.add(jButton1);
+        SAVE.setText("SAVE");
+        ControlPanel.add(SAVE);
 
-        jButton2.setText("QUIT");
-        jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
+        QUIT.setText("QUIT");
+        QUIT.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton2MouseClicked(evt);
+                QUITMouseClicked(evt);
             }
         });
-        ControlPanel.add(jButton2);
+        ControlPanel.add(QUIT);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -251,10 +256,11 @@ public class GamePlay extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_TituloDiccionarioActionPerformed
 
-    private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
+    private void QUITMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_QUITMouseClicked
         // TODO add your handling code here:
-        this.dispose();
-    }//GEN-LAST:event_jButton2MouseClicked
+        sonido.stop();
+        dispose();
+    }//GEN-LAST:event_QUITMouseClicked
 
     /**
      * @param args the command line arguments
@@ -340,18 +346,18 @@ public class GamePlay extends javax.swing.JFrame {
     private javax.swing.JPanel ControlPanel;
     private javax.swing.JPanel Crucigram;
     private javax.swing.JPanel DictionaryPanel;
+    private javax.swing.JButton GIVEUP;
     private javax.swing.JRadioButton Horizontal;
     private javax.swing.JPanel HorizontalButtonPanel;
     private javax.swing.JPanel PistaPanel;
     private javax.swing.ButtonGroup PositionButton;
+    private javax.swing.JButton QUIT;
+    private javax.swing.JButton SAVE;
     private javax.swing.JPanel TimePanel;
     private javax.swing.JTextField TituloDiccionario;
-    private javax.swing.JButton Verificar;
+    private javax.swing.JButton VERIFIED;
     private javax.swing.JRadioButton Vertical;
     private javax.swing.JPanel VerticalButtonPanel;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextField jTextField2;
