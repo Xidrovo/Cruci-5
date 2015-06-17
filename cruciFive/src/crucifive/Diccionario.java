@@ -38,7 +38,7 @@ public class Diccionario {
         
         words.add(word);        
     }
-
+//Este es un ejemplo.
     public  LinkedList<Palabra> getWordsList()
     {
         return words;
