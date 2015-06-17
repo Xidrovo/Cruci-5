@@ -39,6 +39,7 @@ public class Diccionario {
         words.add(word);        
     }
 //Este es un ejemplo.
+    //Esto es lo agregado.
     public  LinkedList<Palabra> getWordsList()
     {
         return words;
