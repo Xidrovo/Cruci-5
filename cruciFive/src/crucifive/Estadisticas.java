@@ -26,5 +26,6 @@ public class Estadisticas {
     public void VerEstadisticas()
     {
         //Muestra por pantalla todas las estadísticas.
+        //Esto es una prueba.
     }
 }
